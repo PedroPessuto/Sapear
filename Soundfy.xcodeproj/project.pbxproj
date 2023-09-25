@@ -13,7 +13,6 @@
 		BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147012AC1FFD100CCFEE5 /* ContentController.swift */; };
 		BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147042AC208FA00CCFEE5 /* SectionView.swift */; };
 		BF5208502ABE299700FB9F5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF52084F2ABE299700FB9F5C /* Localizable.strings */; };
-		BF5208562ABE29D600FB9F5C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5208552ABE29D600FB9F5C /* HomeView.swift */; };
 		BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */; };
 		BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085A2ABE2A6E00FB9F5C /* Phase.swift */; };
 		BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085C2ABE2B9100FB9F5C /* Section.swift */; };
@@ -21,6 +20,11 @@
 		BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */; };
 		BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */; };
 		BFF815A52ABE0D1A00ACF5A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF815A42ABE0D1A00ACF5A7 /* Preview Assets.xcassets */; };
+		E5AB743F2AC21ED500006406 /* PhonemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB743E2AC21ED500006406 /* PhonemesView.swift */; };
+		E5AB74412AC21F1000006406 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74402AC21F1000006406 /* WordView.swift */; };
+		E5AB74432AC21F8A00006406 /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* SoundsView.swift */; };
+		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
+		E5AB74472AC2230B00006406 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74462AC2230B00006406 /* ColorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +34,6 @@
 		BF3147012AC1FFD100CCFEE5 /* ContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentController.swift; sourceTree = "<group>"; };
 		BF3147042AC208FA00CCFEE5 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		BF52084F2ABE299700FB9F5C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		BF5208552ABE29D600FB9F5C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		BF52085A2ABE2A6E00FB9F5C /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		BF52085C2ABE2B9100FB9F5C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -39,6 +42,11 @@
 		BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF815A42ABE0D1A00ACF5A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5AB743E2AC21ED500006406 /* PhonemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonemesView.swift; sourceTree = "<group>"; };
+		E5AB74402AC21F1000006406 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		E5AB74422AC21F8A00006406 /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
+		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E5AB74462AC2230B00006406 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3147012AC1FFD100CCFEE5 /* ContentController.swift */,
+				E5AB74462AC2230B00006406 /* ColorController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -84,7 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				BF3147032AC208EA00CCFEE5 /* Components */,
-				BF5208552ABE29D600FB9F5C /* HomeView.swift */,
+				E5AB74442AC21F9B00006406 /* ProfileView.swift */,
+				E5AB74422AC21F8A00006406 /* SoundsView.swift */,
+				E5AB74402AC21F1000006406 /* WordView.swift */,
+				E5AB743E2AC21ED500006406 /* PhonemesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,13 +213,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */,
+				E5AB74472AC2230B00006406 /* ColorController.swift in Sources */,
 				BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */,
 				BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */,
 				BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */,
 				BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */,
 				BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */,
 				BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */,
-				BF5208562ABE29D600FB9F5C /* HomeView.swift in Sources */,
+				E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */,
+				E5AB743F2AC21ED500006406 /* PhonemesView.swift in Sources */,
+				E5AB74432AC21F8A00006406 /* SoundsView.swift in Sources */,
+				E5AB74412AC21F1000006406 /* WordView.swift in Sources */,
 				BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */,
 				BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */,
 				BF3146F42AC1F2E900CCFEE5 /* Lesson.swift in Sources */,

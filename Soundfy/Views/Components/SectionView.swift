@@ -5,4 +5,14 @@
 //  Created by Pedro Pessuto on 25/09/23.
 //
 
-import Foundation
+
+import SwiftUI
+
+struct SectionView: View{
+    
+    var body: some View{
+        VStack{
+            
+        }
+    }
+}

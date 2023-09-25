@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        HomeView()
+        TabView {
+            SoundsView()
+                .tabItem {
+                    Image(systemName: "speaker.wave.2.fill")
+                    Text("sons-string")
+                }
+            
+            PhonemesView()
+                .tabItem {
+                    Image(systemName: "a.square")
+                    Text("fonemas-string")
+                }
+            
+            WordView()
+                .tabItem {
+                    Image(systemName: "textformat.abc")
+                    Text("palavra-string")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("perfil-string")
+                }
+        }
     }
 }
 
