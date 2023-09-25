@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3146F42AC1F2E900CCFEE5 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146F32AC1F2E900CCFEE5 /* Lesson.swift */; };
+		BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146F52AC1F37E00CCFEE5 /* Exercise.swift */; };
+		BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */; };
+		BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147012AC1FFD100CCFEE5 /* ContentController.swift */; };
+		BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147042AC208FA00CCFEE5 /* SectionView.swift */; };
+		BF5208502ABE299700FB9F5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF52084F2ABE299700FB9F5C /* Localizable.strings */; };
+		BF5208562ABE29D600FB9F5C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5208552ABE29D600FB9F5C /* HomeView.swift */; };
+		BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */; };
+		BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085A2ABE2A6E00FB9F5C /* Phase.swift */; };
+		BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085C2ABE2B9100FB9F5C /* Section.swift */; };
 		BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */; };
 		BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */; };
 		BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */; };
@@ -14,6 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF3146F32AC1F2E900CCFEE5 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		BF3146F52AC1F37E00CCFEE5 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alternative.swift; sourceTree = "<group>"; };
+		BF3147012AC1FFD100CCFEE5 /* ContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentController.swift; sourceTree = "<group>"; };
+		BF3147042AC208FA00CCFEE5 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		BF52084F2ABE299700FB9F5C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BF5208552ABE29D600FB9F5C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		BF52085A2ABE2A6E00FB9F5C /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		BF52085C2ABE2B9100FB9F5C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		BFF8159A2ABE0D1A00ACF5A7 /* Soundfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundfyApp.swift; sourceTree = "<group>"; };
 		BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +52,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF3147032AC208EA00CCFEE5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BF3147042AC208FA00CCFEE5 /* SectionView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BF5208512ABE29A700FB9F5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF52085A2ABE2A6E00FB9F5C /* Phase.swift */,
+				BF52085C2ABE2B9100FB9F5C /* Section.swift */,
+				BF3146F32AC1F2E900CCFEE5 /* Lesson.swift */,
+				BF3146F52AC1F37E00CCFEE5 /* Exercise.swift */,
+				BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF5208522ABE29AB00FB9F5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF3147012AC1FFD100CCFEE5 /* ContentController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF5208532ABE29B300FB9F5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF3147032AC208EA00CCFEE5 /* Components */,
+				BF5208552ABE29D600FB9F5C /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BFF815912ABE0D1A00ACF5A7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +108,15 @@
 		BFF8159C2ABE0D1A00ACF5A7 /* Soundfy */ = {
 			isa = PBXGroup;
 			children = (
+				BF5208532ABE29B300FB9F5C /* Views */,
+				BF5208522ABE29AB00FB9F5C /* Controllers */,
+				BF5208512ABE29A700FB9F5C /* Models */,
 				BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */,
 				BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */,
+				BF52084F2ABE299700FB9F5C /* Localizable.strings */,
 				BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */,
 				BFF815A32ABE0D1A00ACF5A7 /* Preview Content */,
+				BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */,
 			);
 			path = Soundfy;
 			sourceTree = "<group>";
@@ -126,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF815A52ABE0D1A00ACF5A7 /* Preview Assets.xcassets in Resources */,
+				BF5208502ABE299700FB9F5C /* Localizable.strings in Resources */,
 				BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +201,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */,
+				BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */,
+				BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */,
+				BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */,
+				BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */,
+				BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */,
+				BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */,
+				BF5208562ABE29D600FB9F5C /* HomeView.swift in Sources */,
+				BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */,
 				BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */,
+				BF3146F42AC1F2E900CCFEE5 /* Lesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +411,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */,
+			);
+			currentVersion = BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BFF815922ABE0D1A00ACF5A7 /* Project object */;
 }
