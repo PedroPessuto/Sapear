@@ -5,20 +5,21 @@
 //  Created by Pedro Pessuto on 22/09/23.
 //
 
-
 import Foundation
 import SwiftUI
 
 class Section {
-    let sectionId: UUID
-    let sectionName: String
-    let sectionDescription: String
-    let sectionPhases: [Phase]
+    var sectionId: UUID
+    var sectionName: String
+    var sectionDescription: String
+    var sectionColor: Color
+    var sectionPhases: [Phase]
 
-    init(sectionId: UUID = UUID(), sectionName: String, sectionDescription: String, sectionPhases: [Phase]) {
+    init(sectionId: UUID = UUID(), sectionName: String, sectionDescription: String, sectionColor: Color = Color(.orange), sectionPhases: [Phase]) {
         self.sectionId = sectionId
         self.sectionName = sectionName
         self.sectionDescription = sectionDescription
+        self.sectionColor = sectionColor
         self.sectionPhases = sectionPhases
     }
 }

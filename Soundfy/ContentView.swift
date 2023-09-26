@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     @StateObject var generalController = PrimaryController()
+    @StateObject var contentController = ContentController()
+    @StateObject var profileController = ProfileController()
     
     @State var screenName: String = "Sons"
     var screens = ["Sons",  "Fonemas", "Palavras"]
@@ -17,7 +19,8 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
+            
+            VStack (spacing: 0) {
                 VStack {
                     Picker("Sections", selection: $screenName) {
                         ForEach(screens, id: \.self) {
@@ -25,29 +28,30 @@ struct ContentView: View {
                         }
                     }
                     .pickerStyle(.segmented)
-                    
+                   
                 }
-                
                 .padding(.horizontal)
                 .padding(.bottom)
                 .background(Color(generalController.primaryColor))
                 
+             // Divider()
                 
-                if (screenName == "Sons") {
-                    SoundsView()
+                VStack {
+                    if (screenName == "Sons") {
+                        SoundsView()
+                    }
                 }
-                
-                Spacer()
+                .ignoresSafeArea()
             }
             .navigationTitle(screenName)
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(Color(generalController.primaryColor), for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
         }
+        .preferredColorScheme(.dark)
         .environmentObject(generalController)
-        .onAppear(){
-            UITabBar.appearance().backgroundColor = generalController.primaryColor
-        }
+        .environmentObject(contentController)
+        .environmentObject(profileController)
     }
 }
 
