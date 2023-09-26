@@ -12,7 +12,6 @@
 		BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */; };
 		BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147012AC1FFD100CCFEE5 /* ContentController.swift */; };
 		BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147042AC208FA00CCFEE5 /* SectionView.swift */; };
-		BF5208502ABE299700FB9F5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF52084F2ABE299700FB9F5C /* Localizable.strings */; };
 		BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */; };
 		BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085A2ABE2A6E00FB9F5C /* Phase.swift */; };
 		BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085C2ABE2B9100FB9F5C /* Section.swift */; };
@@ -33,7 +32,6 @@
 		BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alternative.swift; sourceTree = "<group>"; };
 		BF3147012AC1FFD100CCFEE5 /* ContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentController.swift; sourceTree = "<group>"; };
 		BF3147042AC208FA00CCFEE5 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		BF52084F2ABE299700FB9F5C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		BF52085A2ABE2A6E00FB9F5C /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		BF52085C2ABE2B9100FB9F5C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				BF5208512ABE29A700FB9F5C /* Models */,
 				BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */,
 				BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */,
-				BF52084F2ABE299700FB9F5C /* Localizable.strings */,
 				BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */,
 				BFF815A32ABE0D1A00ACF5A7 /* Preview Content */,
 				BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */,
@@ -200,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF815A52ABE0D1A00ACF5A7 /* Preview Assets.xcassets in Resources */,
-				BF5208502ABE299700FB9F5C /* Localizable.strings in Resources */,
 				BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

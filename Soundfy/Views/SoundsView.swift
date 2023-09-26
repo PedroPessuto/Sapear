@@ -12,18 +12,9 @@ struct SoundsView: View {
     @EnvironmentObject var generalObject: PrimaryController
     
     var body: some View {
-        NavigationStack{
-            //Picker aqui 🙈
-            ScrollView{
-                
-            }
+        VStack {
+            Text("SoundsView")
         }
-        
-        .navigationTitle("Sounds")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(Color(generalObject.primaryColor), for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
-        
     }
 }
 
