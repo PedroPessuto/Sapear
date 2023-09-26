@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var generalController = PrimaryController()
+    
     var body: some View {
         TabView {
             SoundsView()
@@ -32,9 +34,19 @@ struct ContentView: View {
             ProfileView()
                 .tabItem {
                     Image(systemName: "person")
+                        
                     Text("perfil-string")
+                        
                 }
         }
+        .environmentObject(generalController)
+        .onAppear(){
+            UITabBar.appearance().backgroundColor = generalController.primaryColor
+            
+            
+        }
+        
+
     }
 }
 

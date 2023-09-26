@@ -8,23 +8,22 @@
 import SwiftUI
 
 struct SoundsView: View {
+    
+    @EnvironmentObject var generalObject: PrimaryController
+    
     var body: some View {
         NavigationStack{
+            //Picker aqui 🙈
             ScrollView{
-                VStack{
-                    Text("Sounds")
-                    Text("Sounds")
-                    Text("Sounds")
-                    Text("Sounds")
-                    
-                }
-            }
-            
-            .navigationTitle("Sounds")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(.green, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
                 
+            }
         }
+        
+        .navigationTitle("Sounds")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Color(generalObject.primaryColor), for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        
     }
 }
+

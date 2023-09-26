@@ -24,7 +24,7 @@
 		E5AB74412AC21F1000006406 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74402AC21F1000006406 /* WordView.swift */; };
 		E5AB74432AC21F8A00006406 /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* SoundsView.swift */; };
 		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
-		E5AB74472AC2230B00006406 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74462AC2230B00006406 /* ColorController.swift */; };
+		E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74462AC2230B00006406 /* PrimaryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,7 @@
 		E5AB74402AC21F1000006406 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E5AB74462AC2230B00006406 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		E5AB74462AC2230B00006406 /* PrimaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3147012AC1FFD100CCFEE5 /* ContentController.swift */,
-				E5AB74462AC2230B00006406 /* ColorController.swift */,
+				E5AB74462AC2230B00006406 /* PrimaryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */,
-				E5AB74472AC2230B00006406 /* ColorController.swift in Sources */,
+				E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */,
 				BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */,
 				BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */,
 				BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */,
