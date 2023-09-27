@@ -14,7 +14,7 @@ struct ContentView: View {
     @StateObject var profileController = ProfileController()
     
     var body: some View {
-        BaseView()
+        HomeView()
             .environmentObject(primaryController)
             .environmentObject(contentController)
             .environmentObject(profileController)

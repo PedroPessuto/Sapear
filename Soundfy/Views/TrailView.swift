@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SoundsView: View {
+struct TrailView: View {
     
     @EnvironmentObject var generalObject: PrimaryController
     @EnvironmentObject var contentController: ContentController
@@ -21,10 +21,7 @@ struct SoundsView: View {
         }
         .frame(maxWidth: .infinity)
         .background(Color(red: 195/255, green: 234/255, blue: 1))
-//        .background(Image("BackgroundLake").resizable())
-
-        
-        
+//        .background(Image("BackgroundLake").resizable()) 
     }
 }
 

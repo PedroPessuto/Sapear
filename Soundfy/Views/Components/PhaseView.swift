@@ -11,7 +11,6 @@ import SwiftUI
 struct PhaseView: View {
     
     @EnvironmentObject var profileController: ProfileController
-    
     @State private var isDone: Bool = false
     
     var phase: Phase
