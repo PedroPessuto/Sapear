@@ -16,6 +16,7 @@
 		BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085A2ABE2A6E00FB9F5C /* Phase.swift */; };
 		BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085C2ABE2B9100FB9F5C /* Section.swift */; };
 		BF591E4D2AC4C07300A1F002 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4C2AC4C07300A1F002 /* ProfileController.swift */; };
+		BF591E4F2AC4C18000A1F002 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4E2AC4C18000A1F002 /* BaseView.swift */; };
 		BF7646E32AC35841002AD16C /* PhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7646E22AC35841002AD16C /* PhaseView.swift */; };
 		BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */; };
 		BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 		BF52085A2ABE2A6E00FB9F5C /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		BF52085C2ABE2B9100FB9F5C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		BF591E4C2AC4C07300A1F002 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		BF591E4E2AC4C18000A1F002 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BF7646E22AC35841002AD16C /* PhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseView.swift; sourceTree = "<group>"; };
 		BFF8159A2ABE0D1A00ACF5A7 /* Soundfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundfyApp.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				E5AB74422AC21F8A00006406 /* SoundsView.swift */,
 				E5AB74402AC21F1000006406 /* WordView.swift */,
 				E5AB743E2AC21ED500006406 /* PhonemesView.swift */,
+				BF591E4E2AC4C18000A1F002 /* BaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				E5AB74412AC21F1000006406 /* WordView.swift in Sources */,
 				BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */,
 				BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */,
+				BF591E4F2AC4C18000A1F002 /* BaseView.swift in Sources */,
 				BF3146F42AC1F2E900CCFEE5 /* Lesson.swift in Sources */,
 				BF591E4D2AC4C07300A1F002 /* ProfileController.swift in Sources */,
 			);

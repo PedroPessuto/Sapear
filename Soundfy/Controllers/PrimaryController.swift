@@ -9,8 +9,9 @@ import Foundation
 import SwiftUI
 
 class PrimaryController: ObservableObject {
-    var primaryColor: UIColor
-    var secondaryColor: UIColor
+    
+    @Published var primaryColor: UIColor
+    @Published var secondaryColor: UIColor
 
     init(primaryColor: UIColor = .orange, secondaryColor: UIColor = .white) {
         self.primaryColor = primaryColor
