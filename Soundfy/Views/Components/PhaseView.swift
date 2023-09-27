@@ -18,9 +18,8 @@ struct PhaseView: View {
     var body: some View {
         
         Button (action: {
-            profileController.actualPhase = phase.phaseId
             primaryController.onPhase = true
-            
+            profileController.actualPhase = phase.phaseId
         }) {
             if phase.phaseId == profileController.actualPhase {
                 Image("lilypad3")

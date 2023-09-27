@@ -21,5 +21,6 @@ struct LessonView: View {
             }
             Text("\(profileController.actualPhase)")
         }
+        
     }
 }
