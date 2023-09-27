@@ -28,7 +28,7 @@ struct HomeView: View {
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
-                .background(Color(primaryController.primaryColor))
+                .background(Color(red: 195/255, green: 234/255, blue: 1))
                 
              // Divider()
                 
@@ -44,7 +44,7 @@ struct HomeView: View {
             .toolbarBackground(Color(primaryController.primaryColor), for: .navigationBar)
             .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
         }
-        .preferredColorScheme(.dark)
+//        .preferredColorScheme(.dark)
         
     }
 }

@@ -12,8 +12,10 @@ class PrimaryController: ObservableObject {
     
     @Published var primaryColor: UIColor
     @Published var secondaryColor: UIColor
+    @Published var onPhase: Bool
 
-    init(primaryColor: UIColor = .orange, secondaryColor: UIColor = .white) {
+    init(onPhase: Bool = false, primaryColor: UIColor = .orange, secondaryColor: UIColor = .white) {
+        self.onPhase = onPhase
         self.primaryColor = primaryColor
         self.secondaryColor = secondaryColor
     }

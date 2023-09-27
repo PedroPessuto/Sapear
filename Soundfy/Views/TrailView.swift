@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TrailView: View {
     
-    @EnvironmentObject var generalObject: PrimaryController
+    @EnvironmentObject var primaryController: PrimaryController
     @EnvironmentObject var contentController: ContentController
     
     var body: some View {
@@ -19,9 +19,12 @@ struct TrailView: View {
                 SectionView(section: $contentController.soundsSections[index])
             }
         }
+        .fullScreenCover(isPresented: $primaryController.onPhase) {
+            LessonView()
+        }
         .frame(maxWidth: .infinity)
         .background(Color(red: 195/255, green: 234/255, blue: 1))
-//        .background(Image("BackgroundLake").resizable()) 
+//        .background(Image("BackgroundLake").resizable())
     }
 }
 

@@ -23,6 +23,7 @@ struct SectionView: View {
                     .bold()
                 Text(section.sectionDescription)
             }
+            .foregroundColor(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 100)
             .background(section.sectionColor)

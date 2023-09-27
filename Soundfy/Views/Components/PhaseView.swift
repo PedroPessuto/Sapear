@@ -10,14 +10,18 @@ import SwiftUI
 
 struct PhaseView: View {
     
+    @EnvironmentObject var primaryController: PrimaryController
     @EnvironmentObject var profileController: ProfileController
     @State private var isDone: Bool = false
-    
     var phase: Phase
     
     var body: some View {
         
-        VStack {
+        Button (action: {
+            profileController.actualPhase = phase.phaseId
+            primaryController.onPhase = true
+            
+        }) {
             if phase.phaseId == profileController.actualPhase {
                 Image("lilypad3")
             } else {
