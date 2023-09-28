@@ -18,10 +18,15 @@ class ContentController: ObservableObject {
                 sectionPhases: [
                     Phase(phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!, phaseName: "Natureza", phaseLessons: [
                         SoundLesson(lessonName: "Natureza", lessonDescription: "Clique nas imagens para descobrir os sons", lessonType: "soundClass", lessonAlternatives: [
-                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
+                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva",
+                                alternativeImage: "cloud.rain.fill"),
+                            Alternative(alternativeLabel: "Trovão", alternativeSoundName: "Trovao",
+                                alternativeImage: "cloud.bolt.fill"),
+                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento",
+                                alternativeImage: "wind"),
+                            Alternative(alternativeLabel: "Furacão", alternativeSoundName: "Furacao",
+                                alternativeImage: "tornad")
+                            
                         ]),
                         SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),

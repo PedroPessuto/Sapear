@@ -16,8 +16,9 @@ struct LessonManagerView: View {
     @State var countIndex: Int = 0
     
     let columns = [
-            GridItem(.adaptive(minimum: 80))
-        ]
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
     
     var body: some View {
         NavigationStack{
@@ -38,16 +39,19 @@ struct LessonManagerView: View {
                         .font(.title2)
                         .multilineTextAlignment(.center)
                 }
-                LazyVGrid(columns: columns, spacing: 20) {
+                LazyVGrid(columns: columns,alignment: .center ,spacing: 30) {
                     if let soundLesson = profileController.actualPhase.phaseLessons[0] as? SoundLesson {
                         ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
-                            // seu código aqui
+                            AlternativeButton(item: item)
+                            
                         }
                     }
                 }
-                .padding(.horizontal)
+                .frame(maxWidth: .infinity)
                 
+                PlayButton(actionButton: {}, textButton: "Próximo Nível!").padding(.top, 100)
             }
-        }
+        }.padding(.horizontal, 40)
+        
     }
 }

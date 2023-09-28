@@ -30,7 +30,7 @@ struct SectionView: View {
             .padding(.bottom, 50)
             
             // ===== SECTION BODY =====
-    
+            
             ForEach (section.sectionPhases.indices, id: \.self) {
                 index in
                 HStack {
