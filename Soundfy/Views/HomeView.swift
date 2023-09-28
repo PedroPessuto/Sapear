@@ -43,6 +43,11 @@ struct HomeView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(Color(primaryController.primaryColor), for: .navigationBar)
             .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
+            .toolbar{
+                ToolbarItem(placement: .confirmationAction) {
+                    Image(systemName: "chart.bar.fill").opacity(0.5)
+                }
+            }
         }
 //        .preferredColorScheme(.dark)
         

@@ -13,17 +13,17 @@ class ContentController: ObservableObject {
     var soundsSections: [Section]
     
     init(soundsSections: [Section] = [
-        Section(sectionName: "Seção 1",
+        Section(sectionName: "Natureza",
                 sectionDescription: "Desscrição da seção 1",
                 sectionPhases: [
-                    Phase(phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!, phaseName: "Fase 1", phaseLessons: [
-                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
+                    Phase(phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!, phaseName: "Natureza", phaseLessons: [
+                        SoundLesson(lessonName: "Natureza", lessonDescription: "Clique nas imagens para descobrir os sons", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
                             Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
                             Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
                             Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
                         ]),
-                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
                             Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
                             Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
@@ -32,13 +32,13 @@ class ContentController: ObservableObject {
                     ])
                     ,
                     Phase(phaseId: UUID(uuidString: "6ba7b810-9dad-11d1-80b4-00c04fd430c8")!, phaseName: "Fase 2", phaseLessons: [
-                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
                             Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
                             Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
                             Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
                         ]),
-                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
                             Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
                             Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
@@ -46,14 +46,14 @@ class ContentController: ObservableObject {
                         ])
                     ])
                     ,
-                    Phase(phaseName: "Fase 2", phaseLessons: [
-                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
+                    Phase(phaseName: "Fase 3", phaseLessons: [
+                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
                             Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
                             Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
                             Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
                         ]),
-                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
                             Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
                             Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
@@ -62,12 +62,12 @@ class ContentController: ObservableObject {
                     ])
                     
                 ]),
-        Section(sectionName: "Seção 2",
+        Section(sectionName: "Urbano",
                 sectionDescription: "Desscrição da seção 2",
                 sectionColor: Color(.blue),
                 sectionPhases: [
                     Phase(phaseName: "Fase 1", phaseLessons: [
-                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Urbano", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
                             Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
                             Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),

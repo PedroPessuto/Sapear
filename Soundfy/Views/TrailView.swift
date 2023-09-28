@@ -20,7 +20,7 @@ struct TrailView: View {
             }
         }
         .fullScreenCover(isPresented: $primaryController.onPhase) {
-            LessonView()
+            LessonManagerView()
         }
         .frame(maxWidth: .infinity)
         .background(Color(red: 195/255, green: 234/255, blue: 1))
