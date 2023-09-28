@@ -14,7 +14,11 @@ protocol Lesson {
     var lessonType: String { get set }
 }
 
-class SoundLesson: Lesson {
+protocol LessonWithAlternatives: Lesson {
+    var lessonAlternatives: [Alternative] { get set }
+}
+
+class SoundLesson: LessonWithAlternatives {
     var lessonId: UUID
     var lessonName: String
     var lessonDescription: String

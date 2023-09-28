@@ -39,8 +39,10 @@ struct LessonManagerView: View {
                         .multilineTextAlignment(.center)
                 }
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(profileController.actualPhase.phaseLessons, id: \.self) { item in
-                        item.lessonId
+                    if let soundLesson = profileController.actualPhase.phaseLessons[0] as? SoundLesson {
+                        ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
+                            // seu código aqui
+                        }
                     }
                 }
                 .padding(.horizontal)
