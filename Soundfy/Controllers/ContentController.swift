@@ -15,9 +15,11 @@ class ContentController: ObservableObject {
     init(soundsSections: [Section] = [
         Section(sectionName: "Natureza",
                 sectionDescription: "Desscrição da seção 1",
+                sectionColor: Color(UIColor.systemBlue),
                 sectionPhases: [
-                    Phase(phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!, phaseName: "Natureza", phaseLessons: [
-                        SoundLesson(lessonName: "Natureza", lessonDescription: "Clique nas imagens para descobrir os sons", lessonType: "soundClass", lessonAlternatives: [
+                    Phase(phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!, phaseName: "Natureza",
+                          phaseLessons: [
+                        SoundLesson(lessonName: "Lesson 1", lessonDescription: "Clique nas imagens para descobrir os sons", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva",
                                 alternativeImage: "cloud.rain.fill"),
                             Alternative(alternativeLabel: "Trovão", alternativeSoundName: "Trovao",
@@ -28,22 +30,29 @@ class ContentController: ObservableObject {
                                 alternativeImage: "tornad")
                             
                         ]),
-                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Lesson 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
                             Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
                             Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
                             Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
                         ]),
-                    ])
+                        
+                    ],
+                         phaseExercises: [SoundExercise(exerciseName: "Exercício 1", exerciseDescription: "Faça isso", exerciseType: "soundExercise", exerciseAlternatives: [
+                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
+                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
+                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
+                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
+                        ], exericseAwnser: 1)])
                     ,
                     Phase(phaseId: UUID(uuidString: "6ba7b810-9dad-11d1-80b4-00c04fd430c8")!, phaseName: "Fase 2", phaseLessons: [
-                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Lesson 3", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
                             Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
                             Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
                             Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
                         ]),
-                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
+                        SoundLesson(lessonName: "Lesson 4", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
                             Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
                             Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
@@ -69,7 +78,6 @@ class ContentController: ObservableObject {
                 ]),
         Section(sectionName: "Urbano",
                 sectionDescription: "Desscrição da seção 2",
-                sectionColor: Color(.blue),
                 sectionPhases: [
                     Phase(phaseName: "Fase 1", phaseLessons: [
                         SoundLesson(lessonName: "Urbano", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
@@ -119,7 +127,7 @@ class ContentController: ObservableObject {
                 ]),
         Section(sectionName: "Seção 3",
                 sectionDescription: "Desscrição da seção 3",
-                sectionColor: Color(.purple),
+                sectionColor: Color(UIColor.systemPurple),
                 sectionPhases: [
                     Phase(phaseName: "Fase 1", phaseLessons: [
                         SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [

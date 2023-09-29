@@ -9,13 +9,18 @@ import SwiftUI
 
 struct AlternativeButton: View {
     var item: Alternative
-    // func playsound
+    
+    @State var buttonPrimaryColor: Color = Color(UIColor.systemOrange)
+    @State var buttonSecondaryColor: Color = Color(red: 229/255, green: 94/255, blue: 41/255)
+    @State var buttonPading: CGFloat = 5
+    
     var body: some View {
-        Button(action: {
-            
-        }) {
+        
+        VStack {
             ZStack {
-                Color(.orange)
+                buttonPrimaryColor
+                    .cornerRadius(10)
+                
                 VStack {
                     Image(systemName: item.alternativeImage)
                         .font(.title)
@@ -23,11 +28,22 @@ struct AlternativeButton: View {
                 }
                 .foregroundColor(.white)
             }
+            .padding(.trailing, buttonPading)
+            .padding(.bottom, buttonPading)
         }
+        .background(buttonSecondaryColor)
         .frame(width: 140, height: 100)
         .cornerRadius(10)
-        .shadow(color: .red, radius: 0, x: 5, y: 5)
-        
+        .onLongPressGesture(minimumDuration: .infinity, maximumDistance: .infinity, pressing: { pressing in
+            if pressing {
+                buttonPrimaryColor = Color(UIColor.systemOrange)
+                buttonPading = 0
+            } else {
+                buttonPrimaryColor = Color(UIColor.systemOrange)
+                buttonPading = 5
+                
+            }
+        }, perform: { })
     }
 }
 

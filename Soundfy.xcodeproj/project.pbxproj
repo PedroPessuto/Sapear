@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1685172AC6165200D5D7E3 /* SoundLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1685162AC6165200D5D7E3 /* SoundLessonView.swift */; };
+		BF16851C2AC710CF00D5D7E3 /* SoundExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16851B2AC710CF00D5D7E3 /* SoundExerciseView.swift */; };
+		BF16851E2AC7117100D5D7E3 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16851D2AC7117100D5D7E3 /* ProgressBar.swift */; };
 		BF3146F42AC1F2E900CCFEE5 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146F32AC1F2E900CCFEE5 /* Lesson.swift */; };
 		BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146F52AC1F37E00CCFEE5 /* Exercise.swift */; };
 		BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */; };
@@ -17,8 +20,8 @@
 		BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085C2ABE2B9100FB9F5C /* Section.swift */; };
 		BF591E4D2AC4C07300A1F002 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4C2AC4C07300A1F002 /* ProfileController.swift */; };
 		BF591E4F2AC4C18000A1F002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4E2AC4C18000A1F002 /* HomeView.swift */; };
-		BF591E512AC4CAC600A1F002 /* LessonManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E502AC4CAC600A1F002 /* LessonManagerView.swift */; };
-		BF7646E32AC35841002AD16C /* PhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7646E22AC35841002AD16C /* PhaseView.swift */; };
+		BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */; };
+		BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7646E22AC35841002AD16C /* PhaseButton.swift */; };
 		BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */; };
 		BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */; };
 		BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF1685162AC6165200D5D7E3 /* SoundLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLessonView.swift; sourceTree = "<group>"; };
+		BF16851B2AC710CF00D5D7E3 /* SoundExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExerciseView.swift; sourceTree = "<group>"; };
+		BF16851D2AC7117100D5D7E3 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		BF3146F32AC1F2E900CCFEE5 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		BF3146F52AC1F37E00CCFEE5 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alternative.swift; sourceTree = "<group>"; };
@@ -41,8 +47,8 @@
 		BF52085C2ABE2B9100FB9F5C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		BF591E4C2AC4C07300A1F002 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		BF591E4E2AC4C18000A1F002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		BF591E502AC4CAC600A1F002 /* LessonManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonManagerView.swift; sourceTree = "<group>"; };
-		BF7646E22AC35841002AD16C /* PhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseView.swift; sourceTree = "<group>"; };
+		BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseManagerView.swift; sourceTree = "<group>"; };
+		BF7646E22AC35841002AD16C /* PhaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseButton.swift; sourceTree = "<group>"; };
 		BFF8159A2ABE0D1A00ACF5A7 /* Soundfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundfyApp.swift; sourceTree = "<group>"; };
 		BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,13 +72,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF1685182AC616AF00D5D7E3 /* Lessons */ = {
+			isa = PBXGroup;
+			children = (
+				BF1685162AC6165200D5D7E3 /* SoundLessonView.swift */,
+			);
+			path = Lessons;
+			sourceTree = "<group>";
+		};
+		BF16851A2AC710BD00D5D7E3 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				BF16851B2AC710CF00D5D7E3 /* SoundExerciseView.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
 		BF3147032AC208EA00CCFEE5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				BF3147042AC208FA00CCFEE5 /* SectionView.swift */,
-				BF7646E22AC35841002AD16C /* PhaseView.swift */,
-				BF591E502AC4CAC600A1F002 /* LessonManagerView.swift */,
+				BF16851D2AC7117100D5D7E3 /* ProgressBar.swift */,
 				E53720D72AC60C1E00579F6C /* AlternativeButton.swift */,
+				BF7646E22AC35841002AD16C /* PhaseButton.swift */,
 				E53720D92AC60D6400579F6C /* PlayButton.swift */,
 			);
 			path = Components;
@@ -103,10 +125,13 @@
 		BF5208532ABE29B300FB9F5C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BF3147032AC208EA00CCFEE5 /* Components */,
+				BF591E4E2AC4C18000A1F002 /* HomeView.swift */,
 				E5AB74442AC21F9B00006406 /* ProfileView.swift */,
 				E5AB74422AC21F8A00006406 /* TrailView.swift */,
-				BF591E4E2AC4C18000A1F002 /* HomeView.swift */,
+				BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */,
+				BF16851A2AC710BD00D5D7E3 /* Exercises */,
+				BF1685182AC616AF00D5D7E3 /* Lessons */,
+				BF3147032AC208EA00CCFEE5 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,18 +245,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF591E512AC4CAC600A1F002 /* LessonManagerView.swift in Sources */,
+				BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */,
 				BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */,
 				E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */,
 				BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */,
 				BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */,
 				BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */,
 				BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */,
-				BF7646E32AC35841002AD16C /* PhaseView.swift in Sources */,
+				BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */,
+				BF1685172AC6165200D5D7E3 /* SoundLessonView.swift in Sources */,
 				E53720DA2AC60D6400579F6C /* PlayButton.swift in Sources */,
 				BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */,
 				BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */,
+				BF16851E2AC7117100D5D7E3 /* ProgressBar.swift in Sources */,
 				E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */,
+				BF16851C2AC710CF00D5D7E3 /* SoundExerciseView.swift in Sources */,
 				E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */,
 				BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */,
 				BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */,

@@ -15,7 +15,7 @@ class Section {
     var sectionColor: Color
     var sectionPhases: [Phase]
 
-    init(sectionId: UUID = UUID(), sectionName: String, sectionDescription: String, sectionColor: Color = Color(.orange), sectionPhases: [Phase]) {
+    init(sectionId: UUID = UUID(), sectionName: String, sectionDescription: String, sectionColor: Color = Color(UIColor.systemOrange), sectionPhases: [Phase]) {
         self.sectionId = sectionId
         self.sectionName = sectionName
         self.sectionDescription = sectionDescription

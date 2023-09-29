@@ -12,15 +12,27 @@ struct TrailView: View {
     @EnvironmentObject var primaryController: PrimaryController
     @EnvironmentObject var contentController: ContentController
     
+    
+    @EnvironmentObject var profileController: ProfileController
+    @Binding var screenName: String
+    
     var body: some View {
         ScrollView {
-            ForEach(contentController.soundsSections.indices, id: \.self) {
-                index in
-                SectionView(section: $contentController.soundsSections[index])
+            if screenName == "Sons" {
+                ForEach(contentController.soundsSections.indices, id: \.self) {
+                    index in
+                    SectionView(section: $contentController.soundsSections[index])
+                }
+            }
+            else if screenName == "Fonemas" {
+                
+            }
+            else if screenName == "Palavras" {
+                
             }
         }
         .fullScreenCover(isPresented: $primaryController.onPhase) {
-            LessonManagerView()
+            PhaseManagerView()
         }
         .frame(maxWidth: .infinity)
         .background(Color(red: 195/255, green: 234/255, blue: 1))

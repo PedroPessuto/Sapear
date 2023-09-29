@@ -22,7 +22,7 @@ class SoundExercise: Exercise {
     var exerciseAlternatives: [Alternative]
     var exericseAwnser: Int
 
-    init(exerciseId: UUID, exerciseName: String, exerciseDescription: String, exerciseType: String, exerciseAlternatives: [Alternative], exericseAwnser: Int) {
+    init(exerciseId: UUID = UUID(), exerciseName: String, exerciseDescription: String, exerciseType: String, exerciseAlternatives: [Alternative], exericseAwnser: Int) {
         self.exerciseId = exerciseId
         self.exerciseName = exerciseName
         self.exerciseDescription = exerciseDescription

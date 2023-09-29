@@ -35,11 +35,11 @@ struct SectionView: View {
                 index in
                 HStack {
                     if (index % 2 == 0) {
-                        PhaseView(phase: section.sectionPhases[index])
+                        PhaseButton(phase: section.sectionPhases[index])
                             .padding(.trailing, 175)
                     }
                     else {
-                        PhaseView(phase: section.sectionPhases[index])
+                        PhaseButton(phase: section.sectionPhases[index])
                             .padding(.leading, 175)
                     }
                 }

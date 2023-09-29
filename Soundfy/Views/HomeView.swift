@@ -11,12 +11,14 @@ struct HomeView: View {
     
     @EnvironmentObject var primaryController: PrimaryController
     @State var screenName: String = "Sons"
-    var screens = ["Sons",  "Fonemas", "Palavras"]
+    @State var screens = ["Sons",  "Fonemas", "Palavras"]
     
     var body: some View {
         NavigationStack {
-            
+           
             VStack (spacing: 0) {
+                
+                // ===== HEADER =====
                 VStack {
                     Picker("Sections", selection: $screenName) {
                         ForEach(screens, id: \.self) {
@@ -24,32 +26,24 @@ struct HomeView: View {
                         }
                     }
                     .pickerStyle(.segmented)
-                   
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
                 .background(Color(red: 195/255, green: 234/255, blue: 1))
                 
-             // Divider()
-                
-                VStack {
-                    if (screenName == "Sons") {
-                        TrailView()
-                    }
-                }
-                .ignoresSafeArea()
+                // ===== BODY =====
+                TrailView(screenName: $screenName)
+                    .ignoresSafeArea()
             }
             .navigationTitle(screenName)
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color(primaryController.primaryColor), for: .navigationBar)
-            .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
-            .toolbar{
+//            .toolbarBackground(Color(primaryController.primaryColor), for: .navigationBar)
+//            .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
+            .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Image(systemName: "chart.bar.fill").opacity(0.5)
                 }
             }
         }
-//        .preferredColorScheme(.dark)
-        
     }
 }

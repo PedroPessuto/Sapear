@@ -1,5 +1,5 @@
 //
-//  PhaseView.swift
+//  PhaseButton.swift
 //  Soundfy
 //
 //  Created by Pedro Pessuto on 25/09/23.
@@ -8,12 +8,21 @@
 
 import SwiftUI
 
-struct PhaseView: View {
+struct PhaseButton: View {
     
     @EnvironmentObject var primaryController: PrimaryController
     @EnvironmentObject var profileController: ProfileController
-    @State private var isDone: Bool = false
+    @State var isDone: Bool = false
     var phase: Phase
+    
+    func checkIsDone() -> Void {
+        for id in profileController.phasesDone {
+            if id == phase.phaseId {
+                isDone = true
+                break
+            }
+        }
+    }
     
     var body: some View {
         
@@ -29,13 +38,10 @@ struct PhaseView: View {
         }
         .frame(width: 190, height: 100)
         .onAppear {
-            for id in profileController.phasesDone {
-                if id == phase.phaseId {
-                    isDone = true
-                    break
-                }
-            }
+            checkIsDone()
         }
-        
+        .onChange(of: profileController.phasesDone) { _ in
+            checkIsDone()
+        }
     }
 }
