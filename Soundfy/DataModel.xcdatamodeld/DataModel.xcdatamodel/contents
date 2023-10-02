@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Alternative" representedClassName="Alternative" syncable="YES" codeGenerationType="class">
+        <attribute name="alternativeId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="alternativeImage" optional="YES" attributeType="String"/>
+        <attribute name="alternativeLabel" optional="YES" attributeType="String"/>
+        <attribute name="alternativeSoundName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES" codeGenerationType="class">
+        <attribute name="exerciseDescription" optional="YES" attributeType="String"/>
+        <attribute name="exerciseId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="exerciseName" optional="YES" attributeType="String"/>
+        <attribute name="exerciseType" optional="YES" attributeType="String"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Phase" inverseName="relationship" inverseEntity="Phase"/>
+    </entity>
     <entity name="Lesson" representedClassName="Lesson" syncable="YES" codeGenerationType="class">
         <attribute name="lessonDescription" optional="YES" attributeType="String"/>
         <attribute name="lessonId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -9,6 +22,6 @@
     <entity name="Phase" representedClassName="Phase" syncable="YES" codeGenerationType="class">
         <attribute name="phaseId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="phaseName" optional="YES" attributeType="String"/>
-        <relationship name="ptl" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Phase"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="relationship" inverseEntity="Exercise"/>
     </entity>
 </model>
