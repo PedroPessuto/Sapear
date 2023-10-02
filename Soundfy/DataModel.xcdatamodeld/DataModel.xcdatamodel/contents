@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier=""/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Lesson" representedClassName="Lesson" syncable="YES" codeGenerationType="class">
+        <attribute name="lessonDescription" optional="YES" attributeType="String"/>
+        <attribute name="lessonId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lessonName" optional="YES" attributeType="String"/>
+        <attribute name="lessonType" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Phase" representedClassName="Phase" syncable="YES" codeGenerationType="class">
+        <attribute name="phaseId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="phaseName" optional="YES" attributeType="String"/>
+        <relationship name="ptl" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Phase"/>
+    </entity>
+</model>
