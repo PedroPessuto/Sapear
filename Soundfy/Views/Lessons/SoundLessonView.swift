@@ -24,7 +24,7 @@ struct SoundLessonView: View {
             Spacer()
             VStack (spacing: 20) {
                 Text(lesson.lessonName)
-                    .font(.largeTitle)
+                    .font(Font.custom("Quicksand-Bold", size: 40, relativeTo: .largeTitle))
                     .bold()
                 
                 Text(lesson.lessonDescription)

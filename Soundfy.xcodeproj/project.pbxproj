@@ -16,7 +16,6 @@
 		BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */; };
 		BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147012AC1FFD100CCFEE5 /* ContentController.swift */; };
 		BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3147042AC208FA00CCFEE5 /* SectionView.swift */; };
-		BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */; };
 		BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085A2ABE2A6E00FB9F5C /* Phase.swift */; };
 		BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52085C2ABE2B9100FB9F5C /* Section.swift */; };
 		BF591E4D2AC4C07300A1F002 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4C2AC4C07300A1F002 /* ProfileController.swift */; };
@@ -31,6 +30,9 @@
 		E53720D82AC60C1E00579F6C /* AlternativeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53720D72AC60C1E00579F6C /* AlternativeButton.swift */; };
 		E53720DA2AC60D6400579F6C /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53720D92AC60D6400579F6C /* PlayButton.swift */; };
 		E53720DE2AC74DDE00579F6C /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53720DD2AC74DDE00579F6C /* SoundButton.swift */; };
+		E5A22C4C2ACB60830079C432 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5A22C4A2ACB60830079C432 /* DataModel.xcdatamodeld */; };
+		E5A22C502ACB618C0079C432 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */; };
+		E5A22C512ACB618E0079C432 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */; };
 		E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* TrailView.swift */; };
 		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
 		E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74462AC2230B00006406 /* PrimaryController.swift */; };
@@ -46,7 +48,6 @@
 		BF3146FA2AC1FB4000CCFEE5 /* Alternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alternative.swift; sourceTree = "<group>"; };
 		BF3147012AC1FFD100CCFEE5 /* ContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentController.swift; sourceTree = "<group>"; };
 		BF3147042AC208FA00CCFEE5 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		BF52085A2ABE2A6E00FB9F5C /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		BF52085C2ABE2B9100FB9F5C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		BF591E4C2AC4C07300A1F002 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
@@ -62,6 +63,10 @@
 		E53720D72AC60C1E00579F6C /* AlternativeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeButton.swift; sourceTree = "<group>"; };
 		E53720D92AC60D6400579F6C /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		E53720DD2AC74DDE00579F6C /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
+		E5A22C4B2ACB60830079C432 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		E5A22C522ACB61E60079C432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E5AB74462AC2230B00006406 /* PrimaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryController.swift; sourceTree = "<group>"; };
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				BFF8159C2ABE0D1A00ACF5A7 /* Soundfy */,
+				E5A22C4A2ACB60830079C432 /* DataModel.xcdatamodeld */,
 				BFF8159B2ABE0D1A00ACF5A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 		BFF8159C2ABE0D1A00ACF5A7 /* Soundfy */ = {
 			isa = PBXGroup;
 			children = (
+				E5A22C522ACB61E60079C432 /* Info.plist */,
+				E5A22C4D2ACB60980079C432 /* Fonts */,
 				BF5208532ABE29B300FB9F5C /* Views */,
 				BF5208522ABE29AB00FB9F5C /* Controllers */,
 				BF5208512ABE29A700FB9F5C /* Models */,
@@ -179,7 +187,6 @@
 				BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */,
 				BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */,
 				BFF815A32ABE0D1A00ACF5A7 /* Preview Content */,
-				BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */,
 			);
 			path = Soundfy;
 			sourceTree = "<group>";
@@ -190,6 +197,15 @@
 				BFF815A42ABE0D1A00ACF5A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5A22C4D2ACB60980079C432 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */,
+				E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF815A52ABE0D1A00ACF5A7 /* Preview Assets.xcassets in Resources */,
+				E5A22C502ACB618C0079C432 /* Quicksand-Regular.ttf in Resources */,
 				BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */,
+				E5A22C512ACB618E0079C432 /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +293,6 @@
 				BF1685172AC6165200D5D7E3 /* SoundLessonView.swift in Sources */,
 				BF1685212AC73A3800D5D7E3 /* FineshedView.swift in Sources */,
 				E53720DA2AC60D6400579F6C /* PlayButton.swift in Sources */,
-				BF5208592ABE2A0900FB9F5C /* DataModel.xcdatamodeld in Sources */,
 				BF3146FB2AC1FB4000CCFEE5 /* Alternative.swift in Sources */,
 				BF16851E2AC7117100D5D7E3 /* ProgressBar.swift in Sources */,
 				E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */,
@@ -284,6 +301,7 @@
 				BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */,
 				BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */,
 				BF591E4F2AC4C18000A1F002 /* HomeView.swift in Sources */,
+				E5A22C4C2ACB60830079C432 /* DataModel.xcdatamodeld in Sources */,
 				BF3146F42AC1F2E900CCFEE5 /* Lesson.swift in Sources */,
 				BF591E4D2AC4C07300A1F002 /* ProfileController.swift in Sources */,
 				E53720D82AC60C1E00579F6C /* AlternativeButton.swift in Sources */,
@@ -418,6 +436,7 @@
 				DEVELOPMENT_TEAM = AV2QX4598Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Soundfy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +466,7 @@
 				DEVELOPMENT_TEAM = AV2QX4598Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Soundfy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -489,12 +509,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BF5208572ABE2A0900FB9F5C /* DataModel.xcdatamodeld */ = {
+		E5A22C4A2ACB60830079C432 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */,
+				E5A22C4B2ACB60830079C432 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = BF5208582ABE2A0900FB9F5C /* DataModel.xcdatamodel */;
+			currentVersion = E5A22C4B2ACB60830079C432 /* DataModel.xcdatamodel */;
 			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

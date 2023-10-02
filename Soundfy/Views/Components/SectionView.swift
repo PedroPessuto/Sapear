@@ -31,8 +31,7 @@ struct SectionView: View {
             
             VStack {
                 Text(section.sectionName)
-                    .font(.title)
-                    .bold()
+                    .font(Font.custom("Quicksand-Bold", size: 58))
             }
             .foregroundColor(Color(red: 82/255, green: 146/255, blue: 180/255))
             .frame(width: 330)
