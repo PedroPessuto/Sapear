@@ -27,6 +27,7 @@ struct HomeView: View {
                     }
                     .pickerStyle(.segmented)
                 }
+                .padding(.top, 5)
                 .padding(.horizontal)
                 .padding(.bottom)
                 .background(Color(red: 195/255, green: 234/255, blue: 1))
@@ -35,13 +36,15 @@ struct HomeView: View {
                 TrailView(screenName: $screenName)
                     .ignoresSafeArea()
             }
-            .navigationTitle(screenName)
+//            .navigationTitle(screenName)
             .navigationBarTitleDisplayMode(.inline)
 //            .toolbarBackground(Color(primaryController.primaryColor), for: .navigationBar)
 //            .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Image(systemName: "chart.bar.fill").opacity(0.5)
+                    Image(systemName: "chart.bar.xaxis")
+                        .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
+                        .font(.system(size: 25))
                 }
             }
         }

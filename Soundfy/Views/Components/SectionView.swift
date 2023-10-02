@@ -17,16 +17,28 @@ struct SectionView: View {
             
             // ===== SECTION HEADER =====
             
+//            VStack {
+//                Text(section.sectionName)
+//                    .font(.title2)
+//                    .bold()
+//                Text(section.sectionDescription)
+//            }
+//            .foregroundColor(.white)
+//            .frame(maxWidth: .infinity)
+//            .frame(height: 100)
+//            .background(section.sectionColor)
+//            .padding(.bottom, 50)
+            
             VStack {
                 Text(section.sectionName)
-                    .font(.title2)
+                    .font(.title)
                     .bold()
-                Text(section.sectionDescription)
             }
-            .foregroundColor(.white)
-            .frame(maxWidth: .infinity)
-            .frame(height: 100)
-            .background(section.sectionColor)
+            .foregroundColor(Color(red: 82/255, green: 146/255, blue: 180/255))
+            .frame(width: 330)
+            .frame(height: 80)
+            .background(Color(red: 185/255, green: 220/255, blue: 239/255))
+            .cornerRadius(20)
             .padding(.bottom, 50)
             
             // ===== SECTION BODY =====

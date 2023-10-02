@@ -14,7 +14,47 @@ struct SoundExerciseView: View {
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     var count: Int
     var changeScreen: () -> Void
-    var buttonText: String
+    
+    @State var exerciseAwnser: Int = -1
+    @State var buttonText: String = "Confirmar"
+    @State var gotRight: Bool = false
+    @State var selectedOption: Int = -1
+    @State var waringText: String = ""
+    @State var clickedAlternatives: [UUID] = []
+    @State var selectedOptionId: UUID = UUID()
+    
+    func handleNextScreen() {
+        // Funcionamento de próxima tela
+        
+        // Se já acertou prox tela
+        if gotRight {
+            buttonText = "Confirmar"
+            gotRight = false
+            selectedOption = -1
+            waringText = ""
+            clickedAlternatives = []
+            selectedOptionId = UUID()
+            changeScreen()
+            
+        }
+        
+        // Verifica se acertou
+        if selectedOption == exerciseAwnser {
+            gotRight = true
+            waringText = "Parabéns"
+            buttonText = "Próximo"
+        }
+        
+        // Verifica se errou
+        if selectedOption != exerciseAwnser && selectedOption != -1 {
+            waringText = "Tente Novamente"
+        }
+        
+        if !clickedAlternatives.contains(selectedOptionId) {
+            clickedAlternatives.append(selectedOptionId)
+        }
+        
+    }
     
     var body: some View {
         VStack {
@@ -26,18 +66,16 @@ struct SoundExerciseView: View {
                     .font(.largeTitle)
                     .bold()
                 
-                Text("Que som é esse?")
-                    .font(.title2)
-                    .fontWeight(.medium)
-                
                 Text(exercise.exerciseDescription)
                     .font(.title2)
                     .fontWeight(.medium)
                 
+                SoundButton(buttonAction: {})
+                
                 LazyVGrid(columns: columns, spacing: 20) {
                     if let soundExercise = profileController.actualPhase.phaseExercises[count] as? SoundExercise {
                         ForEach(soundExercise.exerciseAlternatives.indices, id: \.self) { item in
-                            SoundAlternativeButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item)
+                            ExerciseSoundButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item, selectedOption: $selectedOption, selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives)
                         }
                     }
                 }
@@ -47,7 +85,15 @@ struct SoundExerciseView: View {
             Spacer()
             Spacer()
             Spacer()
-            PlayButton(buttonAction: {changeScreen()}, buttonText: buttonText)
+            Text(waringText)
+                .frame(height: 15)
+                .padding(.bottom)
+            PlayButton(buttonAction: {handleNextScreen()}, buttonText: buttonText)
+        }
+        .onAppear {
+            if let soundExercise = profileController.actualPhase.phaseExercises[count] as? SoundExercise {
+                exerciseAwnser = soundExercise.exerciseAnswer
+            }
         }
         .padding(.horizontal, 30)
         .multilineTextAlignment(.center)

@@ -23,7 +23,7 @@
 		BF591E4F2AC4C18000A1F002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4E2AC4C18000A1F002 /* HomeView.swift */; };
 		BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */; };
 		BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7646E22AC35841002AD16C /* PhaseButton.swift */; };
-		BFE802642ACB316800A33A7B /* SoundAlternativeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE802632ACB316800A33A7B /* SoundAlternativeButton.swift */; };
+		BFE802642ACB316800A33A7B /* ExerciseSoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE802632ACB316800A33A7B /* ExerciseSoundButton.swift */; };
 		BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */; };
 		BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */; };
 		BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */; };
@@ -53,7 +53,7 @@
 		BF591E4E2AC4C18000A1F002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseManagerView.swift; sourceTree = "<group>"; };
 		BF7646E22AC35841002AD16C /* PhaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseButton.swift; sourceTree = "<group>"; };
-		BFE802632ACB316800A33A7B /* SoundAlternativeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAlternativeButton.swift; sourceTree = "<group>"; };
+		BFE802632ACB316800A33A7B /* ExerciseSoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSoundButton.swift; sourceTree = "<group>"; };
 		BFF8159A2ABE0D1A00ACF5A7 /* Soundfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundfyApp.swift; sourceTree = "<group>"; };
 		BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				BF7646E22AC35841002AD16C /* PhaseButton.swift */,
 				E53720D92AC60D6400579F6C /* PlayButton.swift */,
 				E53720DD2AC74DDE00579F6C /* SoundButton.swift */,
-				BFE802632ACB316800A33A7B /* SoundAlternativeButton.swift */,
+				BFE802632ACB316800A33A7B /* ExerciseSoundButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			files = (
 				BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */,
 				BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */,
-				BFE802642ACB316800A33A7B /* SoundAlternativeButton.swift in Sources */,
+				BFE802642ACB316800A33A7B /* ExerciseSoundButton.swift in Sources */,
 				E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */,
 				BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */,
 				BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */,
