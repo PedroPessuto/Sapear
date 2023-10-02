@@ -20,14 +20,14 @@ class SoundExercise: Exercise {
     var exerciseDescription: String
     var exerciseType: String
     var exerciseAlternatives: [Alternative]
-    var exericseAwnser: Int
+    var exerciseAnswer: Int
 
-    init(exerciseId: UUID = UUID(), exerciseName: String, exerciseDescription: String, exerciseType: String, exerciseAlternatives: [Alternative], exericseAwnser: Int) {
+    init(exerciseId: UUID = UUID(), exerciseName: String, exerciseDescription: String, exerciseType: String, exerciseAlternatives: [Alternative], exerciseAnswer: Int) {
         self.exerciseId = exerciseId
         self.exerciseName = exerciseName
         self.exerciseDescription = exerciseDescription
         self.exerciseType = exerciseType
         self.exerciseAlternatives = exerciseAlternatives
-        self.exericseAwnser = exericseAwnser
+        self.exerciseAnswer = exerciseAnswer
     }
 }

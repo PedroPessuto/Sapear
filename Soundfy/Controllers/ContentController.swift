@@ -38,12 +38,19 @@ class ContentController: ObservableObject {
                         ]),
                         
                     ],
-                         phaseExercises: [SoundExercise(exerciseName: "Exercício 1", exerciseDescription: "Faça isso", exerciseType: "soundExercise", exerciseAlternatives: [
+                         phaseExercises: [
+                            SoundExercise(exerciseName: "Exercício 1", exerciseDescription: "Faça isso", exerciseType: "soundExercise", exerciseAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
                             Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
                             Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
                             Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-                        ], exericseAwnser: 1)])
+                        ], exerciseAnswer: 1),
+                            SoundExercise(exerciseName: "Exercício 2", exerciseDescription: "Faça isso", exerciseType: "soundExercise", exerciseAlternatives: [
+                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
+                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
+                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
+                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
+                        ], exerciseAnswer: 1)])
                     ,
                     Phase(phaseId: UUID(uuidString: "6ba7b810-9dad-11d1-80b4-00c04fd430c8")!, phaseName: "Fase 2", phaseLessons: [
                         SoundLesson(lessonName: "Lesson 3", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [

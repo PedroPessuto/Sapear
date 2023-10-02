@@ -24,10 +24,11 @@ struct PhaseManagerView: View {
     
     func changeScreen() -> Void {
         
+        
         // Se tiver em aula
         if (actualScreen == "lesson") {
-            // Se tiver aula para fazer
             
+            // Se tiver aula para fazer
             if count != lessonsNumber - 1 {
                 count = count + 1
                 progressValue = progressValue + (1.0 / Float(lessonsNumber + exercisesNumber))
@@ -35,58 +36,68 @@ struct PhaseManagerView: View {
                 
                 if count - 1 == lessonsNumber - 2 {
                     buttonText = "Jogar"
-                    
                 }
                 
             }
+            // Se NÃO tiver aula para fazer
             else {
-                actualScreen = "exercise"
+                if exercisesNumber == 0 {
+                    actualScreen = "finished"
+                    
+                }
+                else {
+                    actualScreen = "exercise"
+                    buttonText = "Próximo"
+                    
+                    exerciseType = profileController.actualPhase.phaseExercises[0].exerciseType
+                    
+                }
+                
                 count = 0
                 progressValue = progressValue + (1.0 / Float(lessonsNumber + exercisesNumber))
+                
             }
         }
-        else if (actualScreen == "exercise") {
-            // Se tiver exercício para fazer
-            buttonText = "Próximo"
+        // Se tiver em exercício
+        else if actualScreen == "exercise" {
             
+            // Se tiver exercício para fazer
             if count != exercisesNumber - 1 {
                 count = count + 1
                 progressValue = progressValue + (1.0 / Float(lessonsNumber + exercisesNumber))
                 exerciseType = profileController.actualPhase.phaseExercises[count].exerciseType
+                
             }
             else {
                 // Finalizar Fase
-                primaryController.onPhase = false
-                buttonText = ""
+                actualScreen = "finished"
+                buttonText = "Concluir"
+                progressValue = progressValue + (1.0 / Float(lessonsNumber + exercisesNumber))
+            
             }
         }
     }
-    
     var body: some View {
         
         NavigationStack {
+            
             VStack {
                 
                 if (actualScreen == "lesson") {
                     
                     if lessonType == "soundClass" {
-                        SoundLessonView(lesson: profileController.actualPhase.phaseLessons[count], changeScreen: changeScreen, buttonText: $buttonText)
+                        SoundLessonView(lesson: profileController.actualPhase.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
                     }
                 }
                 else if(actualScreen == "exercise") {
-                    HStack {
-                        Text("Exercício")
+                    
+                    if exerciseType == "soundExercise" {
+                        SoundExerciseView(exercise: profileController.actualPhase.phaseExercises[count], count: count, changeScreen: changeScreen, buttonText: buttonText)
                     }
                 }
                 else {
                     HStack {
-                        Text("Parabens!!!")
-                        Button (action: {
-                            profileController.phasesDone.append(profileController.actualPhase.phaseId)
-                            primaryController.onPhase = false
-                        }) {
-                            Text("Concluir fase")
-                        }
+                        FineshedView(changeScreen: changeScreen)
                     }
                 }
             }
@@ -99,17 +110,15 @@ struct PhaseManagerView: View {
                             .font(.system(size: 24))
                     }
                 }
-
+                
                 ToolbarItemGroup(placement: .principal) {
-                   
                     ProgressBar(value: $progressValue, maxValue: 1.0)
                         .frame(width: 200, height: 20)
-                    
                 }
             }
-
+            
         }
-
+        
         .onAppear {
             lessonType = profileController.actualPhase.phaseLessons[0].lessonType
             lessonsNumber = profileController.actualPhase.phaseLessons.count

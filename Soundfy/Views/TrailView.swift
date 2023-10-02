@@ -12,7 +12,6 @@ struct TrailView: View {
     @EnvironmentObject var primaryController: PrimaryController
     @EnvironmentObject var contentController: ContentController
     
-    
     @EnvironmentObject var profileController: ProfileController
     @Binding var screenName: String
     
