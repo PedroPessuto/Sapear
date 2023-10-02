@@ -1,18 +1,21 @@
 //
-//  AlternativeButton.swift
+//  ExerciseAlternativeButton.swift
 //  Soundfy
 //
-//  Created by Rafael Carreira on 28/09/23.
+//  Created by Pedro Pessuto on 29/09/23.
 //
 
 import SwiftUI
 
-struct AlternativeButton: View {
+struct ExerciseAlternativeButton: View {
     var item: Alternative
+    var exerciseAnswer: Int
+    var number: Int
     
     @State var buttonPrimaryColor: Color = Color(UIColor.systemOrange)
     @State var buttonSecondaryColor: Color = Color(red: 229/255, green: 94/255, blue: 41/255)
     @State var buttonPading: CGFloat = 5
+ 
     
     var body: some View {
         
@@ -36,7 +39,7 @@ struct AlternativeButton: View {
         .cornerRadius(10)
         .onLongPressGesture(minimumDuration: .infinity, maximumDistance: .infinity, pressing: { pressing in
             if pressing {
-                buttonPrimaryColor = Color(red: 1, green: 196/255, blue: 113/255)
+                buttonPrimaryColor = Color(UIColor.systemOrange)
                 buttonPading = 0
             } else {
                 buttonPrimaryColor = Color(UIColor.systemOrange)

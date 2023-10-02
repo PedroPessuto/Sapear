@@ -14,6 +14,7 @@ struct SoundLessonView: View {
     
     var lesson: Lesson
     var changeScreen: () -> Void
+    var count: Int
     @Binding var buttonText: String
     
     var body: some View {
@@ -31,7 +32,7 @@ struct SoundLessonView: View {
                     .fontWeight(.medium)
                 
                 LazyVGrid(columns: columns, spacing: 20) {
-                    if let soundLesson = profileController.actualPhase.phaseLessons[0] as? SoundLesson {
+                    if let soundLesson = profileController.actualPhase.phaseLessons[count] as? SoundLesson {
                         ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
                             AlternativeButton(item: item)
                         }
