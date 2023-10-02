@@ -27,7 +27,7 @@ class ContentController: ObservableObject {
                             Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento",
                                 alternativeImage: "wind"),
                             Alternative(alternativeLabel: "Furacão", alternativeSoundName: "Furacao",
-                                alternativeImage: "tornad")
+                                alternativeImage: "tornado")
                             
                         ]),
                         SoundLesson(lessonName: "Lesson 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
