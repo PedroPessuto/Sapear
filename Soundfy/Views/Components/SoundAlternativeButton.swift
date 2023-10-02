@@ -1,14 +1,16 @@
 //
-//  AlternativeButton.swift
+//  SoundAlternativeButton.swift
 //  Soundfy
 //
-//  Created by Rafael Carreira on 28/09/23.
+//  Created by Pedro Pessuto on 02/10/23.
 //
 
 import SwiftUI
 
-struct AlternativeButton: View {
+struct SoundAlternativeButton: View {
     var item: Alternative
+    var exerciseAnswer: Int
+    var number: Int
     
     @State var buttonPrimaryColor: Color = Color(red: 238/255, green: 128/255, blue: 81/255)
     @State var buttonSecondaryColor: Color = Color(red: 229/255, green: 94/255, blue: 41/255)

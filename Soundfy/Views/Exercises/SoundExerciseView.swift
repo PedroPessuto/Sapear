@@ -37,7 +37,7 @@ struct SoundExerciseView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     if let soundExercise = profileController.actualPhase.phaseExercises[count] as? SoundExercise {
                         ForEach(soundExercise.exerciseAlternatives.indices, id: \.self) { item in
-                            ExerciseAlternativeButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item)
+                            SoundAlternativeButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item)
                         }
                     }
                 }
