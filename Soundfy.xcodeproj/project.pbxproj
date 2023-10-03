@@ -66,7 +66,6 @@
 		E5A22C4B2ACB60830079C432 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
-		E5A22C522ACB61E60079C432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E5AB74462AC2230B00006406 /* PrimaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryController.swift; sourceTree = "<group>"; };
@@ -178,7 +177,6 @@
 		BFF8159C2ABE0D1A00ACF5A7 /* Soundfy */ = {
 			isa = PBXGroup;
 			children = (
-				E5A22C522ACB61E60079C432 /* Info.plist */,
 				E5A22C4D2ACB60980079C432 /* Fonts */,
 				BF5208532ABE29B300FB9F5C /* Views */,
 				BF5208522ABE29AB00FB9F5C /* Controllers */,
