@@ -63,7 +63,7 @@ struct SoundExerciseView: View {
             Spacer()
             VStack (spacing: 20) {
                 Text(exercise.exerciseName)
-                    .font(.largeTitle)
+                    .font(Font.custom("Quicksand-Bold", size: 40,relativeTo: .largeTitle))
                     .bold()
                 
                 Text(exercise.exerciseDescription)
