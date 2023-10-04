@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ProfileController: ObservableObject {
     @Published var actualPhase: Phase
     @Published var phasesDone: [UUID]
+    
+    
     
     init (actualPhase: Phase = Phase(
         phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!,
@@ -33,6 +36,8 @@ class ProfileController: ObservableObject {
         ]), phasesDone: [UUID] = [UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!]) {
             self.actualPhase = actualPhase
             self.phasesDone = phasesDone
+            
+            
         }
 }
 

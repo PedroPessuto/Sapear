@@ -12,6 +12,7 @@ struct HomeView: View {
     @EnvironmentObject var primaryController: PrimaryController
     @State var screenName: String = "Sons"
     @State var screens = ["Sons",  "Fonemas", "Palavras"]
+
     
     var body: some View {
         NavigationStack {

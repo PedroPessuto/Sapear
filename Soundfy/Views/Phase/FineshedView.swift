@@ -11,6 +11,9 @@ struct FineshedView: View {
     
     @EnvironmentObject var profileController: ProfileController
     @EnvironmentObject var primaryController: PrimaryController
+    @EnvironmentObject var progressionController: ProgressionController
+    
+    @Environment(\.managedObjectContext) var managedObjContext
     
     var changeScreen: () -> Void
     
@@ -37,12 +40,13 @@ struct FineshedView: View {
                 
             }
             
-            // ===== FOOTER ===== Buildar no iphone
+            // ===== FOOTER =====
             Spacer()
             Spacer()
             PlayButton(buttonAction: {
                 changeScreen()
-                profileController.phasesDone.append(profileController.actualPhase.phaseId)
+                progressionController.addPhaseDone(id: profileController.actualPhase.phaseId , context: managedObjContext)
+                 profileController.phasesDone.append(profileController.actualPhase.phaseId)
                 primaryController.onPhase = false
             }, buttonText: "Concluir")
         }

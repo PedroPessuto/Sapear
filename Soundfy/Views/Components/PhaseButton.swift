@@ -12,16 +12,20 @@ struct PhaseButton: View {
     
     @EnvironmentObject var primaryController: PrimaryController
     @EnvironmentObject var profileController: ProfileController
+    @FetchRequest(entity: PhaseCoreData.entity(), sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
+//    @FetchRequest(sortDescriptors: [SortDescriptor(\.id, order: .reverse)]) var phasesDone: FetchedResults<PhaseCoreData>
+    
     @State var isDone: Bool = false
     var phase: Phase
     
     func checkIsDone() -> Void {
-        for id in profileController.phasesDone {
-            if id == phase.phaseId {
+        for phaseCD in phasesDone {
+            if phaseCD.id == phase.phaseId {
                 isDone = true
                 break
             }
         }
+        
     }
     
     var body: some View {
@@ -29,6 +33,7 @@ struct PhaseButton: View {
         Button (action: {
             primaryController.onPhase = true
             profileController.actualPhase = phase
+            
         }) {
             if phase.phaseId == profileController.actualPhase.phaseId {
                 Image("lilypad3")

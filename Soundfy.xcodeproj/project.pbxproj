@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF08A4492ACCC4D000B50DE2 /* ProgressionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08A4482ACCC4D000B50DE2 /* ProgressionController.swift */; };
+		BF08A44C2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF08A44A2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodeld */; };
 		BF1685172AC6165200D5D7E3 /* SoundLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1685162AC6165200D5D7E3 /* SoundLessonView.swift */; };
 		BF16851C2AC710CF00D5D7E3 /* SoundExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16851B2AC710CF00D5D7E3 /* SoundExerciseView.swift */; };
 		BF16851E2AC7117100D5D7E3 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16851D2AC7117100D5D7E3 /* ProgressBar.swift */; };
@@ -30,7 +32,6 @@
 		E53720D82AC60C1E00579F6C /* AlternativeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53720D72AC60C1E00579F6C /* AlternativeButton.swift */; };
 		E53720DA2AC60D6400579F6C /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53720D92AC60D6400579F6C /* PlayButton.swift */; };
 		E53720DE2AC74DDE00579F6C /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53720DD2AC74DDE00579F6C /* SoundButton.swift */; };
-		E5A22C4C2ACB60830079C432 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5A22C4A2ACB60830079C432 /* DataModel.xcdatamodeld */; };
 		E5A22C502ACB618C0079C432 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */; };
 		E5A22C512ACB618E0079C432 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */; };
 		E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* TrailView.swift */; };
@@ -39,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF08A4482ACCC4D000B50DE2 /* ProgressionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionController.swift; sourceTree = "<group>"; };
+		BF08A44B2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProgressionModel.xcdatamodel; sourceTree = "<group>"; };
 		BF1685162AC6165200D5D7E3 /* SoundLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLessonView.swift; sourceTree = "<group>"; };
 		BF16851B2AC710CF00D5D7E3 /* SoundExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExerciseView.swift; sourceTree = "<group>"; };
 		BF16851D2AC7117100D5D7E3 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		E53720D72AC60C1E00579F6C /* AlternativeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeButton.swift; sourceTree = "<group>"; };
 		E53720D92AC60D6400579F6C /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		E53720DD2AC74DDE00579F6C /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
-		E5A22C4B2ACB60830079C432 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				BF3147012AC1FFD100CCFEE5 /* ContentController.swift */,
 				E5AB74462AC2230B00006406 /* PrimaryController.swift */,
 				BF591E4C2AC4C07300A1F002 /* ProfileController.swift */,
+				BF08A4482ACCC4D000B50DE2 /* ProgressionController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				BFF8159C2ABE0D1A00ACF5A7 /* Soundfy */,
-				E5A22C4A2ACB60830079C432 /* DataModel.xcdatamodeld */,
 				BFF8159B2ABE0D1A00ACF5A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -184,6 +186,7 @@
 				BFF8159D2ABE0D1A00ACF5A7 /* SoundfyApp.swift */,
 				BFF8159F2ABE0D1A00ACF5A7 /* ContentView.swift */,
 				BFF815A12ABE0D1A00ACF5A7 /* Assets.xcassets */,
+				BF08A44A2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodeld */,
 				BFF815A32ABE0D1A00ACF5A7 /* Preview Content */,
 			);
 			path = Soundfy;
@@ -283,7 +286,9 @@
 				BFE802642ACB316800A33A7B /* ExerciseSoundButton.swift in Sources */,
 				E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */,
 				BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */,
+				BF08A44C2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodeld in Sources */,
 				BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */,
+				BF08A4492ACCC4D000B50DE2 /* ProgressionController.swift in Sources */,
 				BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */,
 				BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */,
 				BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */,
@@ -299,7 +304,6 @@
 				BF52085B2ABE2A6E00FB9F5C /* Phase.swift in Sources */,
 				BFF8159E2ABE0D1A00ACF5A7 /* SoundfyApp.swift in Sources */,
 				BF591E4F2AC4C18000A1F002 /* HomeView.swift in Sources */,
-				E5A22C4C2ACB60830079C432 /* DataModel.xcdatamodeld in Sources */,
 				BF3146F42AC1F2E900CCFEE5 /* Lesson.swift in Sources */,
 				BF591E4D2AC4C07300A1F002 /* ProfileController.swift in Sources */,
 				E53720D82AC60C1E00579F6C /* AlternativeButton.swift in Sources */,
@@ -507,13 +511,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E5A22C4A2ACB60830079C432 /* DataModel.xcdatamodeld */ = {
+		BF08A44A2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E5A22C4B2ACB60830079C432 /* DataModel.xcdatamodel */,
+				BF08A44B2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodel */,
 			);
-			currentVersion = E5A22C4B2ACB60830079C432 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
+			currentVersion = BF08A44B2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodel */;
+			name = ProgressionModel.xcdatamodeld;
+			path = ../ProgressionModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
