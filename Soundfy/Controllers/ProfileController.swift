@@ -33,7 +33,7 @@ class ProfileController: ObservableObject {
                 Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
                 Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
             ])
-        ]), phasesDone: [UUID] = [UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!]) {
+        ]), phasesDone: [UUID] = []) {
             self.actualPhase = actualPhase
             self.phasesDone = phasesDone
             

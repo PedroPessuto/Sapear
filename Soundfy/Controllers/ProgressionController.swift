@@ -12,6 +12,7 @@ class ProgressionController: ObservableObject {
     let container = NSPersistentContainer(name: "ProgressionModel")
     
     init() {
+        
         container.loadPersistentStores {
             desc, error in
             if error != nil {
@@ -33,5 +34,17 @@ class ProgressionController: ObservableObject {
         let phase = PhaseCoreData(context: context)
         phase.id = id
         save(context: context)
+    }
+    
+    func deleteAllPhases(in context: NSManagedObjectContext) {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = PhaseCoreData.fetchRequest()
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch let error as NSError {
+            print("Error deleting all PhaseCoreData objects: \(error), \(error.userInfo)")
+        }
     }
 }

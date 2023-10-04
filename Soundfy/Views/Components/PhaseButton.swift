@@ -20,12 +20,12 @@ struct PhaseButton: View {
     
     func checkIsDone() -> Void {
         for phaseCD in phasesDone {
+                
             if phaseCD.id == phase.phaseId {
                 isDone = true
                 break
             }
         }
-        
     }
     
     var body: some View {
@@ -35,11 +35,13 @@ struct PhaseButton: View {
             profileController.actualPhase = phase
             
         }) {
+            
             if phase.phaseId == profileController.actualPhase.phaseId {
                 Image("lilypad3")
             } else {
                 Image(isDone ? "lilypad2" : "lilypad")
             }
+            
         }
         .frame(width: 190, height: 100)
         .onAppear {

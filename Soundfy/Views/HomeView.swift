@@ -13,6 +13,10 @@ struct HomeView: View {
     @State var screenName: String = "Sons"
     @State var screens = ["Sons",  "Fonemas", "Palavras"]
 
+    @EnvironmentObject var profileController: ProfileController
+    @FetchRequest(entity: PhaseCoreData.entity(), sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
+    @Environment(\.managedObjectContext) var contexto
+    @EnvironmentObject var progressionController: ProgressionController
     
     var body: some View {
         NavigationStack {
@@ -48,6 +52,10 @@ struct HomeView: View {
                         .font(.system(size: 25))
                 }
             }
+        }
+        .onAppear {
+            let uuids: [UUID] = phasesDone.compactMap { $0.id }
+            profileController.phasesDone = uuids            
         }
     }
 }
