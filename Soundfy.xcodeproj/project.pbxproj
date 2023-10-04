@@ -34,6 +34,7 @@
 		E53720DE2AC74DDE00579F6C /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53720DD2AC74DDE00579F6C /* SoundButton.swift */; };
 		E5A22C502ACB618C0079C432 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */; };
 		E5A22C512ACB618E0079C432 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */; };
+		E5A22C722ACE10B60079C432 /* FonemaLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A22C712ACE10B60079C432 /* FonemaLessonView.swift */; };
 		E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* TrailView.swift */; };
 		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
 		E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74462AC2230B00006406 /* PrimaryController.swift */; };
@@ -68,6 +69,7 @@
 		E53720DD2AC74DDE00579F6C /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
 		E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		E5A22C712ACE10B60079C432 /* FonemaLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FonemaLessonView.swift; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E5AB74462AC2230B00006406 /* PrimaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1685162AC6165200D5D7E3 /* SoundLessonView.swift */,
+				E5A22C712ACE10B60079C432 /* FonemaLessonView.swift */,
 			);
 			path = Lessons;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				BF52085D2ABE2B9100FB9F5C /* Section.swift in Sources */,
 				BF3147022AC1FFD100CCFEE5 /* ContentController.swift in Sources */,
 				BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */,
+				E5A22C722ACE10B60079C432 /* FonemaLessonView.swift in Sources */,
 				E53720DE2AC74DDE00579F6C /* SoundButton.swift in Sources */,
 				BF1685172AC6165200D5D7E3 /* SoundLessonView.swift in Sources */,
 				BF1685212AC73A3800D5D7E3 /* FineshedView.swift in Sources */,
