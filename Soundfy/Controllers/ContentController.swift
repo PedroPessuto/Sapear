@@ -44,12 +44,12 @@ class ContentController: ObservableObject {
                                                         alternativeSoundName: "TrovãoSound",
                                                         alternativeImage: "cloud.bolt.rain")
                                         ]),
-                            //... repita para todos os grupos de 4 sons em "NATUREZA"
+                            
                           ],
                           phaseExercises: [
                             SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655440009")!,
                                           exerciseName: "Identifique o som",
-                                          exerciseDescription: "Qual destes é o som da Chuva?",
+                                          exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
                                           exerciseAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655440010")!,
@@ -69,81 +69,201 @@ class ContentController: ObservableObject {
                                                         alternativeSoundName: "VentoSound",
                                                         alternativeImage: "wind")
                                           ],
-                                          exerciseAnswer: 2)
-                            , SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655410009")!,
-                                            exerciseName: "Identifique o som",
-                                            exerciseDescription: "Qual destes é o som da Chuva?",
-                                            exerciseType: "soundExercise",
-                                            exerciseAlternatives: [
-                                              Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655410011")!,
-                                                          alternativeLabel: "Trovão",
-                                                          alternativeSoundName: "TrovãoSound",
-                                                         alternativeImage: "cloud.bolt.rain"),
-                                              Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655410012")!,
-                                                          alternativeLabel: "Onda",
-                                                          alternativeSoundName: "OndaSound",
-                                                          alternativeImage: "water.waves"),
-                                              Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655410010")!,
-                                                          alternativeLabel: "Chuva",
-                                                          alternativeSoundName: "ChuvaSound",
-                                                          alternativeImage: "cloud.rain.fill"),
-                                              Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655410013")!,
-                                                          alternativeLabel: "Vento",
-                                                          alternativeSoundName: "VentoSound",
-                                                          alternativeImage: "wind")
-                                            ],
-                                            exerciseAnswer: 2)
-                            //... repita para cada som específico como exercício em "NATUREZA"
+                                          exerciseAnswer: 2),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655410009")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655410011")!,
+                                                        alternativeLabel: "Trovão",
+                                                        alternativeSoundName: "TrovãoSound",
+                                                        alternativeImage: "cloud.bolt.rain"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655410012")!,
+                                                        alternativeLabel: "Onda",
+                                                        alternativeSoundName: "OndaSound",
+                                                        alternativeImage: "water.waves"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655410013")!,
+                                                        alternativeLabel: "Vento",
+                                                        alternativeSoundName: "VentoSound",
+                                                        alternativeImage: "wind"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655410010")!,
+                                                        alternativeLabel: "Chuva",
+                                                        alternativeSoundName: "ChuvaSound",
+                                                        alternativeImage: "cloud.rain.fill")
+                                          ],
+                                          exerciseAnswer: 3),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655430009")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655430013")!,
+                                                        alternativeLabel: "Vento",
+                                                        alternativeSoundName: "VentoSound",
+                                                        alternativeImage: "wind"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655430011")!,
+                                                        alternativeLabel: "Trovão",
+                                                        alternativeSoundName: "TrovãoSound",
+                                                        alternativeImage: "cloud.bolt.rain"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655430012")!,
+                                                        alternativeLabel: "Onda",
+                                                        alternativeSoundName: "OndaSound",
+                                                        alternativeImage: "water.waves"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655430010")!,
+                                                        alternativeLabel: "Chuva",
+                                                        alternativeSoundName: "ChuvaSound",
+                                                        alternativeImage: "cloud.rain.fill")
+                                          ],
+                                          exerciseAnswer: 1),
+                            
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655420009")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655420013")!,
+                                                        alternativeLabel: "Vento",
+                                                        alternativeSoundName: "VentoSound",
+                                                        alternativeImage: "wind"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655420011")!,
+                                                        alternativeLabel: "Trovão",
+                                                        alternativeSoundName: "TrovãoSound",
+                                                        alternativeImage: "cloud.bolt.rain"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655420012")!,
+                                                        alternativeLabel: "Onda",
+                                                        alternativeSoundName: "OndaSound",
+                                                        alternativeImage: "water.waves"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655420010")!,
+                                                        alternativeLabel: "Chuva",
+                                                        alternativeSoundName: "ChuvaSound",
+                                                        alternativeImage: "cloud.rain.fill")
+                                          ],
+                                          exerciseAnswer: 0)
+                            
                           ]),
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446555440019")!,
                           phaseName: "Natureza",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8530-e29b-41d4-a716-446655440020")!,
-                                        lessonName: "Sons da Natureza 2",
+                                        lessonName: "Sons de Animais",
                                         lessonDescription: "Aprenda mais sons da natureza.",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8540-e29b-41d4-a716-446655440021")!,
                                                         alternativeLabel: "Cachorro",
                                                         alternativeSoundName: "CachorroSound",
-                                                       alternativeImage: "dog"),
+                                                        alternativeImage: "dog"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8550-e29b-41d4-a716-446655440022")!,
                                                         alternativeLabel: "Gato",
                                                         alternativeSoundName: "GatoSound",
-                                                       alternativeImage: "cat"),
+                                                        alternativeImage: "cat"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8560-e29b-41d4-a716-446655440023")!,
-                                                        alternativeLabel: "Galinha",
-                                                        alternativeSoundName: "GalinhaSound",
-                                                       alternativeImage: "chicken"),
+                                                        alternativeLabel: "Vaca",
+                                                        alternativeSoundName: "VacaSound",
+                                                        alternativeImage: "cow"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8570-e29b-41d4-a716-446655440024")!,
-                                                        alternativeLabel: "Trigre",
-                                                        alternativeSoundName: "TrigreSound",
-                                                       alternativeImage: "tiger")
+                                                        alternativeLabel: "Porco",
+                                                        alternativeSoundName: "PorcoSound",
+                                                        alternativeImage: "pig")
                                         ]),
                             //... repita para todos os grupos de 4 sons em "NATUREZA"
                           ],
                           phaseExercises: [
                             SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440040")!,
                                           exerciseName: "Identifique o som",
-                                          exerciseDescription: "Qual destes é o som de um Cachorro?",
+                                          exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
                                           exerciseAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655440041")!,
                                                         alternativeLabel: "Gato",
-                                                        alternativeSoundName: "GatoSound"),
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "cat"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655440042")!,
                                                         alternativeLabel: "Cachorro",
-                                                        alternativeSoundName: "CachorroSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655440043")!,
-                                                        alternativeLabel: "Galinha",
-                                                        alternativeSoundName: "GalinhaSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8570-e29b-41d4-a716-446655440024")!,
-                                                        alternativeLabel: "Trigre",
-                                                        alternativeSoundName: "TrigreSound",
-                                                       alternativeImage: "tiger")
+                                                        alternativeSoundName: "CachorroSound",
+                                                        alternativeImage: "dog"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8560-e29b-41d4-a716-446655440043")!,
+                                                        alternativeLabel: "Vaca",
+                                                        alternativeSoundName: "VacaSound",
+                                                        alternativeImage: "cow"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8570-e29b-41d4-a716-446655440044")!,
+                                                        alternativeLabel: "Porco",
+                                                        alternativeSoundName: "PorcoSound",
+                                                        alternativeImage: "pig")
                                             
                                           ],
-                                          exerciseAnswer: 1)
+                                          exerciseAnswer: 2),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655430040")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8570-e29b-41d4-a716-446655430044")!,
+                                                        alternativeLabel: "Porco",
+                                                        alternativeSoundName: "PorcoSound",
+                                                        alternativeImage: "pig"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655430041")!,
+                                                        alternativeLabel: "Gato",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "cat"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655430042")!,
+                                                        alternativeLabel: "Cachorro",
+                                                        alternativeSoundName: "CachorroSound",
+                                                        alternativeImage: "dog"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8560-e29b-41d4-a716-446655430043")!,
+                                                        alternativeLabel: "Vaca",
+                                                        alternativeSoundName: "VacaSound",
+                                                        alternativeImage: "cow")
+                                          ],
+                                          exerciseAnswer: 1),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450040")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655450042")!,
+                                                        alternativeLabel: "Cachorro",
+                                                        alternativeSoundName: "CachorroSound",
+                                                        alternativeImage: "dog"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8570-e29b-41d4-a716-446655450044")!,
+                                                        alternativeLabel: "Porco",
+                                                        alternativeSoundName: "PorcoSound",
+                                                        alternativeImage: "pig"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655450041")!,
+                                                        alternativeLabel: "Gato",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "cat"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8560-e29b-41d4-a716-446655450043")!,
+                                                        alternativeLabel: "Vaca",
+                                                        alternativeSoundName: "VacaSound",
+                                                        alternativeImage: "cow")
+                                            
+                                          ],
+                                          exerciseAnswer: 1),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655460040")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655460041")!,
+                                                        alternativeLabel: "Gato",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "cat"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8570-e29b-41d4-a716-446655460044")!,
+                                                        alternativeLabel: "Porco",
+                                                        alternativeSoundName: "PorcoSound",
+                                                        alternativeImage: "pig"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8560-e29b-41d4-a716-446655460043")!,
+                                                        alternativeLabel: "Vaca",
+                                                        alternativeSoundName: "VacaSound",
+                                                        alternativeImage: "cow"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655460042")!,
+                                                        alternativeLabel: "Cachorro",
+                                                        alternativeSoundName: "CachorroSound",
+                                                        alternativeImage: "dog"),
+                                          ],
+                                          exerciseAnswer: 3)
                             //... repita para cada som específico como exercício em "NATUREZA"
                           ])
                     ,
@@ -156,41 +276,119 @@ class ContentController: ObservableObject {
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655440031")!,
-                                                        alternativeLabel: "Baleia",
-                                                        alternativeSoundName: "BaleiaSound"),
+                                                        alternativeLabel: "Cabra",
+                                                        alternativeSoundName: "cabra",
+                                                        alternativeImage: "goat"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655440032")!,
-                                                        alternativeLabel: "Vaca",
-                                                        alternativeSoundName: "VacaSound"),
+                                                        alternativeLabel: "Ovelha",
+                                                        alternativeSoundName: "ovelha",
+                                                        alternativeImage: "sheep"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8610-e29b-41d4-a716-446655440033")!,
-                                                        alternativeLabel: "Porco",
-                                                        alternativeSoundName: "PorcoSound"),
+                                                        alternativeLabel: "Tigre",
+                                                        alternativeSoundName: "tigre",
+                                                        alternativeImage: "tiger"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446655440034")!,
-                                                        alternativeLabel: "Macaco",
-                                                        alternativeSoundName: "MacacoSound")
+                                                        alternativeLabel: "Galinha",
+                                                        alternativeSoundName: "galinha",
+                                                        alternativeImage: "chicken")
                                         ]),
                             //... repita para todos os grupos de 4 sons em "NATUREZA"
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440050")!,
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450050")!,
                                           exerciseName: "Identifique o som",
-                                          exerciseDescription: "Qual destes é o som de um Vaca?",
+                                          exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
-                                          exerciseAlternatives: [
-                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655440051")!,
-                                                        alternativeLabel: "Baleia",
-                                                        alternativeSoundName: "BaleiaSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655440052")!,
-                                                        alternativeLabel: "Macaco",
-                                                        alternativeSoundName: "MacacoSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655440053")!,
-                                                        alternativeLabel: "Porco",
-                                                        alternativeSoundName: "PorcoSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655440054")!,
-                                                        alternativeLabel: "Vaca",
-                                                        alternativeSoundName: "VacaSound")
-                                          ],
-                                          exerciseAnswer: 3)
-                            //... repita para cada som específico como exercício em "NATUREZA"
+                                          exerciseAlternatives: [ // ovelha
+                                            Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655450031")!,
+                                                        alternativeLabel: "Cabra",
+                                                        alternativeSoundName: "cabra",
+                                                        alternativeImage: "goat"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8610-e29b-41d4-a716-446655450033")!,
+                                                        alternativeLabel: "Tigre",
+                                                        alternativeSoundName: "tigre",
+                                                        alternativeImage: "tiger"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655450032")!,
+                                                        alternativeLabel: "Ovelha",
+                                                        alternativeSoundName: "ovelha",
+                                                        alternativeImage: "sheep"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446655450034")!,
+                                                        alternativeLabel: "Galinha",
+                                                        alternativeSoundName: "galinha",
+                                                        alternativeImage: "chicken")
+                                                                ],
+                                          exerciseAnswer: 2),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655460050")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [ // tigre
+                                            Alternative(alternativeId: UUID(uuidString: "550e8610-e29b-41d4-a716-446655460033")!,
+                                                        alternativeLabel: "Tigre",
+                                                        alternativeSoundName: "tigre",
+                                                        alternativeImage: "tiger"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655460031")!,
+                                                        alternativeLabel: "Cabra",
+                                                        alternativeSoundName: "cabra",
+                                                        alternativeImage: "goat"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655460032")!,
+                                                        alternativeLabel: "Ovelha",
+                                                        alternativeSoundName: "ovelha",
+                                                        alternativeImage: "sheep"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446655460034")!,
+                                                        alternativeLabel: "Galinha",
+                                                        alternativeSoundName: "galinha",
+                                                        alternativeImage: "chicken")
+                                                                ],
+                                          exerciseAnswer: 0),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655470050")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [ // gailnha
+                                            Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655470031")!,
+                                                        alternativeLabel: "Cabra",
+                                                        alternativeSoundName: "cabra",
+                                                        alternativeImage: "goat"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655470032")!,
+                                                        alternativeLabel: "Ovelha",
+                                                        alternativeSoundName: "ovelha",
+                                                        alternativeImage: "sheep"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8610-e29b-41d4-a716-446655470033")!,
+                                                        alternativeLabel: "Tigre",
+                                                        alternativeSoundName: "tigre",
+                                                        alternativeImage: "tiger"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446655470034")!,
+                                                        alternativeLabel: "Galinha",
+                                                        alternativeSoundName: "galinha",
+                                                        alternativeImage: "chicken")
+                                                                ],
+                                          exerciseAnswer: 3),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655480050")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [ // cabra
+                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446655480034")!,
+                                                        alternativeLabel: "Galinha",
+                                                        alternativeSoundName: "galinha",
+                                                        alternativeImage: "chicken"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655480031")!,
+                                                        alternativeLabel: "Cabra",
+                                                        alternativeSoundName: "cabra",
+                                                        alternativeImage: "goat"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655480032")!,
+                                                        alternativeLabel: "Ovelha",
+                                                        alternativeSoundName: "ovelha",
+                                                        alternativeImage: "sheep"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8610-e29b-41d4-a716-446655480033")!,
+                                                        alternativeLabel: "Tigre",
+                                                        alternativeSoundName: "tigre",
+                                                        alternativeImage: "tiger")
+                                            
+                                                                ],
+                                          exerciseAnswer: 1)
+                            
                           ])
                 ]),
         Section(sectionId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440060")!,
@@ -207,40 +405,117 @@ class ContentController: ObservableObject {
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8430-e29b-41d4-a716-446655440063")!,
                                                         alternativeLabel: "Carro",
-                                                        alternativeSoundName: "CarroSound"),
+                                                        alternativeSoundName: "CarroSound",
+                                                        alternativeImage: "car.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8440-e29b-41d4-a716-446655440064")!,
                                                         alternativeLabel: "Buzina",
-                                                        alternativeSoundName: "BuzinaSound"),
+                                                        alternativeSoundName: "BuzinaSound",
+                                                        alternativeImage: "car.front.waves.up"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8450-e29b-41d4-a716-446655440065")!,
                                                         alternativeLabel: "Avião",
-                                                        alternativeSoundName: "AviãoSound"),
+                                                        alternativeSoundName: "AviãoSound",
+                                                        alternativeImage: "airplane"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8460-e29b-41d4-a716-446655440066")!,
                                                         alternativeLabel: "Relógio",
-                                                        alternativeSoundName: "RelógioSound")
+                                                        alternativeSoundName: "RelógioSound",
+                                                        alternativeImage: "clock.fill")
                                         ]),
-                            //... repita para todos os grupos de 4 sons em "NATUREZA"
+                            
                           ],
                           phaseExercises: [
                             SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Identifique o som",
-                                          exerciseDescription: "Qual destes é o som da Buzina?",
+                                          exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
-                                          exerciseAlternatives: [
+                                          exerciseAlternatives: [//carro
                                             Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655440070")!,
-                                                        alternativeLabel: "Alarme",
-                                                        alternativeSoundName: "AlarmeSound"),
+                                                        alternativeLabel: "Avião",
+                                                        alternativeSoundName: "AviãoSound",
+                                                        alternativeImage: "airplane"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655440071")!,
                                                         alternativeLabel: "Relógio",
-                                                        alternativeSoundName: "RelógioSound"),
+                                                        alternativeSoundName: "RelógioSound",
+                                                        alternativeImage: "clock.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655440072")!,
                                                         alternativeLabel: "Carro",
-                                                        alternativeSoundName: "CarroSound"),
+                                                        alternativeSoundName: "CarroSound",
+                                                        alternativeImage: "car.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655440073")!,
                                                         alternativeLabel: "Buzina",
-                                                        alternativeSoundName: "BuzinaSound")
-                                          ],
-                                          exerciseAnswer: 3)
-                            //                            ... repita para cada som específico como exercício em "NATUREZA"
+                                                        alternativeSoundName: "BuzinaSound",
+                                                        alternativeImage: "car.front.waves.up")
+                                                                ],
+                                          exerciseAnswer: 2),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966450069")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//aviao
+                                            Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655450070")!,
+                                                        alternativeLabel: "Avião",
+                                                        alternativeSoundName: "AviãoSound",
+                                                        alternativeImage: "airplane"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655450071")!,
+                                                        alternativeLabel: "Relógio",
+                                                        alternativeSoundName: "RelógioSound",
+                                                        alternativeImage: "clock.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655450073")!,
+                                                        alternativeLabel: "Buzina",
+                                                        alternativeSoundName: "BuzinaSound",
+                                                        alternativeImage: "car.front.waves.up"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655450072")!,
+                                                        alternativeLabel: "Carro",
+                                                        alternativeSoundName: "CarroSound",
+                                                        alternativeImage: "car.fill")
+                                                                ],
+                                          exerciseAnswer: 0),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966460069")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//Relogio
+                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655460072")!,
+                                                        alternativeLabel: "Carro",
+                                                        alternativeSoundName: "CarroSound",
+                                                        alternativeImage: "car.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655460070")!,
+                                                        alternativeLabel: "Avião",
+                                                        alternativeSoundName: "AviãoSound",
+                                                        alternativeImage: "airplane"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655460073")!,
+                                                        alternativeLabel: "Buzina",
+                                                        alternativeSoundName: "BuzinaSound",
+                                                        alternativeImage: "car.front.waves.up"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655460071")!,
+                                                        alternativeLabel: "Relógio",
+                                                        alternativeSoundName: "RelógioSound",
+                                                        alternativeImage: "clock.fill")
+                                                                ],
+                                          exerciseAnswer: 3),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966470069")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//Buzina
+                                            Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655470071")!,
+                                                        alternativeLabel: "Relógio",
+                                                        alternativeSoundName: "RelógioSound",
+                                                        alternativeImage: "clock.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655470072")!,
+                                                        alternativeLabel: "Carro",
+                                                        alternativeSoundName: "CarroSound",
+                                                        alternativeImage: "car.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655470073")!,
+                                                        alternativeLabel: "Buzina",
+                                                        alternativeSoundName: "BuzinaSound",
+                                                        alternativeImage: "car.front.waves.up"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655470070")!,
+                                                        alternativeLabel: "Avião",
+                                                        alternativeSoundName: "AviãoSound",
+                                                        alternativeImage: "airplane")
+                                            
+                                                                ],
+                                          exerciseAnswer: 2)
                           ])
                     ,
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440079")!,
@@ -252,268 +527,279 @@ class ContentController: ObservableObject {
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8540-e29b-41d4-a716-446655440081")!,
-                                                        alternativeLabel: "Cachorro",
-                                                        alternativeSoundName: "CachorroSound"),
+                                                        alternativeLabel: "Sino",
+                                                        alternativeSoundName: "sino",
+                                                        alternativeImage: "bell.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8550-e29b-41d4-a716-446655440082")!,
-                                                        alternativeLabel: "Gato",
-                                                        alternativeSoundName: "GatoSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8560-e29b-41d4-a716-446655440083")!,
-                                                        alternativeLabel: "Galinha",
-                                                        alternativeSoundName: "GalinhaSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8570-e29b-41d4-a716-446655440084")!,
-                                                        alternativeLabel: "Leão",
-                                                        alternativeSoundName: "LeãoSound")
+                                                        alternativeLabel: "Campainha",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "doorbell")
                                         ]),
-                            //... repita para todos os grupos de 4 sons em "NATUREZA"
+                            
                           ],
                           phaseExercises: [
                             SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440090")!,
                                           exerciseName: "Identifique o som",
-                                          exerciseDescription: "Qual destes é o som de um Cachorro?",
+                                          exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
-                                          exerciseAlternatives: [
+                                          exerciseAlternatives: [//sino
                                             Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655440091")!,
-                                                        alternativeLabel: "Gato",
-                                                        alternativeSoundName: "GatoSound"),
+                                                        alternativeLabel: "Sino",
+                                                        alternativeSoundName: "sino",
+                                                        alternativeImage: "bell.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655440092")!,
-                                                        alternativeLabel: "Cachorro",
-                                                        alternativeSoundName: "CachorroSound"),
+                                                        alternativeLabel: "Relógio",
+                                                        alternativeSoundName: "RelógioSound",
+                                                        alternativeImage: "clock.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655440093")!,
-                                                        alternativeLabel: "Galinha",
-                                                        alternativeSoundName: "GalinhaSound"),
+                                                        alternativeLabel: "Campainha",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "doorbell"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655440094")!,
-                                                        alternativeLabel: "Leão",
-                                                        alternativeSoundName: "LeãoSound")
-                                          ],
-                                          exerciseAnswer: 1)
-                            //... repita para cada som específico como exercício em "NATUREZA"
+                                                        alternativeLabel: "Avião",
+                                                        alternativeSoundName: "AviãoSound",
+                                                        alternativeImage: "airplane")
+                                                                ],
+                                          exerciseAnswer: 0),
+                            
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450090")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//campainha
+                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446651450034")!,
+                                                        alternativeLabel: "Galinha",
+                                                        alternativeSoundName: "galinha",
+                                                        alternativeImage: "chicken"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655450091")!,
+                                                        alternativeLabel: "Sino",
+                                                        alternativeSoundName: "sino",
+                                                        alternativeImage: "bell.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655450092")!,
+                                                        alternativeLabel: "Relógio",
+                                                        alternativeSoundName: "RelógioSound",
+                                                        alternativeImage: "clock.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655450093")!,
+                                                        alternativeLabel: "Campainha",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "doorbell")
+                                                                ],
+                                          exerciseAnswer: 3)
                           ])
                     ,
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440100")!,
-                          phaseName: "Natureza",
+                          phaseName: "Urbano",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440100")!,
-                                        lessonName: "Sons da Natureza 3",
-                                        lessonDescription: "Aprenda ainda mais sons da natureza.",
+                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540100")!,
+                                        lessonName: "Sons Urbanos 3",
+                                        lessonDescription: "Aprenda ainda mais sons Urbanos.",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655440101")!,
-                                                        alternativeLabel: "Baleia",
-                                                        alternativeSoundName: "BaleiaSound"),
+                                                        alternativeLabel: "Teclado",
+                                                        alternativeSoundName: "teclado",
+                                                        alternativeImage: "keyboard.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655440102")!,
-                                                        alternativeLabel: "Vaca",
-                                                        alternativeSoundName: "VacaSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8610-e29b-41d4-a716-446655440103")!,
-                                                        alternativeLabel: "Porco",
-                                                        alternativeSoundName: "PorcoSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446655440104")!,
-                                                        alternativeLabel: "Macaco",
-                                                        alternativeSoundName: "MacacoSound")
+                                                        alternativeLabel: "Telefone",
+                                                        alternativeSoundName: "telefone",
+                                                        alternativeImage: "phone.fill"),
                                         ]),
-                            //... repita para todos os grupos de 4 sons em "NATUREZA"
+                            
+                          ],
+                          phaseExercises: [
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446659440105")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//teclado
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655440106")!,
+                                                        alternativeLabel: "Telefone",
+                                                        alternativeSoundName: "telefone",
+                                                        alternativeImage: "phone.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655440107")!,
+                                                        alternativeLabel: "Campainha",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "doorbell"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655440108")!,
+                                                        alternativeLabel: "Teclado",
+                                                        alternativeSoundName: "teclado",
+                                                        alternativeImage: "keyboard.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655440109")!,
+                                                        alternativeLabel: "Vaca",
+                                                        alternativeSoundName: "VacaSound",
+                                                        alternativeImage: "cow")
+                                                                ],
+                                          exerciseAnswer: 2),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450105")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//telefone
+                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655450109")!,
+                                                        alternativeLabel: "Vaca",
+                                                        alternativeSoundName: "VacaSound",
+                                                        alternativeImage: "cow"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655450106")!,
+                                                        alternativeLabel: "Telefone",
+                                                        alternativeSoundName: "telefone",
+                                                        alternativeImage: "phone.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655450107")!,
+                                                        alternativeLabel: "Campainha",
+                                                        alternativeSoundName: "GatoSound",
+                                                        alternativeImage: "doorbell"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655450108")!,
+                                                        alternativeLabel: "Teclado",
+                                                        alternativeSoundName: "teclado",
+                                                        alternativeImage: "keyboard.fill"),
+                                                                ],
+                                          exerciseAnswer: 1)
+                            
+                          ])
+                ]),
+        Section(sectionId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655540000")!,
+                sectionName:  "Instrumentos",
+                sectionDescription: "Sons de instrumentos",
+                sectionPhases: [
+                    Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655540001")!,
+                          phaseName: "Instruementos",
+                          phaseLessons: [
+                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540002")!,
+                                        lessonName: "Sons de Instrumentos 1",
+                                        lessonDescription: "Aprenda sons de Instrumentos.",
+                                        lessonType: "soundClass",
+                                        lessonAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655540101")!,
+                                                        alternativeLabel: "Bateria",
+                                                        alternativeSoundName: "bateria",
+                                                        alternativeImage: "drums"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655540102")!,
+                                                        alternativeLabel: "Guitarra",
+                                                        alternativeSoundName: "guitarra",
+                                                        alternativeImage: "guitar"),
+                                        ]),
+                            
                           ],
                           phaseExercises: [
                             SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440105")!,
                                           exerciseName: "Identifique o som",
-                                          exerciseDescription: "Qual destes é o som de um Vaca?",
+                                          exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
-                                          exerciseAlternatives: [
-                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655440106")!,
-                                                        alternativeLabel: "Baleia",
-                                                        alternativeSoundName: "BaleiaSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655440107")!,
-                                                        alternativeLabel: "Macaco",
-                                                        alternativeSoundName: "MacacoSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655440108")!,
-                                                        alternativeLabel: "Porco",
-                                                        alternativeSoundName: "PorcoSound"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655440109")!,
-                                                        alternativeLabel: "Vaca",
-                                                        alternativeSoundName: "VacaSound")
-                                          ],
-                                          exerciseAnswer: 3)
-                            //... repita para cada som específico como exercício em "NATUREZA"
+                                          exerciseAlternatives: [//bateria
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655540106")!,
+                                                        alternativeLabel: "Telefone",
+                                                        alternativeSoundName: "telefone",
+                                                        alternativeImage: "phone.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655540107")!,
+                                                        alternativeLabel: "Bateria",
+                                                        alternativeSoundName: "bateria",
+                                                        alternativeImage: "drums"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655540108")!,
+                                                        alternativeLabel: "Teclado",
+                                                        alternativeSoundName: "teclado",
+                                                        alternativeImage: "keyboard.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655540109")!,
+                                                        alternativeLabel: "Guitarra",
+                                                        alternativeSoundName: "guitarra",
+                                                        alternativeImage: "guitar"),
+                                                                ],
+                                          exerciseAnswer: 1),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655650105")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//guitarra
+                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655650109")!,
+                                                        alternativeLabel: "Bateria",
+                                                        alternativeSoundName: "bateria",
+                                                        alternativeImage: "drums"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655650106")!,
+                                                        alternativeLabel: "Telefone",
+                                                        alternativeSoundName: "telefone",
+                                                        alternativeImage: "phone.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655650107")!,
+                                                        alternativeLabel: "Guitarra",
+                                                        alternativeSoundName: "guitarra",
+                                                        alternativeImage: "guitar"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655650108")!,
+                                                        alternativeLabel: "Teclado",
+                                                        alternativeSoundName: "teclado",
+                                                        alternativeImage: "keyboard.fill"),
+                                                                ],
+                                          exerciseAnswer: 2)
+                            
+                          ]),
+                    Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655640001")!,
+                          phaseName: "Instruementos",
+                          phaseLessons: [
+                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655640002")!,
+                                        lessonName: "Sons de Instrumentos 2",
+                                        lessonDescription: "Aprenda sons de Instrumentos.",
+                                        lessonType: "soundClass",
+                                        lessonAlternatives: [
+                                            Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655640101")!,
+                                                        alternativeLabel: "Flauta",
+                                                        alternativeSoundName: "flauta",
+                                                        alternativeImage: "flute"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8600-e29b-41d4-a716-446655640102")!,
+                                                        alternativeLabel: "Piano",
+                                                        alternativeSoundName: "piano",
+                                                        alternativeImage: "pianokeys"),
+                                        ]),
+                            
+                          ],
+                          phaseExercises: [
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446656440105")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//Flauta
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655640106")!,
+                                                        alternativeLabel: "Guitarra",
+                                                        alternativeSoundName: "guitarra",
+                                                        alternativeImage: "guitar"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655640107")!,
+                                                        alternativeLabel: "Flauta",
+                                                        alternativeSoundName: "flauta",
+                                                        alternativeImage: "flute"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655640108")!,
+                                                        alternativeLabel: "Bateria",
+                                                        alternativeSoundName: "bateria",
+                                                        alternativeImage: "drums"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655640109")!,
+                                                        alternativeLabel: "Piano",
+                                                        alternativeSoundName: "piano",
+                                                        alternativeImage: "pianokeys"),
+                                                                ],
+                                          exerciseAnswer: 1),
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655660105")!,
+                                          exerciseName: "Identifique o som",
+                                          exerciseDescription: "Que som é esse?",
+                                          exerciseType: "soundExercise",
+                                          exerciseAlternatives: [//paino
+                                            Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655660109")!,
+                                                        alternativeLabel: "Flauta",
+                                                        alternativeSoundName: "flauta",
+                                                        alternativeImage: "flute"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655660106")!,
+                                                        alternativeLabel: "Telefone",
+                                                        alternativeSoundName: "telefone",
+                                                        alternativeImage: "phone.fill"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8650-e29b-41d4-a716-446655660107")!,
+                                                        alternativeLabel: "Piano",
+                                                        alternativeSoundName: "piano",
+                                                        alternativeImage: "pianokeys"),
+                                            Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655660108")!,
+                                                        alternativeLabel: "Teclado",
+                                                        alternativeSoundName: "teclado",
+                                                        alternativeImage: "keyboard.fill"),
+                                                                ],
+                                          exerciseAnswer: 2)
+                            
                           ])
-                ]
-               )
+                ])
         
-        // Continue da mesma forma para as seções "URBANO" e "INSTRUMENTOS"
+        
     ], phonemesSection: [Section] = [])
-    
-    
-    
-    
-    
-    
-    
-    
-    //        Section(sectionName: "Natureza",
-    //                sectionDescription: "Desscrição da seção 1",
-    //                sectionPhases: [
-    //                    Phase(phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!, phaseName: "Natureza",
-    //                          phaseLessons: [
-    //                        SoundLesson(lessonName: "Lesson 1", lessonDescription: "Clique nas imagens para descobrir os sons", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva",
-    //                                alternativeImage: "cloud.rain.fill"),
-    //                            Alternative(alternativeLabel: "Trovão", alternativeSoundName: "Trovao",
-    //                                alternativeImage: "cloud.bolt.fill"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento",
-    //                                alternativeImage: "wind"),
-    //                            Alternative(alternativeLabel: "Furacão", alternativeSoundName: "Furacao",
-    //                                alternativeImage: "tornado")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Lesson 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ]),
-    //                    ],
-    //                         phaseExercises: [
-    //                            SoundExercise(exerciseName: "Exercício 1", exerciseDescription: "Faça isso", exerciseType: "soundExercise", exerciseAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ], exerciseAnswer: 1),
-    //                            SoundExercise(exerciseName: "Exercício 2", exerciseDescription: "Faça isso", exerciseType: "soundExercise", exerciseAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ], exerciseAnswer: 1)])
-    //                    ,
-    //                    Phase(phaseId: UUID(uuidString: "6ba7b810-9dad-11d1-80b4-00c04fd430c8")!, phaseName: "Fase 2", phaseLessons: [
-    //                        SoundLesson(lessonName: "Lesson 3", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Lesson 4", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ])
-    //                    ])
-    //                    ,
-    //                    Phase(phaseName: "Fase 3", phaseLessons: [
-    //                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Natureza", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ])
-    //                    ])
-    //
-    //                ]),
-    //        Section(sectionName: "Urbano",
-    //                sectionDescription: "Desscrição da seção 2",
-    //                sectionPhases: [
-    //                    Phase(phaseName: "Fase 1", phaseLessons: [
-    //                        SoundLesson(lessonName: "Urbano", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ]),
-    //                    ])
-    //                    ,
-    //                    Phase(phaseName: "Fase 2", phaseLessons: [
-    //                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ])
-    //                    ])
-    //                    ,
-    //                    Phase(phaseName: "Fase 2", phaseLessons: [
-    //                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ])
-    //                    ])
-    //
-    //                ]),
-    //        Section(sectionName: "Seção 3",
-    //                sectionDescription: "Desscrição da seção 3",
-    //                sectionPhases: [
-    //                    Phase(phaseName: "Fase 1", phaseLessons: [
-    //                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ]),
-    //                    ])
-    //                    ,
-    //                    Phase(phaseName: "Fase 2", phaseLessons: [
-    //                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ])
-    //                    ])
-    //                    ,
-    //                    Phase(phaseName: "Fase 2", phaseLessons: [
-    //                        SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-    //                            Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-    //                            Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-    //                            Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-    //                        ]),
-    //                        SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-    //                            Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-    //                            Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-    //                            Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-    //                            Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-    //                        ])
-    //                    ])
-    //
-    //                ])
-    //
-    //    ], phonemesSection: [Section] = [])
     {
         self.soundsSections = soundsSections
         self.phonemesSection = phonemesSection

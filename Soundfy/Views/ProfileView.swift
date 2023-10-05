@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
     var body: some View {
-        NavigationStack {
-            Text("Profile")
+        ScrollView {
+            
         }
+        .frame(maxWidth: .infinity)
+        .background(Color(red: 195/255, green: 234/255, blue: 1))
     }
 }

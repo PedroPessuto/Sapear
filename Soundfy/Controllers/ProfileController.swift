@@ -6,38 +6,94 @@
 //
 
 import Foundation
-import SwiftUI
 
 class ProfileController: ObservableObject {
-    @Published var actualPhase: Phase
+    @Published var actualPhase: Phase?
     @Published var phasesDone: [UUID]
-    
-    
-    
-    init (actualPhase: Phase = Phase(
-        phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!,
-        phaseName: "Fase 1", phaseLessons: [
-            SoundLesson(
-                lessonName: "Aula 1",
-                lessonDescription: "Descrição da aula 1",
-                lessonType: "soundClass",
-                lessonAlternatives: [
-                    Alternative(alternativeLabel: "Chuva", alternativeSoundName: "Chuva"),
-                    Alternative(alternativeLabel: "Raio", alternativeSoundName: "Raio"),
-                    Alternative(alternativeLabel: "Vento", alternativeSoundName: "Vento"),
-                    Alternative(alternativeLabel: "Explosão", alternativeSoundName: "Explosão")
-                ]),
-            SoundLesson(lessonName: "Aula 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
-                Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
-                Alternative(alternativeLabel: "Raio2", alternativeSoundName: "Raio2"),
-                Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
-                Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
-            ])
-        ]), phasesDone: [UUID] = []) {
-            self.actualPhase = actualPhase
-            self.phasesDone = phasesDone
-            
-            
+    @Published var onPhase: Bool
+    @Published var actualPhaseId: UUID {
+        didSet {
+            saveActualPhaseId()
         }
-}
+    }
+    
+    @Published var soundsExercisesDone: Double {
+        didSet {
+            saveDoubleValue(soundsExercisesDone, forKey: soundsExercisesDoneKey)
+        }
+    }
+    
+    @Published var soundsExercisesRight: Double {
+        didSet {
+            saveDoubleValue(soundsExercisesRight, forKey: soundsExercisesRightKey)
+        }
+    }
+    
+    @Published var phonemeExercisesDone: Double {
+        didSet {
+            saveDoubleValue(phonemeExercisesDone, forKey: phonemeExercisesDoneKey)
+        }
+    }
+    
+    @Published var phonemeExercisesRight: Double {
+        didSet {
+            saveDoubleValue(phonemeExercisesRight, forKey: phonemeExercisesRightKey)
+        }
+    }
+    
+    @Published var wordsExercisesDone: Double {
+        didSet {
+            saveDoubleValue(wordsExercisesDone, forKey: wordsExercisesDoneKey)
+        }
+    }
+    
+    @Published var wordsExercisesRight: Double {
+        didSet {
+            saveDoubleValue(wordsExercisesRight, forKey: wordsExercisesRightKey)
+        }
+    }
+    
+    private let actualPhaseIdKey = "actualPhaseIdKey"
+    private let soundsExercisesDoneKey = "soundsExercisesDoneKey"
+    private let soundsExercisesRightKey = "soundsExercisesRightKey"
+    private let phonemeExercisesDoneKey = "phonemeExercisesDoneKey"
+    private let phonemeExercisesRightKey = "phonemeExercisesRightKey"
+    private let wordsExercisesDoneKey = "wordsExercisesDoneKey"
+    private let wordsExercisesRightKey = "wordsExercisesRightKey"
 
+    init (actualPhase: Phase? = nil, phasesDone: [UUID] = [], onPhase: Bool = false, actualPhaseId: UUID = UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!) {
+
+       
+        self.soundsExercisesDone = UserDefaults.standard.double(forKey: soundsExercisesDoneKey)
+        self.soundsExercisesRight = UserDefaults.standard.double(forKey: soundsExercisesRightKey)
+        self.phonemeExercisesDone = UserDefaults.standard.double(forKey: phonemeExercisesDoneKey)
+        self.phonemeExercisesRight = UserDefaults.standard.double(forKey: phonemeExercisesRightKey)
+        self.wordsExercisesDone = UserDefaults.standard.double(forKey: wordsExercisesDoneKey)
+        self.wordsExercisesRight = UserDefaults.standard.double(forKey: wordsExercisesRightKey)
+        
+        self.actualPhase = actualPhase
+        self.phasesDone = phasesDone
+        self.onPhase = onPhase
+        self.actualPhaseId = actualPhaseId
+        
+        loadActualPhaseId()
+
+    }
+        
+    private func saveActualPhaseId() {
+        let defaults = UserDefaults.standard
+        defaults.setValue(actualPhaseId.uuidString, forKey: actualPhaseIdKey)
+    }
+    
+    private func loadActualPhaseId() {
+        let defaults = UserDefaults.standard
+        if let savedIdString = defaults.string(forKey: actualPhaseIdKey),
+           let savedId = UUID(uuidString: savedIdString) {
+            self.actualPhaseId = savedId
+        }
+    }
+    
+    private func saveDoubleValue(_ value: Double, forKey key: String) {
+        UserDefaults.standard.set(value, forKey: key)
+    }
+}

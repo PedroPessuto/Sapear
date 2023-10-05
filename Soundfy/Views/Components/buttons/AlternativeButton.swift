@@ -14,6 +14,14 @@ struct AlternativeButton: View {
     @State var buttonSecondaryColor: Color = Color(red: 229/255, green: 94/255, blue: 41/255)
     @State var buttonPading: CGFloat = 8
     
+    func getSafeImage(named: String) -> Bool {
+        let uiImage =  (UIImage(named: named) ?? UIImage(named: "Default.png"))!
+        if uiImage == UIImage(named: "Default.png"){
+            return false
+        }
+        return true
+    }
+    
     var body: some View {
         
         VStack {
@@ -21,16 +29,22 @@ struct AlternativeButton: View {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(buttonSecondaryColor)
                     .frame(width: 140, height: 100)
-                    
+                
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(buttonPrimaryColor)
                         .frame(width: 140, height: 100)
-                        
+                    
                     
                     VStack {
-                        Image(systemName: item.alternativeImage)
-                            .font(.title)
+                        if getSafeImage(named: item.alternativeImage){
+                            Image(item.alternativeImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                        }else{
+                            Image(systemName: item.alternativeImage).font(.title)
+                        }
                         Text(item.alternativeLabel)
                     }
                     .foregroundColor(.white)

@@ -37,7 +37,6 @@
 		E5A22C722ACE10B60079C432 /* PhonemeLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A22C712ACE10B60079C432 /* PhonemeLessonView.swift */; };
 		E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* TrailView.swift */; };
 		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
-		E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74462AC2230B00006406 /* PrimaryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +71,6 @@
 		E5A22C712ACE10B60079C432 /* PhonemeLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonemeLessonView.swift; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E5AB74462AC2230B00006406 /* PrimaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +113,9 @@
 		BF3147032AC208EA00CCFEE5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BF947DDB2ACF3EA60048BD67 /* buttons */,
 				BF3147042AC208FA00CCFEE5 /* SectionView.swift */,
 				BF16851D2AC7117100D5D7E3 /* ProgressBar.swift */,
-				E53720D72AC60C1E00579F6C /* AlternativeButton.swift */,
-				BF7646E22AC35841002AD16C /* PhaseButton.swift */,
-				E53720D92AC60D6400579F6C /* PlayButton.swift */,
-				E53720DD2AC74DDE00579F6C /* SoundButton.swift */,
-				BFE802632ACB316800A33A7B /* ExerciseSoundButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -142,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				BF3147012AC1FFD100CCFEE5 /* ContentController.swift */,
-				E5AB74462AC2230B00006406 /* PrimaryController.swift */,
 				BF591E4C2AC4C07300A1F002 /* ProfileController.swift */,
 				BF08A4482ACCC4D000B50DE2 /* ProgressionController.swift */,
 			);
@@ -161,6 +154,18 @@
 				BF3147032AC208EA00CCFEE5 /* Components */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BF947DDB2ACF3EA60048BD67 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E53720D72AC60C1E00579F6C /* AlternativeButton.swift */,
+				BF7646E22AC35841002AD16C /* PhaseButton.swift */,
+				E53720D92AC60D6400579F6C /* PlayButton.swift */,
+				E53720DD2AC74DDE00579F6C /* SoundButton.swift */,
+				BFE802632ACB316800A33A7B /* ExerciseSoundButton.swift */,
+			);
+			path = buttons;
 			sourceTree = "<group>";
 		};
 		BFF815912ABE0D1A00ACF5A7 = {
@@ -287,7 +292,6 @@
 				BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */,
 				BFF815A02ABE0D1A00ACF5A7 /* ContentView.swift in Sources */,
 				BFE802642ACB316800A33A7B /* ExerciseSoundButton.swift in Sources */,
-				E5AB74472AC2230B00006406 /* PrimaryController.swift in Sources */,
 				BF3146F62AC1F37E00CCFEE5 /* Exercise.swift in Sources */,
 				BF08A44C2ACDDEFD00B50DE2 /* ProgressionModel.xcdatamodeld in Sources */,
 				BF3147052AC208FA00CCFEE5 /* SectionView.swift in Sources */,

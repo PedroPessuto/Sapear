@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TrailView: View {
     
-    @EnvironmentObject var primaryController: PrimaryController
     @EnvironmentObject var contentController: ContentController
     
     @EnvironmentObject var profileController: ProfileController
@@ -30,7 +29,7 @@ struct TrailView: View {
                 
             }
         }
-        .fullScreenCover(isPresented: $primaryController.onPhase) {
+        .fullScreenCover(isPresented: $profileController.onPhase) {
             PhaseManagerView()
         }
         .frame(maxWidth: .infinity)

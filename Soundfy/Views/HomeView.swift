@@ -9,11 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject var primaryController: PrimaryController
     @State var screenName: String = "Sons"
     @State var screens = ["Sons",  "Fonemas", "Palavras"]
 
     @EnvironmentObject var profileController: ProfileController
+    @EnvironmentObject var contentController: ContentController
     @FetchRequest(entity: PhaseCoreData.entity(), sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
     @Environment(\.managedObjectContext) var contexto
     @EnvironmentObject var progressionController: ProgressionController
@@ -55,7 +55,17 @@ struct HomeView: View {
         }
         .onAppear {
             let uuids: [UUID] = phasesDone.compactMap { $0.id }
-            profileController.phasesDone = uuids            
+            profileController.phasesDone = uuids
+            
+            outerLoop: for section in contentController.soundsSections {
+                for phase in section.sectionPhases {
+                    if phase.phaseId == profileController.actualPhaseId {
+                        profileController.actualPhase = phase
+                        break outerLoop
+                    }
+                }
+            }
+
         }
     }
 }

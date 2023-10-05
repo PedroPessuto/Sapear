@@ -10,7 +10,6 @@ import SwiftUI
 struct PhaseManagerView: View {
     
     @EnvironmentObject var profileController: ProfileController
-    @EnvironmentObject var primaryController: PrimaryController
     
     @State var progressValue: Float = 0.0
     
@@ -32,7 +31,7 @@ struct PhaseManagerView: View {
             if count != lessonsNumber - 1 {
                 count = count + 1
                 progressValue = progressValue + (1.0 / Float(lessonsNumber + exercisesNumber))
-                lessonType = profileController.actualPhase.phaseLessons[count].lessonType
+                lessonType = profileController.actualPhase!.phaseLessons[count].lessonType
                 
                 if count - 1 == lessonsNumber - 2 {
                     buttonText = "Jogar"
@@ -49,7 +48,7 @@ struct PhaseManagerView: View {
                     actualScreen = "exercise"
                     buttonText = "Próximo"
                     
-                    exerciseType = profileController.actualPhase.phaseExercises[0].exerciseType
+                    exerciseType = profileController.actualPhase!.phaseExercises[0].exerciseType
                     
                 }
                 
@@ -65,7 +64,7 @@ struct PhaseManagerView: View {
             if count != exercisesNumber - 1 {
                 count = count + 1
                 progressValue = progressValue + (1.0 / Float(lessonsNumber + exercisesNumber))
-                exerciseType = profileController.actualPhase.phaseExercises[count].exerciseType
+                exerciseType = profileController.actualPhase!.phaseExercises[count].exerciseType
                 
             }
             else {
@@ -86,13 +85,14 @@ struct PhaseManagerView: View {
                 if (actualScreen == "lesson") {
                     
                     if lessonType == "soundClass" {
-                        SoundLessonView(lesson: profileController.actualPhase.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
+                        SoundLessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
                     }
                 }
                 else if(actualScreen == "exercise") {
                     
                     if exerciseType == "soundExercise" {
-                        SoundExerciseView(exercise: profileController.actualPhase.phaseExercises[count], count: count, changeScreen: changeScreen)
+                       
+                        SoundExerciseView(exercise: profileController.actualPhase!.phaseExercises[count], count: count, changeScreen: changeScreen)
                     }
                 }
                 else {
@@ -105,7 +105,7 @@ struct PhaseManagerView: View {
             .background(Color(red: 195/255, green: 234/255, blue: 1))
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
-                    Button (action: {primaryController.onPhase = false}) {
+                    Button (action: {profileController.onPhase = false}) {
                         Image(systemName: "x.square.fill")
                             .font(.system(size: 24))
                     }
@@ -120,9 +120,9 @@ struct PhaseManagerView: View {
         }
         
         .onAppear {
-            lessonType = profileController.actualPhase.phaseLessons[0].lessonType
-            lessonsNumber = profileController.actualPhase.phaseLessons.count
-            exercisesNumber = profileController.actualPhase.phaseExercises.count
+            lessonType = profileController.actualPhase!.phaseLessons[0].lessonType
+            lessonsNumber = profileController.actualPhase!.phaseLessons.count
+            exercisesNumber = profileController.actualPhase!.phaseExercises.count
         }
         
     }

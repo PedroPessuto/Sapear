@@ -53,11 +53,3 @@ struct PlayButton: View {
     }
 }
 
-struct PlayButton_Previews: PreviewProvider {
-    static var previews: some View {
-        PlayButton(buttonAction: {},buttonText: "Próximo")
-    }
-}
-
-
-
