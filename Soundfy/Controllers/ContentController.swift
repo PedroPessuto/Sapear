@@ -57,9 +57,9 @@ class ContentController: ObservableObject {
                                                         alternativeSoundName: "ChuvaSound",
                                                         alternativeImage: "cloud.rain.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655440011")!,
-                                                        alternativeLabel: "Gato",
-                                                        alternativeSoundName: "GatoSound",
-                                                       alternativeImage: "cat"),
+                                                        alternativeLabel: "Trovão",
+                                                        alternativeSoundName: "TrovãoSound",
+                                                       alternativeImage: "cloud.bolt.rain"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655440012")!,
                                                         alternativeLabel: "Onda",
                                                         alternativeSoundName: "OndaSound",
@@ -69,7 +69,30 @@ class ContentController: ObservableObject {
                                                         alternativeSoundName: "VentoSound",
                                                         alternativeImage: "wind")
                                           ],
-                                          exerciseAnswer: 0)
+                                          exerciseAnswer: 2)
+                            , SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655410009")!,
+                                            exerciseName: "Identifique o som",
+                                            exerciseDescription: "Qual destes é o som da Chuva?",
+                                            exerciseType: "soundExercise",
+                                            exerciseAlternatives: [
+                                              Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655410011")!,
+                                                          alternativeLabel: "Trovão",
+                                                          alternativeSoundName: "TrovãoSound",
+                                                         alternativeImage: "cloud.bolt.rain"),
+                                              Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655410012")!,
+                                                          alternativeLabel: "Onda",
+                                                          alternativeSoundName: "OndaSound",
+                                                          alternativeImage: "water.waves"),
+                                              Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655410010")!,
+                                                          alternativeLabel: "Chuva",
+                                                          alternativeSoundName: "ChuvaSound",
+                                                          alternativeImage: "cloud.rain.fill"),
+                                              Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655410013")!,
+                                                          alternativeLabel: "Vento",
+                                                          alternativeSoundName: "VentoSound",
+                                                          alternativeImage: "wind")
+                                            ],
+                                            exerciseAnswer: 2)
                             //... repita para cada som específico como exercício em "NATUREZA"
                           ]),
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446555440019")!,
