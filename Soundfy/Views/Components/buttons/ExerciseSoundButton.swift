@@ -179,6 +179,7 @@ struct ExerciseSoundButton: View {
             selectedOptionId = item.alternativeId
         }
         .onChange(of: clickedAlternatives, perform: { newValue in
+            
             if clickedAlternatives.contains(item.alternativeId) {
                 if exerciseAnswer == number {
                     isRight = true
@@ -195,6 +196,7 @@ struct ExerciseSoundButton: View {
         
         })
         .onChange(of: selectedOption) { newValue in
+            
             if selectedOption == number {
                 buttonPrimaryColor = Color(red: 242/255, green: 165/255, blue: 132/255)
                 buttonPading = 0
