@@ -92,7 +92,7 @@ struct PhaseManagerView: View {
                     
                     if exerciseType == "soundExercise" {
                        
-                        SoundExerciseView(exercise: profileController.actualPhase.phaseExercises[count], count: count, changeScreen: changeScreen)
+                        SoundExerciseView(exercise: profileController.actualPhase!.phaseExercises[count], count: count, changeScreen: changeScreen)
                     }
                 }
                 else {

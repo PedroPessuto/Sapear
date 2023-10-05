@@ -101,7 +101,7 @@ struct SoundExerciseView: View {
         }
         .onChange(of: count, perform: { newValue in
 
-            if let soundExercise = profileController.actualPhase.phaseExercises[count+1] as? SoundExercise {
+            if let soundExercise = profileController.actualPhase!.phaseExercises[count+1] as? SoundExercise {
                 exerciseAwnser = soundExercise.exerciseAnswer
             }
 
