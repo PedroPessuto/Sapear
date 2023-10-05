@@ -11,7 +11,7 @@ import SwiftUI
 class ContentController: ObservableObject {
     
     var soundsSections: [Section]
-    var fonemasSection: [Section]
+    var phonemesSection: [Section]
     
     init(soundsSections: [Section] = [
         Section(sectionName: "Natureza",
@@ -179,9 +179,10 @@ class ContentController: ObservableObject {
                     ])
                     
                 ])
-    ])
+    ], phonemesSection: [Section] = [])
     {
         self.soundsSections = soundsSections
+        self.phonemesSection = phonemesSection
     }
     
 }
