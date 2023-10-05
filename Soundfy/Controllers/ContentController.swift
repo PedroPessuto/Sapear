@@ -567,7 +567,7 @@ class ContentController: ObservableObject {
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
                                           exerciseAlternatives: [//campainha
-                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446655450034")!,
+                                            Alternative(alternativeId: UUID(uuidString: "550e8620-e29b-41d4-a716-446651450034")!,
                                                         alternativeLabel: "Galinha",
                                                         alternativeSoundName: "galinha",
                                                         alternativeImage: "chicken"),
@@ -590,7 +590,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440100")!,
                           phaseName: "Urbano",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440100")!,
+                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540100")!,
                                         lessonName: "Sons Urbanos 3",
                                         lessonDescription: "Aprenda ainda mais sons Urbanos.",
                                         lessonType: "soundClass",
@@ -607,7 +607,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440105")!,
+                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446659440105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -793,7 +793,7 @@ class ContentController: ObservableObject {
                                                         alternativeSoundName: "teclado",
                                                         alternativeImage: "keyboard.fill"),
                                                                 ],
-                                          exerciseAnswer: 3)
+                                          exerciseAnswer: 2)
                             
                           ])
                 ])
