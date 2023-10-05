@@ -73,7 +73,7 @@ struct SoundExerciseView: View {
                 SoundButton(buttonAction: {})
                 
                 LazyVGrid(columns: columns, spacing: 20) {
-                    if let soundExercise = profileController.actualPhase.phaseExercises[count] as? SoundExercise {
+                    if let soundExercise = profileController.actualPhase!.phaseExercises[count] as? SoundExercise {
                         ForEach(soundExercise.exerciseAlternatives.indices, id: \.self) { item in
                             ExerciseSoundButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item, selectedOption: $selectedOption, selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives)
                         }
@@ -91,7 +91,7 @@ struct SoundExerciseView: View {
             PlayButton(buttonAction: {handleNextScreen()}, buttonText: buttonText)
         }
         .onAppear {
-            if let soundExercise = profileController.actualPhase.phaseExercises[count] as? SoundExercise {
+            if let soundExercise = profileController.actualPhase!.phaseExercises[count] as? SoundExercise {
                 exerciseAwnser = soundExercise.exerciseAnswer
             }
         }
