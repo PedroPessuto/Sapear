@@ -46,7 +46,7 @@ struct FineshedView: View {
             PlayButton(buttonAction: {
                 changeScreen()
                 progressionController.addPhaseDone(id: profileController.actualPhase.phaseId , context: managedObjContext)
-                 profileController.phasesDone.append(profileController.actualPhase.phaseId)
+                profileController.phasesDone.append(profileController.actualPhase.phaseId)
                 primaryController.onPhase = false
             }, buttonText: "Concluir")
         }

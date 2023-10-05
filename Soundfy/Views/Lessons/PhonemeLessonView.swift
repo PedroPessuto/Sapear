@@ -1,5 +1,5 @@
 //
-//  FonemaLessonView.swift
+//  PhonemeLessonView.swift
 //  Soundfy
 //
 //  Created by Rafael Carreira on 03/10/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FonemaLessonView: View {
+struct PhonemeLessonView: View {
     
     @EnvironmentObject var profileController: ProfileController
     let columns = [GridItem(.flexible()), GridItem(.flexible())]

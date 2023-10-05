@@ -11,11 +11,11 @@ import SwiftUI
 class ContentController: ObservableObject {
     
     var soundsSections: [Section]
+    var fonemasSection: [Section]
     
     init(soundsSections: [Section] = [
         Section(sectionName: "Natureza",
                 sectionDescription: "Desscrição da seção 1",
-                sectionColor: Color(UIColor.systemBlue),
                 sectionPhases: [
                     Phase(phaseId: UUID(uuidString: "550e8400-e29b-41d4-a716-446655440000")!, phaseName: "Natureza",
                           phaseLessons: [
@@ -28,7 +28,6 @@ class ContentController: ObservableObject {
                                 alternativeImage: "wind"),
                             Alternative(alternativeLabel: "Furacão", alternativeSoundName: "Furacao",
                                 alternativeImage: "tornado")
-                            
                         ]),
                         SoundLesson(lessonName: "Lesson 2", lessonDescription: "Descrição da aula 2", lessonType: "soundClass", lessonAlternatives: [
                             Alternative(alternativeLabel: "Chuva2", alternativeSoundName: "Chuva2"),
@@ -36,7 +35,6 @@ class ContentController: ObservableObject {
                             Alternative(alternativeLabel: "Vento2", alternativeSoundName: "Vento2"),
                             Alternative(alternativeLabel: "Explosão2", alternativeSoundName: "Explosão2")
                         ]),
-                        
                     ],
                          phaseExercises: [
                             SoundExercise(exerciseName: "Exercício 1", exerciseDescription: "Faça isso", exerciseType: "soundExercise", exerciseAlternatives: [
@@ -134,7 +132,6 @@ class ContentController: ObservableObject {
                 ]),
         Section(sectionName: "Seção 3",
                 sectionDescription: "Desscrição da seção 3",
-                sectionColor: Color(UIColor.systemPurple),
                 sectionPhases: [
                     Phase(phaseName: "Fase 1", phaseLessons: [
                         SoundLesson(lessonName: "Aula 1", lessonDescription: "Descrição da aula 1", lessonType: "soundClass", lessonAlternatives: [
