@@ -29,7 +29,10 @@ struct TrailView: View {
                 }
             }
             else if screenName == "Palavras" {
-                
+                ForEach(contentController.wordsSection.indices, id: \.self) {
+                    index in
+                    SectionView(section: $contentController.wordsSection[index])
+                }
             }
         }
         .fullScreenCover(isPresented: $profileController.onPhase) {
