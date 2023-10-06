@@ -149,6 +149,7 @@
 		E5C72DF82ACF8F43005A8137 /* biquini.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D882ACF8F43005A8137 /* biquini.mp3 */; };
 		E5C72DF92ACF8F43005A8137 /* lago.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D892ACF8F43005A8137 /* lago.mp3 */; };
 		E5C72DFA2ACF8F43005A8137 /* ovelha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D8A2ACF8F43005A8137 /* ovelha.mp3 */; };
+		E5C72DFC2AD0836F005A8137 /* teclado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72DFB2AD0836F005A8137 /* teclado.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -295,6 +296,7 @@
 		E5C72D882ACF8F43005A8137 /* biquini.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biquini.mp3; sourceTree = "<group>"; };
 		E5C72D892ACF8F43005A8137 /* lago.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lago.mp3; sourceTree = "<group>"; };
 		E5C72D8A2ACF8F43005A8137 /* ovelha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ovelha.mp3; sourceTree = "<group>"; };
+		E5C72DFB2AD0836F005A8137 /* teclado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teclado.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -446,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				E5C72D232ACF8F3F005A8137 /* a.mp3 */,
+				E5C72DFB2AD0836F005A8137 /* teclado.mp3 */,
 				E5C72D442ACF8F40005A8137 /* abajur.mp3 */,
 				E5C72D322ACF8F40005A8137 /* alarme.mp3 */,
 				E5C72D2E2ACF8F40005A8137 /* algodao- doce.mp3 */,
@@ -708,6 +711,7 @@
 				E5C72DB52ACF8F43005A8137 /* t.mp3 in Resources */,
 				E5C72DEC2ACF8F43005A8137 /* cesta.mp3 in Resources */,
 				E5C72D992ACF8F43005A8137 /* sabonete.mp3 in Resources */,
+				E5C72DFC2AD0836F005A8137 /* teclado.mp3 in Resources */,
 				E5C72DE12ACF8F43005A8137 /* piquenique.mp3 in Resources */,
 				E5C72DA22ACF8F43005A8137 /* alarme.mp3 in Resources */,
 				E5C72DFA2ACF8F43005A8137 /* ovelha.mp3 in Resources */,

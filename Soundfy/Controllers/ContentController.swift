@@ -1500,13 +1500,13 @@ class ContentController: ObservableObject {
                 ])
         
         
-    ], wordSection: [Section] = [
+    ], wordsSection: [Section] = [
         
     ])
     {
         self.soundsSections = soundsSections
         self.phonemesSection = phonemesSection
-        self.wordsSection = wordSection
+        self.wordsSection = wordsSection
     }
     
 }

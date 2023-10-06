@@ -46,7 +46,7 @@ struct SoundExerciseView: View {
     @State var contador = 0
     @State var palavraescrita: String = "A"
     var palavraindex: [Int] = []
-    @State var imageSwitchTimer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    @State var imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
     
     var transition: AnyTransition {
         switch index {
@@ -196,47 +196,52 @@ struct SoundExerciseView: View {
                     SoundButton(buttonAction: {playSound(Nome: getSound())})
                 }else {
                     ZStack{
-                        Image("Sapo")
+                        Image("SapoExercise")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 130, height: 250)
-                            
+                        
                         if isTalking {
-                            
-                            Image(bocas[palavra(letras: palavraescrita)[index]])
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .scaledToFit()
-                                .padding(.top)
-                                .frame(width: 100, height: 60)
-                                .transition(transition) // use here
-                                .onReceive(imageSwitchTimer) { _ in
-                                    let aux = self.palavra(letras: palavraescrita).count
-                                    
-                                    self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
-                                    
-                                    contador += 1
-                                    
-                                    if contador == aux {
-                                        self.imageSwitchTimer.upstream.connect().cancel()
-                                        isTalking.toggle()
+                            VStack{
+                                Image(bocas[palavra(letras: palavraescrita)[index]])
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 20)
+                                    .transition(transition) // use here
+                                    .onReceive(imageSwitchTimer) { _ in
+                                        let aux = self.palavra(letras: palavraescrita).count
+                                        
+                                        self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
+                                        print(self.index)
+                                        print(self.palavra(letras: palavraescrita).count)
+                                        contador += 1
+                                        
+                                        if contador == aux {
+                                            self.imageSwitchTimer.upstream.connect().cancel()
+                                            isTalking.toggle()
+                                        }
                                     }
-                                }
+                            }
                         }
                         else{
-                            Image("AHK")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .scaledToFit()
-                                .transition(transition)
-                                .frame(width: 100, height: 60)
-                            
-                            
+                            VStack{
+                                Image("BMP")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .scaledToFit()
+                                    .transition(transition)
+                                    .frame(width: 60, height: 20)
+                                
+                            }
                         }
                     }
                     .onTapGesture {
-                        palavra(letras: getSound())
                         playSound(Nome: getSound())
+                        palavraescrita = getSound()
+                        isTalking.toggle()
+                        contador = 0
+                        imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
                     }
                 }
                 
@@ -245,7 +250,7 @@ struct SoundExerciseView: View {
                         ForEach(soundExercise.exerciseAlternatives.indices, id: \.self) { item in
                             ExerciseSoundButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item, buttonAction: {playSound(Nome: soundExercise.exerciseAlternatives[item].alternativeSoundName)}, selectedOption: $selectedOption, selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives)
                             
-                                
+                            
                         }
                     }
                 }

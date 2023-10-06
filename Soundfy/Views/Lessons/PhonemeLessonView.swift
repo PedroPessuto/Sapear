@@ -49,9 +49,9 @@ struct PhonemeLessonView: View {
     @State var index: Int = 0
     @State var isTalking: Bool = true
     @State var contador = 0
-    @State var palavraescrita: String = "A"
+    @State var palavraescrita: String = "FV"
     var palavraindex: [Int] = []
-    @State var imageSwitchTimer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
+    @State var imageSwitchTimer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
     
     var transition: AnyTransition {
         switch index {
@@ -64,7 +64,7 @@ struct PhonemeLessonView: View {
     
     func palavra(letras: String) -> [Int]{
         var aux: [String] = []
-        aux = letras.map({ letter in String(letter) })
+        aux = letras.uppercased().map({ letter in String(letter) })
         var lista: [Int] = []
         for i in aux{
             switch i{
@@ -135,28 +135,30 @@ struct PhonemeLessonView: View {
             // ===== BODY =====
             Spacer()
             VStack (spacing: 20) {
-                Text("Fonema")
+                Text(lesson.lessonName)
                     .font(Font.custom("Quicksand-Bold", size: 40, relativeTo: .largeTitle))
                     .bold()
                 
-                Text("Clique nas vogais para descobrir as pronúncias")
+                Text(lesson.lessonDescription)
                     .font(.title2)
                     .fontWeight(.medium)
                     .padding(.horizontal)
                 
                 
                 ZStack{
-                    Image("Sapo")
+                    Image("SapoLesson")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 130, height: 250)
+                        .padding(.trailing, 15)
                     if isTalking {
                         
                         Image(bocas[palavra(letras: palavraescrita)[index]])
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .scaledToFit()
-                            .frame(width: 100, height: 60)
+                            .frame(width: 60, height: 20)
+                            .padding(.trailing,10)
                             .transition(transition) // use here
                             .onReceive(imageSwitchTimer) { _ in
                                 let aux = self.palavra(letras: palavraescrita).count
@@ -172,12 +174,12 @@ struct PhonemeLessonView: View {
                             }
                     }
                     else{
-                        Image("AHK")
+                        Image("BMP")
                             .resizable()
                             .scaledToFit()
                             .transition(transition)
-                            .frame(width: 100, height: 60)
-                        
+                            .frame(width: 60, height: 20)
+                            .padding(.trailing,10)
                         
                     }
                 }
@@ -187,13 +189,12 @@ struct PhonemeLessonView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     if let soundLesson = profileController.actualPhase!.phaseLessons[count] as? SoundLesson {
                         ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
-                            AlternativeButton(item: item, buttonAction: {playSound(Nome: item.alternativeSoundName)})
-                                .onTapGesture{
-                                    palavraescrita = item.alternativeLabel
-                                    isTalking.toggle()
-                                    imageSwitchTimer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
-                                    contador = 0
-                                }
+                            AlternativeButton(item: item, buttonAction: {playSound(Nome: item.alternativeSoundName)
+                                                                                   palavraescrita = item.alternativeLabel
+                                                                                   isTalking.toggle()
+                                                                                   contador = 0
+                                                                                   imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+                            })
                         }
                     }
                 }
