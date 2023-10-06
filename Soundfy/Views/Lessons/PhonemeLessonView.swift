@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct PhonemeLessonView: View {
     
@@ -15,6 +16,20 @@ struct PhonemeLessonView: View {
     var changeScreen: () -> Void
     var count: Int
     @Binding var buttonText: String
+    
+    func playSound(Nome: String){
+        let url = Bundle.main.url(forResource: Nome, withExtension: "mp3")
+        guard url != nil else{
+            return
+        }
+        do{
+            player = try AVAudioPlayer(contentsOf: url!)
+            player?.play()
+        }catch{
+            print("\(error)")
+        }
+    }
+    
     let bocas: [String] = [
         "AHK", //0
         "BMP", //1
@@ -34,9 +49,9 @@ struct PhonemeLessonView: View {
     @State var index: Int = 0
     @State var isTalking: Bool = true
     @State var contador = 0
-    @State var palavraescrita: String = "BOBOCA"
+    @State var palavraescrita: String = "BMP"
     var palavraindex: [Int] = []
-    @State var imageSwitchTimer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
+    @State var imageSwitchTimer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
     
     var transition: AnyTransition {
         switch index {
@@ -49,7 +64,7 @@ struct PhonemeLessonView: View {
     
     func palavra(letras: String) -> [Int]{
         var aux: [String] = []
-        aux = letras.map({ letter in String(letter) })
+        aux = letras.uppercased().map({ letter in String(letter) })
         var lista: [Int] = []
         for i in aux{
             switch i{
@@ -120,49 +135,65 @@ struct PhonemeLessonView: View {
             // ===== BODY =====
             Spacer()
             VStack (spacing: 20) {
-                Text("Fonema")
+                Text(lesson.lessonName)
                     .font(Font.custom("Quicksand-Bold", size: 40, relativeTo: .largeTitle))
                     .bold()
                 
-                Text("Clique nas vogais para descobrir as pronúncias")
+                Text(lesson.lessonDescription)
                     .font(.title2)
                     .fontWeight(.medium)
                     .padding(.horizontal)
                 
                 
                 ZStack{
+                    Image("SapoLesson")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130, height: 250)
+                        .padding(.trailing, 15)
                     if isTalking {
                         
-                        Image("Sapo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 250, height: 370)
                         Image(bocas[palavra(letras: palavraescrita)[index]])
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .scaledToFit()
-                            .frame(width: 100, height: 60)
-                            .padding(.bottom)
+                            .frame(width: 60, height: 20)
+                            .padding(.trailing,10)
                             .transition(transition) // use here
                             .onReceive(imageSwitchTimer) { _ in
-                                let aux = self.palavra(letras: palavraescrita).count
                                 
-                                self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
+                                
+                                let aux = self.palavra(letras: palavraescrita).count
+                               
+                                
+                                self.index = (self.index + 1) % aux
                                 
                                 contador += 1
                                 
                                 if contador == aux {
                                     self.imageSwitchTimer.upstream.connect().cancel()
                                     isTalking.toggle()
+                                  
                                 }
+//                                let aux = self.palavra(letras: palavraescrita).count
+//
+//                                self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
+//
+//                                contador += 1
+//
+//                                if contador == aux {
+//                                    self.imageSwitchTimer.upstream.connect().cancel()
+//                                    isTalking.toggle()
+//                                }
                             }
                     }
                     else{
-                        Image("AHK")
+                        Image("BMP")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 100, height: 60)
-                        
+                            .transition(transition)
+                            .frame(width: 60, height: 20)
+                            .padding(.trailing,10)
                         
                     }
                 }
@@ -172,13 +203,14 @@ struct PhonemeLessonView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     if let soundLesson = profileController.actualPhase!.phaseLessons[count] as? SoundLesson {
                         ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
-                            AlternativeButton(item: item)
-                                .onTapGesture{
-                                    palavraescrita = item.alternativeLabel
-                                    isTalking.toggle()
-                                    imageSwitchTimer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
-                                    contador = 0
-                                }
+                            AlternativeButton(item: item, buttonAction: {
+                                playSound(Nome: item.alternativeSoundName)
+                                palavraescrita = item.alternativeLabel
+                                isTalking.toggle()
+                                contador = 0
+                                index = 0
+                                imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+                            })
                         }
                     }
                 }

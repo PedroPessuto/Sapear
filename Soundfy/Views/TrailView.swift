@@ -23,10 +23,16 @@ struct TrailView: View {
                 }
             }
             else if screenName == "Fonemas" {
-                
+                ForEach(contentController.phonemesSection.indices, id: \.self) {
+                    index in
+                    SectionView(section: $contentController.phonemesSection[index])
+                }
             }
             else if screenName == "Palavras" {
-                
+                ForEach(contentController.wordsSection.indices, id: \.self) {
+                    index in
+                    SectionView(section: $contentController.wordsSection[index])
+                }
             }
         }
         .fullScreenCover(isPresented: $profileController.onPhase) {
