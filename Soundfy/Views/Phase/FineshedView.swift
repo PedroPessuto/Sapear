@@ -27,6 +27,9 @@ struct FineshedView: View {
                     .bold()
                 
                 Image("frog_fineshed")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 180, height: 180)
                 
                 Text("Parabéns!")
                     .font(.title)

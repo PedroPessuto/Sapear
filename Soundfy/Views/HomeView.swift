@@ -17,6 +17,7 @@ struct HomeView: View {
     @FetchRequest(entity: PhaseCoreData.entity(), sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
     @Environment(\.managedObjectContext) var contexto
     @EnvironmentObject var progressionController: ProgressionController
+    @State var onProfile: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -47,10 +48,15 @@ struct HomeView: View {
 //            .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Image(systemName: "chart.bar.xaxis")
-                        .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
-                        .font(.system(size: 25))
+                    Button (action: {onProfile.toggle()}) {
+                        Image(systemName: "chart.bar.xaxis")
+                            .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
+                            .font(.system(size: 25))
+                    }
                 }
+            }
+            .fullScreenCover(isPresented: $onProfile) {
+                ProfileView(onProfile: $onProfile)
             }
         }
         .onAppear {
