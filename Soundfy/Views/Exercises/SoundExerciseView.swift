@@ -58,7 +58,7 @@ struct SoundExerciseView: View {
     }
     func palavra(letras: String) -> [Int]{
         var aux: [String] = []
-        aux = letras.map({ letter in String(letter) })
+        aux = letras.uppercased().map({ letter in String(letter) })
         var lista: [Int] = []
         for i in aux{
             switch i{
@@ -214,7 +214,7 @@ struct SoundExerciseView: View {
                                         
                                         self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
                                         print(self.index)
-                                        print(self.palavra(letras: palavraescrita).count)
+                                        print(palavraescrita)
                                         contador += 1
                                         
                                         if contador == aux {
@@ -241,6 +241,7 @@ struct SoundExerciseView: View {
                         palavraescrita = getSound()
                         isTalking.toggle()
                         contador = 0
+                        index = 0
                         imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
                     }
                 }

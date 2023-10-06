@@ -49,7 +49,7 @@ struct PhonemeLessonView: View {
     @State var index: Int = 0
     @State var isTalking: Bool = true
     @State var contador = 0
-    @State var palavraescrita: String = "FV"
+    @State var palavraescrita: String = "BMP"
     var palavraindex: [Int] = []
     @State var imageSwitchTimer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
     
@@ -161,16 +161,30 @@ struct PhonemeLessonView: View {
                             .padding(.trailing,10)
                             .transition(transition) // use here
                             .onReceive(imageSwitchTimer) { _ in
-                                let aux = self.palavra(letras: palavraescrita).count
                                 
-                                self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
+                                
+                                let aux = self.palavra(letras: palavraescrita).count
+                               
+                                
+                                self.index = (self.index + 1) % aux
                                 
                                 contador += 1
                                 
                                 if contador == aux {
                                     self.imageSwitchTimer.upstream.connect().cancel()
                                     isTalking.toggle()
+                                  
                                 }
+//                                let aux = self.palavra(letras: palavraescrita).count
+//
+//                                self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
+//
+//                                contador += 1
+//
+//                                if contador == aux {
+//                                    self.imageSwitchTimer.upstream.connect().cancel()
+//                                    isTalking.toggle()
+//                                }
                             }
                     }
                     else{
@@ -189,11 +203,13 @@ struct PhonemeLessonView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     if let soundLesson = profileController.actualPhase!.phaseLessons[count] as? SoundLesson {
                         ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
-                            AlternativeButton(item: item, buttonAction: {playSound(Nome: item.alternativeSoundName)
-                                                                                   palavraescrita = item.alternativeLabel
-                                                                                   isTalking.toggle()
-                                                                                   contador = 0
-                                                                                   imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+                            AlternativeButton(item: item, buttonAction: {
+                                playSound(Nome: item.alternativeSoundName)
+                                palavraescrita = item.alternativeLabel
+                                isTalking.toggle()
+                                contador = 0
+                                index = 0
+                                imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
                             })
                         }
                     }
