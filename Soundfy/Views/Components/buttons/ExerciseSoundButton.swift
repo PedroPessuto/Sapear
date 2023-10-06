@@ -11,7 +11,7 @@ struct ExerciseSoundButton: View {
     var item: Alternative
     var exerciseAnswer: Int
     var number: Int
-    
+    var buttonAction: () -> Void
     @State var isWrong: Bool = false
     @State var isRight: Bool = false
     @Binding var selectedOption: Int
@@ -177,6 +177,7 @@ struct ExerciseSoundButton: View {
         .onTapGesture {
             selectedOption = number
             selectedOptionId = item.alternativeId
+            buttonAction()
         }
         .onChange(of: clickedAlternatives, perform: { newValue in
             

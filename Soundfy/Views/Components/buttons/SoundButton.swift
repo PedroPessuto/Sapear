@@ -14,6 +14,8 @@ struct SoundButton: View {
     @State var buttonPrimaryColor: Color = Color(red: 56/255, green: 128/255, blue: 147/255)
     @State var buttonSecondaryColor: Color = Color(red: 34/255, green: 100/255, blue: 117/255)
     
+    
+    
     var body: some View {
         
         VStack{
@@ -34,6 +36,7 @@ struct SoundButton: View {
         }
         .frame(height: 130)
         .cornerRadius(100)
+        
         .onLongPressGesture(minimumDuration: .infinity, maximumDistance: .infinity, pressing: { pressing in
             if pressing {
                 buttonPrimaryColor = Color(red: 109/255, green: 172/255, blue: 189/255)

@@ -87,11 +87,16 @@ struct PhaseManagerView: View {
                     if lessonType == "soundClass" {
                         SoundLessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
                     }
+                    else if lessonType == "phonemeClass" {
+                        PhonemeLessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
+                    }
                 }
                 else if(actualScreen == "exercise") {
                     
                     if exerciseType == "soundExercise" {
                        
+                        SoundExerciseView(exercise: profileController.actualPhase!.phaseExercises[count], count: count, changeScreen: changeScreen)
+                    }else if exerciseType == "phonemeExercise"{
                         SoundExerciseView(exercise: profileController.actualPhase!.phaseExercises[count], count: count, changeScreen: changeScreen)
                     }
                 }

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AVFoundation
+
 
 struct SoundExerciseView: View {
     
@@ -23,9 +25,30 @@ struct SoundExerciseView: View {
     @State var clickedAlternatives: [UUID] = []
     @State var selectedOptionId: UUID = UUID()
     
+    func playSound(Nome: String){
+        let url = Bundle.main.url(forResource: Nome, withExtension: "mp3")
+        guard url != nil else{
+            return
+        }
+        do{
+            player = try AVAudioPlayer(contentsOf: url!)
+            player?.play()
+        }catch{
+            print("\(error)")
+        }
+    }
+    
+    func getSound() -> String{
+        if let soundExercise = profileController.actualPhase!.phaseExercises[count] as? SoundExercise {
+            return ExerciseSoundButton(item: soundExercise.exerciseAlternatives[soundExercise.exerciseAnswer], exerciseAnswer: soundExercise.exerciseAnswer, number: soundExercise.exerciseAnswer, buttonAction: {}, selectedOption: $selectedOption,selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives).item.alternativeSoundName
+        }
+        return ""
+        
+    }
+    
     func handleNextScreen() {
         // Funcionamento de próxima tela
-    
+        
         
         // Se já acertou prox tela
         if gotRight {
@@ -36,8 +59,6 @@ struct SoundExerciseView: View {
             waringText = ""
             clickedAlternatives = []
             selectedOptionId = UUID()
-            
-            
         }
         
         // Verifica se acertou
@@ -67,19 +88,21 @@ struct SoundExerciseView: View {
             Spacer()
             VStack (spacing: 20) {
                 Text(exercise.exerciseName)
-                    .font(Font.custom("Quicksand-Bold", size: 40,relativeTo: .largeTitle))
+                    .font(Font.custom("Quicksand-Bold", size: 38,relativeTo: .largeTitle))
                     .bold()
                 
                 Text(exercise.exerciseDescription)
                     .font(.title2)
                     .fontWeight(.medium)
                 
-                SoundButton(buttonAction: {})
-               
+                SoundButton(buttonAction: {playSound(Nome: getSound())})
+                
                 LazyVGrid(columns: columns, spacing: 20) {
                     if let soundExercise = profileController.actualPhase!.phaseExercises[count] as? SoundExercise {
                         ForEach(soundExercise.exerciseAlternatives.indices, id: \.self) { item in
-                            ExerciseSoundButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item, selectedOption: $selectedOption, selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives)
+                            ExerciseSoundButton(item: soundExercise.exerciseAlternatives[item], exerciseAnswer: soundExercise.exerciseAnswer, number: item, buttonAction: {playSound(Nome: soundExercise.exerciseAlternatives[item].alternativeSoundName)}, selectedOption: $selectedOption, selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives)
+                            
+                                
                         }
                     }
                 }
@@ -100,13 +123,10 @@ struct SoundExerciseView: View {
             }
         }
         .onChange(of: count, perform: { newValue in
-
             if let soundExercise = profileController.actualPhase!.phaseExercises[count+1] as? SoundExercise {
                 exerciseAwnser = soundExercise.exerciseAnswer
             }
-
         })
-        
         .padding(.horizontal, 30)
         .multilineTextAlignment(.center)
         .foregroundColor(Color(red: 56/255, green: 128/255, blue: 200/255))
