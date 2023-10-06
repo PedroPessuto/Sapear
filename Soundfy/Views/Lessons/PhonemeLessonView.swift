@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct PhonemeLessonView: View {
     
@@ -15,6 +16,20 @@ struct PhonemeLessonView: View {
     var changeScreen: () -> Void
     var count: Int
     @Binding var buttonText: String
+    
+    func playSound(Nome: String){
+        let url = Bundle.main.url(forResource: Nome, withExtension: "mp3")
+        guard url != nil else{
+            return
+        }
+        do{
+            player = try AVAudioPlayer(contentsOf: url!)
+            player?.play()
+        }catch{
+            print("\(error)")
+        }
+    }
+    
     let bocas: [String] = [
         "AHK", //0
         "BMP", //1
@@ -172,7 +187,7 @@ struct PhonemeLessonView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     if let soundLesson = profileController.actualPhase!.phaseLessons[count] as? SoundLesson {
                         ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
-                            AlternativeButton(item: item)
+                            AlternativeButton(item: item, buttonAction: {playSound(Nome: item.alternativeSoundName)})
                                 .onTapGesture{
                                     palavraescrita = item.alternativeLabel
                                     isTalking.toggle()

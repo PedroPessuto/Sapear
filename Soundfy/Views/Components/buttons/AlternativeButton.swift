@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AlternativeButton: View {
     var item: Alternative
-    
+    var buttonAction: () -> Void
     @State var buttonPrimaryColor: Color = Color(red: 238/255, green: 128/255, blue: 81/255)
     @State var buttonSecondaryColor: Color = Color(red: 229/255, green: 94/255, blue: 41/255)
     @State var buttonPading: CGFloat = 8
@@ -62,6 +62,7 @@ struct AlternativeButton: View {
             } else {
                 buttonPrimaryColor = Color(red: 238/255, green: 128/255, blue: 81/255)
                 buttonPading = 8
+                buttonAction()
                 
             }
         }, perform: { })
