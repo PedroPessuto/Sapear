@@ -49,7 +49,7 @@ struct PhonemeLessonView: View {
     @State var index: Int = 0
     @State var isTalking: Bool = true
     @State var contador = 0
-    @State var palavraescrita: String = "BOBOCA"
+    @State var palavraescrita: String = "A"
     var palavraindex: [Int] = []
     @State var imageSwitchTimer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
     
@@ -146,18 +146,17 @@ struct PhonemeLessonView: View {
                 
                 
                 ZStack{
+                    Image("Sapo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130, height: 250)
                     if isTalking {
                         
-                        Image("Sapo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 250, height: 370)
                         Image(bocas[palavra(letras: palavraescrita)[index]])
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .scaledToFit()
                             .frame(width: 100, height: 60)
-                            .padding(.bottom)
                             .transition(transition) // use here
                             .onReceive(imageSwitchTimer) { _ in
                                 let aux = self.palavra(letras: palavraescrita).count
@@ -176,6 +175,7 @@ struct PhonemeLessonView: View {
                         Image("AHK")
                             .resizable()
                             .scaledToFit()
+                            .transition(transition)
                             .frame(width: 100, height: 60)
                         
                         

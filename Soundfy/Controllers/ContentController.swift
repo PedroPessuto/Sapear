@@ -12,6 +12,7 @@ class ContentController: ObservableObject {
     
     var soundsSections: [Section]
     var phonemesSection: [Section]
+    var wordsSection: [Section]
     
     init(soundsSections: [Section] = [
         // Seção NATUREZA
@@ -1499,10 +1500,13 @@ class ContentController: ObservableObject {
                 ])
         
         
+    ], wordSection: [Section] = [
+        
     ])
     {
         self.soundsSections = soundsSections
         self.phonemesSection = phonemesSection
+        self.wordsSection = wordSection
     }
     
 }
