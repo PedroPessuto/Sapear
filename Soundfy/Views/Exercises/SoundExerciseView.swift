@@ -44,9 +44,9 @@ struct SoundExerciseView: View {
     @State var index: Int = 0
     @State var isTalking: Bool = true
     @State var contador = 0
-    @State var palavraescrita: String = "A"
+    @State var palavraescrita: String = "B"
     var palavraindex: [Int] = []
-    @State var imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    @State var imageSwitchTimer = Timer.publish(every: 0.3, on: .main, in: .common).autoconnect()
     
     var transition: AnyTransition {
         switch index {
@@ -187,11 +187,13 @@ struct SoundExerciseView: View {
             VStack (spacing: 20) {
                 Text(exercise.exerciseName)
                     .font(Font.custom("Quicksand-Bold", size: 38,relativeTo: .largeTitle))
+                    .multilineTextAlignment(.center)
                     .bold()
                 
                 Text(exercise.exerciseDescription)
                     .font(.title2)
                     .fontWeight(.medium)
+                    .multilineTextAlignment(.center)
                 if exercise.exerciseType == "soundExercise" {
                     SoundButton(buttonAction: {playSound(Nome: getSound())})
                 }else {

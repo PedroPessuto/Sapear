@@ -99,7 +99,7 @@
 		E5C72DC62ACF8F43005A8137 /* mar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D562ACF8F41005A8137 /* mar.mp3 */; };
 		E5C72DC72ACF8F43005A8137 /* onda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D572ACF8F41005A8137 /* onda.mp3 */; };
 		E5C72DC82ACF8F43005A8137 /* aviao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D582ACF8F41005A8137 /* aviao.mp3 */; };
-		E5C72DC92ACF8F43005A8137 /* Z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D592ACF8F41005A8137 /* Z.mp3 */; };
+		E5C72DC92ACF8F43005A8137 /* z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D592ACF8F41005A8137 /* z.mp3 */; };
 		E5C72DCA2ACF8F43005A8137 /* x.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5A2ACF8F41005A8137 /* x.mp3 */; };
 		E5C72DCB2ACF8F43005A8137 /* j.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5B2ACF8F41005A8137 /* j.mp3 */; };
 		E5C72DCC2ACF8F43005A8137 /* biblia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5C2ACF8F41005A8137 /* biblia.mp3 */; };
@@ -246,7 +246,7 @@
 		E5C72D562ACF8F41005A8137 /* mar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mar.mp3; sourceTree = "<group>"; };
 		E5C72D572ACF8F41005A8137 /* onda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onda.mp3; sourceTree = "<group>"; };
 		E5C72D582ACF8F41005A8137 /* aviao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aviao.mp3; sourceTree = "<group>"; };
-		E5C72D592ACF8F41005A8137 /* Z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Z.mp3; sourceTree = "<group>"; };
+		E5C72D592ACF8F41005A8137 /* z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = z.mp3; sourceTree = "<group>"; };
 		E5C72D5A2ACF8F41005A8137 /* x.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = x.mp3; sourceTree = "<group>"; };
 		E5C72D5B2ACF8F41005A8137 /* j.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = j.mp3; sourceTree = "<group>"; };
 		E5C72D5C2ACF8F41005A8137 /* biblia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biblia.mp3; sourceTree = "<group>"; };
@@ -559,7 +559,7 @@
 				E5C72D3A2ACF8F40005A8137 /* vento.mp3 */,
 				E5C72D772ACF8F42005A8137 /* volei.mp3 */,
 				E5C72D5A2ACF8F41005A8137 /* x.mp3 */,
-				E5C72D592ACF8F41005A8137 /* Z.mp3 */,
+				E5C72D592ACF8F41005A8137 /* z.mp3 */,
 			);
 			path = Sons;
 			sourceTree = "<group>";
@@ -691,7 +691,7 @@
 				E5C72D9E2ACF8F43005A8137 /* algodao- doce.mp3 in Resources */,
 				E5C72DED2ACF8F43005A8137 /* sol.mp3 in Resources */,
 				E5C72DD82ACF8F43005A8137 /* o.mp3 in Resources */,
-				E5C72DC92ACF8F43005A8137 /* Z.mp3 in Resources */,
+				E5C72DC92ACF8F43005A8137 /* z.mp3 in Resources */,
 				E5C72D9A2ACF8F43005A8137 /* cabra.mp3 in Resources */,
 				E5C72DD62ACF8F43005A8137 /* colchao.mp3 in Resources */,
 				E5C72D982ACF8F43005A8137 /* futebol.mp3 in Resources */,

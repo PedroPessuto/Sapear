@@ -49,7 +49,7 @@ struct PhonemeLessonView: View {
     @State var index: Int = 0
     @State var isTalking: Bool = true
     @State var contador = 0
-    @State var palavraescrita: String = "BMP"
+    @State var palavraescrita: String = "B"
     var palavraindex: [Int] = []
     @State var imageSwitchTimer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
     
@@ -134,16 +134,17 @@ struct PhonemeLessonView: View {
             
             // ===== BODY =====
             Spacer()
-            VStack (spacing: 20) {
+            VStack (spacing: 10) {
                 Text(lesson.lessonName)
                     .font(Font.custom("Quicksand-Bold", size: 40, relativeTo: .largeTitle))
                     .bold()
+                    .multilineTextAlignment(.center)
                 
                 Text(lesson.lessonDescription)
                     .font(.title2)
                     .fontWeight(.medium)
                     .padding(.horizontal)
-                
+                    .multilineTextAlignment(.center)
                 
                 ZStack{
                     Image("SapoLesson")
