@@ -133,7 +133,7 @@ struct PhonemeLessonView: View {
         VStack {
             
             // ===== BODY =====
-            Spacer()
+            
             VStack (spacing: 10) {
                 Text(lesson.lessonName)
                     .font(Font.custom("Quicksand-Bold", size: 40, relativeTo: .largeTitle))

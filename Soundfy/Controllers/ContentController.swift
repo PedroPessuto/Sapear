@@ -24,8 +24,8 @@ class ContentController: ObservableObject {
                           phaseName: "Natureza",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8420-e29b-41d4-a716-446655440002")!,
-                                        lessonName: "Sons da Natureza 1",
-                                        lessonDescription: "Aprenda os primeiros sons da natureza.",
+                                        lessonName: "Natureza",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8430-e29b-41d4-a716-446655440003")!,
@@ -147,8 +147,8 @@ class ContentController: ObservableObject {
                           phaseName: "Natureza",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8530-e29b-41d4-a716-446655440020")!,
-                                        lessonName: "Sons de Animais",
-                                        lessonDescription: "Aprenda mais sons da natureza.",
+                                        lessonName: "Natureza",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8540-e29b-41d4-a716-446655440021")!,
@@ -272,8 +272,8 @@ class ContentController: ObservableObject {
                           phaseName: "Natureza",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440030")!,
-                                        lessonName: "Sons da Natureza 3",
-                                        lessonDescription: "Aprenda ainda mais sons da natureza.",
+                                        lessonName: "Natureza",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655440031")!,
@@ -400,8 +400,8 @@ class ContentController: ObservableObject {
                           phaseName: "Urbano",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8420-e29b-41d4-a716-446655440062")!,
-                                        lessonName: "Sons Urbanos 1",
-                                        lessonDescription: "Aprenda os primeiros sons Urbanos.",
+                                        lessonName: "Urbano",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8430-e29b-41d4-a716-446655440063")!,
@@ -523,8 +523,8 @@ class ContentController: ObservableObject {
                           phaseName: "Urbano",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8530-e29b-41d4-a716-446655440080")!,
-                                        lessonName: "Sons Urbanos 2",
-                                        lessonDescription: "Aprenda mais sons Urbanos.",
+                                        lessonName: "Urbano",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8540-e29b-41d4-a716-446655440081")!,
@@ -592,8 +592,8 @@ class ContentController: ObservableObject {
                           phaseName: "Urbano",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540100")!,
-                                        lessonName: "Sons Urbanos 3",
-                                        lessonDescription: "Aprenda ainda mais sons Urbanos.",
+                                        lessonName: "Urbano",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655440101")!,
@@ -665,8 +665,8 @@ class ContentController: ObservableObject {
                           phaseName: "Instrumentos",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540002")!,
-                                        lessonName: "Sons de Instrumentos 1",
-                                        lessonDescription: "Aprenda sons de Instrumentos.",
+                                        lessonName: "Instrumentos",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655540101")!,
@@ -683,7 +683,7 @@ class ContentController: ObservableObject {
                             SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
-                                          exerciseType: "phonemeExercise",
+                                          exerciseType: "soundExercise",
                                           exerciseAlternatives: [//bateria
                                             Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655540106")!,
                                                         alternativeLabel: "Telefone",
@@ -706,7 +706,7 @@ class ContentController: ObservableObject {
                             SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655650105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
-                                          exerciseType: "phonemeExercise",
+                                          exerciseType: "soundExercise",
                                           exerciseAlternatives: [//guitarra
                                             Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655650109")!,
                                                         alternativeLabel: "Bateria",
@@ -732,8 +732,8 @@ class ContentController: ObservableObject {
                           phaseName: "Instruementos",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655640002")!,
-                                        lessonName: "Sons de Instrumentos 2",
-                                        lessonDescription: "Aprenda sons de Instrumentos.",
+                                        lessonName: "Instrumentos",
+                                        lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8590-e29b-41d4-a716-446655640101")!,
@@ -751,7 +751,7 @@ class ContentController: ObservableObject {
                             SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446656440105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
-                                          exerciseType: "phonemeExercise",
+                                          exerciseType: "soundExercise",
                                           exerciseAlternatives: [//Flauta
                                             Alternative(alternativeId: UUID(uuidString: "550e8640-e29b-41d4-a716-446655640106")!,
                                                         alternativeLabel: "Guitarra",
@@ -774,7 +774,7 @@ class ContentController: ObservableObject {
                             SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655660105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
-                                          exerciseType: "phonemeExercise",
+                                          exerciseType: "soundExercise",
                                           exerciseAlternatives: [//paino
                                             Alternative(alternativeId: UUID(uuidString: "550e8670-e29b-41d4-a716-446655660109")!,
                                                         alternativeLabel: "Flauta",
@@ -808,8 +808,8 @@ class ContentController: ObservableObject {
                           phaseName: "Vogais",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
-                                        lessonName: "Sons das Vogais 1",
-                                        lessonDescription: "Aprenda os sons das Vogais.",
+                                        lessonName: "Vogais",
+                                        lessonDescription: "Clique nas palavras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "650e8430-e29b-41d4-a716-446655440063")!,
@@ -859,8 +859,8 @@ class ContentController: ObservableObject {
                           phaseName: "Vogal",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "650e8530-e29b-41d4-a716-446655440080")!,
-                                        lessonName: "Sons das Vogais 2",
-                                        lessonDescription: "Aprenda os sons das Vogais.",
+                                        lessonName: "Vogais",
+                                        lessonDescription: "Clique nas palavras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "650e8540-e29b-41d4-a716-446655440081")!,
@@ -916,8 +916,8 @@ class ContentController: ObservableObject {
                           phaseName: "Vogal",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655540100")!,
-                                        lessonName: "Sons das Vogais 3",
-                                        lessonDescription: "Aprenda os sons das Vogais.",
+                                        lessonName: "Vogais",
+                                        lessonDescription: "Clique nas palavras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "650e8590-e29b-41d4-a716-446655440101")!,
@@ -982,15 +982,15 @@ class ContentController: ObservableObject {
                           ])
                 ]),
         Section(sectionId: UUID(uuidString: "650e8400-e29b-41d4-a716-446655440000")!,
-                sectionName: "Cosoantes",
+                sectionName: "Consoantes",
                 sectionDescription: "Sons da Consoantes",
                 sectionPhases: [
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440001")!,
                           phaseName: "Consoante",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440002")!,
-                                        lessonName: "Sons das Consoantes 1",
-                                        lessonDescription: "Aprenda os sons das Consoantes.",
+                                        lessonName: "Consoantes",
+                                        lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "650e8430-e29b-41d4-a716-446655440003")!,
@@ -1112,8 +1112,8 @@ class ContentController: ObservableObject {
                           phaseName: "Consoante",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "650e8530-e29b-41d4-a716-446655440020")!,
-                                        lessonName: "Sons das Consoantes 2",
-                                        lessonDescription: "Aprenda os sons das Consoantes.",
+                                        lessonName: "Consoantes",
+                                        lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "650e8540-e29b-41d4-a716-446655440021")!,
@@ -1237,8 +1237,8 @@ class ContentController: ObservableObject {
                           phaseName: "Consoante",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655440030")!,
-                                        lessonName: "Sons das Consoantes 3",
-                                        lessonDescription: "Aprenda os sons das Consoantes.",
+                                        lessonName: "Consoantes",
+                                        lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "650e8590-e29b-41d4-a716-446655440031")!,
@@ -1360,8 +1360,8 @@ class ContentController: ObservableObject {
                           phaseName: "Consoante",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655440030")!,
-                                        lessonName: "Sons das Consoantes 4",
-                                        lessonDescription: "Aprenda os sons das Consoantes.",
+                                        lessonName: "Consoantes",
+                                        lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "670e8590-e29b-41d4-a716-446655440031")!,
@@ -1482,8 +1482,8 @@ class ContentController: ObservableObject {
                           phaseName: "Consoante",
                           phaseLessons: [
                             SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440030")!,
-                                        lessonName: "Sons das Consoantes 5",
-                                        lessonDescription: "Aprenda os sons das Consoantes.",
+                                        lessonName: "Consoantes",
+                                        lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "570e8590-e29b-41d4-a716-446655440031")!,

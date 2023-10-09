@@ -37,6 +37,8 @@
 		E5A22C722ACE10B60079C432 /* PhonemeLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A22C712ACE10B60079C432 /* PhonemeLessonView.swift */; };
 		E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* TrailView.swift */; };
 		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
+		E5B719AD2AD4948200449687 /* cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5B719AC2AD4948200449687 /* cachorro.mp3 */; };
+		E5B719AF2AD4974A00449687 /* guitarra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5B719AE2AD4974A00449687 /* guitarra.mp3 */; };
 		E5C72D8B2ACF8F43005A8137 /* elevador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1B2ACF8F3F005A8137 /* elevador.mp3 */; };
 		E5C72D8C2ACF8F43005A8137 /* toalha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1C2ACF8F3F005A8137 /* toalha.mp3 */; };
 		E5C72D8D2ACF8F43005A8137 /* u.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1D2ACF8F3F005A8137 /* u.mp3 */; };
@@ -56,7 +58,7 @@
 		E5C72D9B2ACF8F43005A8137 /* mochila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2B2ACF8F3F005A8137 /* mochila.mp3 */; };
 		E5C72D9C2ACF8F43005A8137 /* praca-alimentacao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2C2ACF8F40005A8137 /* praca-alimentacao.mp3 */; };
 		E5C72D9D2ACF8F43005A8137 /* buzina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */; };
-		E5C72D9E2ACF8F43005A8137 /* algodao- doce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2E2ACF8F40005A8137 /* algodao- doce.mp3 */; };
+		E5C72D9E2ACF8F43005A8137 /* algodao-doce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */; };
 		E5C72D9F2ACF8F43005A8137 /* banco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2F2ACF8F40005A8137 /* banco.mp3 */; };
 		E5C72DA02ACF8F43005A8137 /* r.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D302ACF8F40005A8137 /* r.mp3 */; };
 		E5C72DA12ACF8F43005A8137 /* televisao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D312ACF8F40005A8137 /* televisao.mp3 */; };
@@ -72,7 +74,6 @@
 		E5C72DAB2ACF8F43005A8137 /* cortina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3B2ACF8F40005A8137 /* cortina.mp3 */; };
 		E5C72DAC2ACF8F43005A8137 /* v.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3C2ACF8F40005A8137 /* v.mp3 */; };
 		E5C72DAD2ACF8F43005A8137 /* sapatos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3D2ACF8F40005A8137 /* sapatos.mp3 */; };
-		E5C72DAE2ACF8F43005A8137 /* guitarra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3E2ACF8F40005A8137 /* guitarra.mp3 */; };
 		E5C72DAF2ACF8F43005A8137 /* garfo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3F2ACF8F40005A8137 /* garfo.mp3 */; };
 		E5C72DB02ACF8F43005A8137 /* almofada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D402ACF8F40005A8137 /* almofada.mp3 */; };
 		E5C72DB12ACF8F43005A8137 /* boia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D412ACF8F40005A8137 /* boia.mp3 */; };
@@ -117,7 +118,7 @@
 		E5C72DD82ACF8F43005A8137 /* o.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D682ACF8F42005A8137 /* o.mp3 */; };
 		E5C72DD92ACF8F43005A8137 /* geladeira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D692ACF8F42005A8137 /* geladeira.mp3 */; };
 		E5C72DDA2ACF8F43005A8137 /* telefone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6A2ACF8F42005A8137 /* telefone.mp3 */; };
-		E5C72DDB2ACF8F43005A8137 /* cadeiras.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6B2ACF8F42005A8137 /* cadeiras.mp3 */; };
+		E5C72DDB2ACF8F43005A8137 /* cadeira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6B2ACF8F42005A8137 /* cadeira.mp3 */; };
 		E5C72DDC2ACF8F43005A8137 /* tapete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6C2ACF8F42005A8137 /* tapete.mp3 */; };
 		E5C72DDD2ACF8F43005A8137 /* quadro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6D2ACF8F42005A8137 /* quadro.mp3 */; };
 		E5C72DDE2ACF8F43005A8137 /* basquete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6E2ACF8F42005A8137 /* basquete.mp3 */; };
@@ -184,6 +185,8 @@
 		E5A22C712ACE10B60079C432 /* PhonemeLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonemeLessonView.swift; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E5B719AC2AD4948200449687 /* cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cachorro.mp3; sourceTree = "<group>"; };
+		E5B719AE2AD4974A00449687 /* guitarra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = guitarra.mp3; path = ../../../../../Downloads/guitarra.mp3; sourceTree = "<group>"; };
 		E5C72D1B2ACF8F3F005A8137 /* elevador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elevador.mp3; sourceTree = "<group>"; };
 		E5C72D1C2ACF8F3F005A8137 /* toalha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toalha.mp3; sourceTree = "<group>"; };
 		E5C72D1D2ACF8F3F005A8137 /* u.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = u.mp3; sourceTree = "<group>"; };
@@ -203,7 +206,7 @@
 		E5C72D2B2ACF8F3F005A8137 /* mochila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mochila.mp3; sourceTree = "<group>"; };
 		E5C72D2C2ACF8F40005A8137 /* praca-alimentacao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "praca-alimentacao.mp3"; sourceTree = "<group>"; };
 		E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzina.mp3; sourceTree = "<group>"; };
-		E5C72D2E2ACF8F40005A8137 /* algodao- doce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "algodao- doce.mp3"; sourceTree = "<group>"; };
+		E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "algodao-doce.mp3"; sourceTree = "<group>"; };
 		E5C72D2F2ACF8F40005A8137 /* banco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banco.mp3; sourceTree = "<group>"; };
 		E5C72D302ACF8F40005A8137 /* r.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = r.mp3; sourceTree = "<group>"; };
 		E5C72D312ACF8F40005A8137 /* televisao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = televisao.mp3; sourceTree = "<group>"; };
@@ -219,7 +222,6 @@
 		E5C72D3B2ACF8F40005A8137 /* cortina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cortina.mp3; sourceTree = "<group>"; };
 		E5C72D3C2ACF8F40005A8137 /* v.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = v.mp3; sourceTree = "<group>"; };
 		E5C72D3D2ACF8F40005A8137 /* sapatos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sapatos.mp3; sourceTree = "<group>"; };
-		E5C72D3E2ACF8F40005A8137 /* guitarra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guitarra.mp3; sourceTree = "<group>"; };
 		E5C72D3F2ACF8F40005A8137 /* garfo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = garfo.mp3; sourceTree = "<group>"; };
 		E5C72D402ACF8F40005A8137 /* almofada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = almofada.mp3; sourceTree = "<group>"; };
 		E5C72D412ACF8F40005A8137 /* boia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boia.mp3; sourceTree = "<group>"; };
@@ -264,7 +266,7 @@
 		E5C72D682ACF8F42005A8137 /* o.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = o.mp3; sourceTree = "<group>"; };
 		E5C72D692ACF8F42005A8137 /* geladeira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geladeira.mp3; sourceTree = "<group>"; };
 		E5C72D6A2ACF8F42005A8137 /* telefone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = telefone.mp3; sourceTree = "<group>"; };
-		E5C72D6B2ACF8F42005A8137 /* cadeiras.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cadeiras.mp3; sourceTree = "<group>"; };
+		E5C72D6B2ACF8F42005A8137 /* cadeira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cadeira.mp3; sourceTree = "<group>"; };
 		E5C72D6C2ACF8F42005A8137 /* tapete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapete.mp3; sourceTree = "<group>"; };
 		E5C72D6D2ACF8F42005A8137 /* quadro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quadro.mp3; sourceTree = "<group>"; };
 		E5C72D6E2ACF8F42005A8137 /* basquete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = basquete.mp3; sourceTree = "<group>"; };
@@ -451,7 +453,7 @@
 				E5C72DFB2AD0836F005A8137 /* teclado.mp3 */,
 				E5C72D442ACF8F40005A8137 /* abajur.mp3 */,
 				E5C72D322ACF8F40005A8137 /* alarme.mp3 */,
-				E5C72D2E2ACF8F40005A8137 /* algodao- doce.mp3 */,
+				E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */,
 				E5C72D402ACF8F40005A8137 /* almofada.mp3 */,
 				E5C72D4F2ACF8F41005A8137 /* areia.mp3 */,
 				E5C72D212ACF8F3F005A8137 /* armario.mp3 */,
@@ -470,7 +472,8 @@
 				E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */,
 				E5C72D1E2ACF8F3F005A8137 /* c.mp3 */,
 				E5C72D2A2ACF8F3F005A8137 /* cabra.mp3 */,
-				E5C72D6B2ACF8F42005A8137 /* cadeiras.mp3 */,
+				E5B719AC2AD4948200449687 /* cachorro.mp3 */,
+				E5C72D6B2ACF8F42005A8137 /* cadeira.mp3 */,
 				E5C72D732ACF8F42005A8137 /* caderno.mp3 */,
 				E5C72D4C2ACF8F41005A8137 /* cama.mp3 */,
 				E5C72D622ACF8F42005A8137 /* campainha.mp3 */,
@@ -504,7 +507,7 @@
 				E5C72D722ACF8F42005A8137 /* gato.mp3 */,
 				E5C72D692ACF8F42005A8137 /* geladeira.mp3 */,
 				E5C72D4D2ACF8F41005A8137 /* guarda-sol.mp3 */,
-				E5C72D3E2ACF8F40005A8137 /* guitarra.mp3 */,
+				E5B719AE2AD4974A00449687 /* guitarra.mp3 */,
 				E5C72D7A2ACF8F42005A8137 /* i.mp3 */,
 				E5C72D5B2ACF8F41005A8137 /* j.mp3 */,
 				E5C72D272ACF8F3F005A8137 /* k.mp3 */,
@@ -639,7 +642,7 @@
 				E5C72D922ACF8F43005A8137 /* porco.mp3 in Resources */,
 				E5C72DC22ACF8F43005A8137 /* borracha.mp3 in Resources */,
 				E5C72DC42ACF8F43005A8137 /* lousa.mp3 in Resources */,
-				E5C72DDB2ACF8F43005A8137 /* cadeiras.mp3 in Resources */,
+				E5C72DDB2ACF8F43005A8137 /* cadeira.mp3 in Resources */,
 				E5C72D8F2ACF8F43005A8137 /* mesa.mp3 in Resources */,
 				E5C72DCD2ACF8F43005A8137 /* estojo.mp3 in Resources */,
 				E5C72DF02ACF8F43005A8137 /* faca.mp3 in Resources */,
@@ -688,7 +691,7 @@
 				E5C72DAF2ACF8F43005A8137 /* garfo.mp3 in Resources */,
 				E5C72DEE2ACF8F43005A8137 /* relogio.mp3 in Resources */,
 				E5C72DB92ACF8F43005A8137 /* controle-remoto.mp3 in Resources */,
-				E5C72D9E2ACF8F43005A8137 /* algodao- doce.mp3 in Resources */,
+				E5C72D9E2ACF8F43005A8137 /* algodao-doce.mp3 in Resources */,
 				E5C72DED2ACF8F43005A8137 /* sol.mp3 in Resources */,
 				E5C72DD82ACF8F43005A8137 /* o.mp3 in Resources */,
 				E5C72DC92ACF8F43005A8137 /* z.mp3 in Resources */,
@@ -709,6 +712,7 @@
 				E5C72DE42ACF8F43005A8137 /* espelho.mp3 in Resources */,
 				E5C72DEA2ACF8F43005A8137 /* i.mp3 in Resources */,
 				E5C72DB52ACF8F43005A8137 /* t.mp3 in Resources */,
+				E5B719AD2AD4948200449687 /* cachorro.mp3 in Resources */,
 				E5C72DEC2ACF8F43005A8137 /* cesta.mp3 in Resources */,
 				E5C72D992ACF8F43005A8137 /* sabonete.mp3 in Resources */,
 				E5C72DFC2AD0836F005A8137 /* teclado.mp3 in Resources */,
@@ -719,9 +723,9 @@
 				E5C72DCB2ACF8F43005A8137 /* j.mp3 in Resources */,
 				E5C72DA02ACF8F43005A8137 /* r.mp3 in Resources */,
 				E5C72DA42ACF8F43005A8137 /* arvore.mp3 in Resources */,
+				E5B719AF2AD4974A00449687 /* guitarra.mp3 in Resources */,
 				E5C72DB62ACF8F43005A8137 /* presentes.mp3 in Resources */,
 				E5C72DAA2ACF8F43005A8137 /* vento.mp3 in Resources */,
-				E5C72DAE2ACF8F43005A8137 /* guitarra.mp3 in Resources */,
 				E5C72DBA2ACF8F43005A8137 /* n.mp3 in Resources */,
 				E5C72DAB2ACF8F43005A8137 /* cortina.mp3 in Resources */,
 				E5C72DD72ACF8F43005A8137 /* q.mp3 in Resources */,
@@ -903,7 +907,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Soundfy/Preview Content\"";
-				DEVELOPMENT_TEAM = AV2QX4598Q;
+				DEVELOPMENT_TEAM = V6XLW7943W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Soundfy/Info.plist;
@@ -933,7 +937,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Soundfy/Preview Content\"";
-				DEVELOPMENT_TEAM = AV2QX4598Q;
+				DEVELOPMENT_TEAM = V6XLW7943W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Soundfy/Info.plist;

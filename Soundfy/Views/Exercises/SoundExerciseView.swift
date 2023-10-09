@@ -189,11 +189,13 @@ struct SoundExerciseView: View {
                     .font(Font.custom("Quicksand-Bold", size: 38,relativeTo: .largeTitle))
                     .multilineTextAlignment(.center)
                     .bold()
+                    .lineLimit(nil)
                 
                 Text(exercise.exerciseDescription)
                     .font(.title2)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
+                    .lineLimit(nil)
                 if exercise.exerciseType == "soundExercise" {
                     SoundButton(buttonAction: {playSound(Nome: getSound())})
                 }else {
