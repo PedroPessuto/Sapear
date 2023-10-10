@@ -90,13 +90,19 @@ struct PhaseManagerView: View {
                     else if lessonType == "phonemeClass" {
                         PhonemeLessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
                     }
+                    else if lessonType == "wordClass" {
+                        PhonemeLessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
+                    }
                 }
                 else if(actualScreen == "exercise") {
                     
                     if exerciseType == "soundExercise" {
                        
                         SoundExerciseView(exercise: profileController.actualPhase!.phaseExercises[count], count: count, changeScreen: changeScreen)
-                    }else if exerciseType == "phonemeExercise"{
+                    }else if exerciseType == "phonemeExercise" {
+                        SoundExerciseView(exercise: profileController.actualPhase!.phaseExercises[count], count: count, changeScreen: changeScreen)
+                    }
+                    else if exerciseType == "wordExercise" {
                         SoundExerciseView(exercise: profileController.actualPhase!.phaseExercises[count], count: count, changeScreen: changeScreen)
                     }
                 }

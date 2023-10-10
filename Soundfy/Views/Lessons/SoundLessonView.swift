@@ -40,9 +40,11 @@ struct SoundLessonView: View {
             VStack (spacing: 20) {
                 Text(lesson.lessonName)
                     .font(Font.custom("Quicksand-Bold", size: 40, relativeTo: .largeTitle))
+                    .multilineTextAlignment(.center)
                     .bold()
                 
                 Text(lesson.lessonDescription)
+                    .multilineTextAlignment(.center)
                     .font(.title2)
                     .fontWeight(.medium)
                 

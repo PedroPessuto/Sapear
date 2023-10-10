@@ -46,18 +46,13 @@ struct HomeView: View {
             .navigationBarTitleDisplayMode(.inline)
 //            .toolbarBackground(Color(primaryController.primaryColor), for: .navigationBar)
 //            .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button (action: {onProfile.toggle()}) {
-                        Image(systemName: "chart.bar.xaxis")
-                            .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
-                            .font(.system(size: 25))
-                    }
-                }
-            }
-            .fullScreenCover(isPresented: $onProfile) {
-                ProfileView(onProfile: $onProfile)
-            }
+//            .toolbar {
+//                ToolbarItem(placement: .confirmationAction) {
+//                    Image(systemName: "chart.bar.xaxis")
+//                        .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
+//                        .font(.system(size: 25))
+//                }
+//            }
         }
         .onAppear {
             let uuids: [UUID] = phasesDone.compactMap { $0.id }
