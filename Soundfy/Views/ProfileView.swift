@@ -12,60 +12,119 @@ struct ProfileView: View {
     @Binding var onProfile: Bool
     @EnvironmentObject var profileController: ProfileController
     @State var soundsValue: Float = 0.0
+    @State var wordsValue: Float = 0.0
+    @State var phonemeValue: Float = 0.0
+    @FetchRequest(sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
     
     var body: some View {
         NavigationStack {
-            
-            VStack {
+            VStack{
                 
-                VStack {
-                    Text("Acertos")
-                        .bold()
-                        .font(.largeTitle)
+//                Button(action: {
+//                    profileController.soundsExercisesDone = 0
+//                    profileController.soundsExercisesRight = 0
+//                    profileController.phonemeExercisesDone = 0
+//                    profileController.phonemeExercisesRight = 0
+//                    profileController.wordsExercisesDone = 0
+//                    profileController.wordsExercisesRight = 0
+//                }) {
+//                    Text("Resetar")
+//                }
+                
+                ZStack{
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.white)
+                        .frame(width: 300, height: 300)
+                    Image("sapoEstatisitca")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130, height: 130)
+                        .offset(x:140, y:-150)
                     
-                    Text("Som")
-                    
-                    ZStack {
+                    VStack {
                         
-                        ProgressBar(value: $soundsValue, maxValue: 1.0)
+                        VStack {
+                            Text("Acertos")
+                                .foregroundStyle(Color.green)
+                                .font(.largeTitle)
+                            HStack{
+                                Text("Som")
+                                    .foregroundStyle(Color.green)
+                                Spacer()
+                            }.frame(width: 200, height: 20)
+                            ZStack {
+                                ProgressBar(value: $soundsValue, maxValue: 1.0, color: .green)
+                                HStack {
+                                    Spacer()
+                                    Text("\((profileController.soundsExercisesRight / profileController.soundsExercisesDone)*100,specifier: "%.0f")%")
+                                        .font(.body)
+                                        .padding(.trailing, 20)
+                                }
+                            }
+                            .frame(width: 200, height: 20)
+                            HStack{
+                                Text("Letras")
+                                    .foregroundStyle(Color.green)
+                                Spacer()
+                            }.frame(width: 200, height: 20)
+                            ZStack {
+                                ProgressBar(value: $phonemeValue, maxValue: 1.0, color: .green)
+                                HStack {
+                                    Spacer()
+                                    Text("\((profileController.phonemeExercisesRight / profileController.phonemeExercisesDone)*100,specifier: "%.0f")%")
+                                        .font(.body)
+                                        .padding(.trailing, 20)
+                                }
+                            }
+                            .frame(width: 200, height: 20)
+                            HStack{
+                                Text("Palavras")
+                                    .foregroundStyle(Color.green)
+                                Spacer()
+                            }.frame(width: 200, height: 20)
+                            ZStack {
+                                ProgressBar(value: $wordsValue, maxValue: 1.0, color: .green)
+                                HStack {
+                                    Spacer()
+                                    Text("\((profileController.wordsExercisesRight / profileController.wordsExercisesDone)*100,specifier: "%.0f")%")
+                                        .font(.body)
+                                        .padding(.trailing, 20)
+                                }
+                            }
+                            .frame(width: 200, height: 20)
                             
-                        
-                        HStack {
-                            
-                            Spacer()
-                            Text("\((profileController.soundsExercisesRight / profileController.soundsExercisesDone)*100,specifier: "%.0f")%")
-                                .font(.body)
-                                .padding(.trailing, 20)
-                            
+                            //                            Text("Realizados: \(profileController.soundsExercisesDone, specifier: "%.0f")")
+                            //                            Text("Acertados: \(profileController.soundsExercisesRight, specifier: "%.0f")")
                         }
-                        
                     }
-                    .frame(width: 200, height: 20)
                     
-                    Text("Realizados: \(profileController.soundsExercisesDone, specifier: "%.0f")")
-                    Text("Acertados: \(profileController.soundsExercisesRight, specifier: "%.0f")")
-                }
-                .frame(maxWidth: .infinity)
-                .background(.white)
-                .cornerRadius(10)
-                
-                
-            }
-            .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .onAppear {
-                soundsValue = Float((profileController.soundsExercisesRight / profileController.soundsExercisesDone))
-            }
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button (action: {onProfile.toggle()}) {
-                        Image(systemName: "house.fill")
-                            .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
-                            .font(.system(size: 25))
+                    .onAppear {
+                        soundsValue = Float((profileController.soundsExercisesRight / profileController.soundsExercisesDone))
+                        phonemeValue = Float((profileController.phonemeExercisesRight / profileController.phonemeExercisesDone))
+                        wordsValue = Float((profileController.wordsExercisesRight / profileController.wordsExercisesDone))
+                    }
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button (action: {onProfile.toggle()}) {
+                                Image(systemName: "house.fill")
+                                    .foregroundColor(Color(red: 229/255, green: 94/255, blue: 41/255))
+                                    .font(.system(size: 25))
+                            }
+                        }
+                        ToolbarItem(placement: .principal) {
+                            Text("Estatísticas")
+                                .font(.largeTitle)
+                                .foregroundColor(Color(red: 229/255, green: 94/255, blue: 41/255))
+                                .bold()
+                                .padding(.top, 80)
+                        }
                     }
                 }
             }
-            .background(Color(red: 195/255, green: 234/255, blue: 1))
+            .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(red: 255/255, green: 228/255, blue: 220/255))
         }
+        
     }
 }

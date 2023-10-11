@@ -38,6 +38,7 @@
 		E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* TrailView.swift */; };
 		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
 		E5B719AD2AD4948200449687 /* cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5B719AC2AD4948200449687 /* cachorro.mp3 */; };
+		E5B719B42AD73EB900449687 /* vazio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5B719B32AD73EB900449687 /* vazio.mp3 */; };
 		E5C72D8B2ACF8F43005A8137 /* elevador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1B2ACF8F3F005A8137 /* elevador.mp3 */; };
 		E5C72D8C2ACF8F43005A8137 /* toalha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1C2ACF8F3F005A8137 /* toalha.mp3 */; };
 		E5C72D8D2ACF8F43005A8137 /* u.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1D2ACF8F3F005A8137 /* u.mp3 */; };
@@ -185,6 +186,7 @@
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E5B719AC2AD4948200449687 /* cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cachorro.mp3; sourceTree = "<group>"; };
+		E5B719B32AD73EB900449687 /* vazio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vazio.mp3; sourceTree = "<group>"; };
 		E5C72D1B2ACF8F3F005A8137 /* elevador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elevador.mp3; sourceTree = "<group>"; };
 		E5C72D1C2ACF8F3F005A8137 /* toalha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toalha.mp3; sourceTree = "<group>"; };
 		E5C72D1D2ACF8F3F005A8137 /* u.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = u.mp3; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 		E5C72D1A2ACF8F27005A8137 /* Sons */ = {
 			isa = PBXGroup;
 			children = (
+				E5B719B32AD73EB900449687 /* vazio.mp3 */,
 				E5C72D232ACF8F3F005A8137 /* a.mp3 */,
 				E5C72DFB2AD0836F005A8137 /* teclado.mp3 */,
 				E5C72D442ACF8F40005A8137 /* abajur.mp3 */,
@@ -646,6 +649,7 @@
 				E5C72DBE2ACF8F43005A8137 /* lojas.mp3 in Resources */,
 				E5C72DC52ACF8F43005A8137 /* microfone.mp3 in Resources */,
 				E5C72DA52ACF8F43005A8137 /* colher.mp3 in Resources */,
+				E5B719B42AD73EB900449687 /* vazio.mp3 in Resources */,
 				E5C72DE32ACF8F43005A8137 /* caderno.mp3 in Resources */,
 				E5C72DB42ACF8F43005A8137 /* abajur.mp3 in Resources */,
 				E5C72DA92ACF8F43005A8137 /* b.mp3 in Resources */,

@@ -94,7 +94,8 @@ struct LessonView: View {
             // ===== FOOTER =====
                     
             Spacer()
-            PlayButton(buttonAction: {changeScreen()}, buttonText: buttonText, isDisabled: .constant(false))
+            PlayButton(buttonAction: {changeScreen() 
+                playSound(Nome: "vazio")}, buttonText: buttonText, isDisabled: .constant(false))
         }
         .padding(.horizontal, 30)
         .multilineTextAlignment(.center)

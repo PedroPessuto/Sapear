@@ -11,8 +11,8 @@ struct FineshedView: View {
     
     @EnvironmentObject var profileController: ProfileController
     @EnvironmentObject var progressionController: ProgressionController
-    
     @Environment(\.managedObjectContext) var managedObjContext
+    @FetchRequest(sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
     
     var changeScreen: () -> Void
     
@@ -45,10 +45,22 @@ struct FineshedView: View {
             // ===== FOOTER =====
             Spacer()
             Spacer()
+           
             PlayButton(buttonAction: {
                 changeScreen()
-                progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
-                profileController.phasesDone.append(profileController.actualPhase!.phaseId)
+                
+                let phaseId = profileController.actualPhase!.phaseId
+                
+                for number in phasesDone.indices {
+                    if phasesDone[number].id == phaseId {
+                        break
+                    }
+                    if number == phasesDone.count  {
+                        progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
+                        profileController.phasesDone.append(profileController.actualPhase!.phaseId)
+                    }
+                }
+                
                 profileController.onPhase = false
             }, buttonText: "Concluir", isDisabled: .constant(false))
         }

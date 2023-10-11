@@ -113,17 +113,18 @@ struct PhaseManagerView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(red: 195/255, green: 234/255, blue: 1))
+            .background(actualScreen == "lesson" ? Color(red: 195/255, green: 234/255, blue: 255/255) : Color(red: 215/255, green: 217/255, blue: 255/255))
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
                     Button (action: {profileController.onPhase = false}) {
-                        Image(systemName: "x.square.fill")
+                        Image(systemName: "house.fill")
+                            .foregroundColor(Color(red: 56/255, green: 128/255, blue: 147/255))
                             .font(.system(size: 24))
                     }
                 }
                 
                 ToolbarItemGroup(placement: .principal) {
-                    ProgressBar(value: $progressValue, maxValue: 1.0)
+                    ProgressBar(value: $progressValue, maxValue: 1.0, color: Color(red: 56/255, green: 128/255, blue: 147/255))
                         .frame(width: 200, height: 20)
                 }
             }
