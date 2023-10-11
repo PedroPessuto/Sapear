@@ -10,10 +10,10 @@ import Foundation
 class Alternative {
     var alternativeId: UUID
     var alternativeLabel: String
-    var alternativeSoundName: String
-    var alternativeImage: String
+    var alternativeSoundName: String?
+    var alternativeImage: String?
     
-    init(alternativeId: UUID = UUID(), alternativeLabel: String, alternativeSoundName: String, alternativeImage: String = "") {
+    init(alternativeId: UUID = UUID(), alternativeLabel: String, alternativeSoundName: String? = "", alternativeImage: String? = "") {
         self.alternativeId = alternativeId
         self.alternativeLabel = alternativeLabel
         self.alternativeSoundName = alternativeSoundName

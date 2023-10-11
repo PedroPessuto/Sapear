@@ -23,6 +23,7 @@ struct ExerciseSoundButton: View {
     @State var buttonPading: CGFloat = 8
     
     func getSafeImage(named: String) -> Bool {
+        
         let uiImage =  (UIImage(named: named) ?? UIImage(named: "Default.png"))!
         if uiImage == UIImage(named: "Default.png"){
             return false
@@ -33,114 +34,124 @@ struct ExerciseSoundButton: View {
     var body: some View {
         
         VStack {
-        if isWrong {
-            VStack {
-                ZStack{
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color(red: 83/255, green: 83/255, blue: 83/255))
-                        .frame(width: 140, height: 100)
-                    
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color(UIColor.systemGray))
-                            .frame(width: 140, height: 100)
-                            .overlay( /// apply a rounded border
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(red: 83/255, green: 83/255, blue: 83/255), lineWidth: 3)
-                            )
-                        
-                        
-                        VStack {
-                            if getSafeImage(named: item.alternativeImage){
-                                Image(item.alternativeImage)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                            }else{
-                                Image(systemName: item.alternativeImage)
-                                    .font(.title)
-                            }
-                            Text(item.alternativeLabel)
-                        }
-                        .foregroundColor(.secondary)
-                    }
-                    .padding(.trailing, buttonPading)
-                    .padding(.bottom, buttonPading)
+            
+            if isWrong {
+                VStack {
                     
                     ZStack{
-                        Image(systemName: "xmark")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 50)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color(red: 83/255, green: 83/255, blue: 83/255))
+                            .frame(width: 140, height: 100)
                         
-                        Image(systemName: "xmark")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 45, height: 45)
-                            .foregroundColor(.red)
-                            .bold()
-                    }.offset(x: 60, y: -55)
-                    
-                    
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(UIColor.systemGray))
+                                .frame(width: 140, height: 100)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color(red: 83/255, green: 83/255, blue: 83/255), lineWidth: 3)
+                                )
+                            
+                            
+                            VStack {
+                                if  item.alternativeImage != "" {
+                                    if getSafeImage(named: item.alternativeImage!) {
+                                        Image(item.alternativeImage!)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                    }
+                                    else {
+                                        Image(systemName: item.alternativeImage!)
+                                            .font(.title)
+                                    }
+                                }
+                                Text(item.alternativeLabel)
+                            }
+                            .foregroundColor(.secondary)
+                        }
+                        .padding(.trailing, buttonPading)
+                        .padding(.bottom, buttonPading)
+                        
+                        ZStack{
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(.white)
+                                .fontWeight(.black)
+                            
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 45, height: 45)
+                                .foregroundColor(.red)
+                                .bold()
+                        }.offset(x: 60, y: -55)
+                        
+                        
+                    }
                 }
             }
-        }
-        else if isRight {
-            VStack {
-                ZStack{
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color(red: 34/255, green: 169/255, blue: 1/255))
-                        .frame(width: 140, height: 100)
-                    
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color(red: 159/255, green: 252/255, blue: 191/255))
-                            .frame(width: 140, height: 100)
-                            .overlay( /// apply a rounded border
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color(red: 34/255, green: 169/255, blue: 1/255), lineWidth: 3)
-                            )
-                        
-                        
-                        VStack {
-                            if getSafeImage(named: item.alternativeImage){
-                                Image(item.alternativeImage)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                            }else{
-                                Image(systemName: item.alternativeImage)
-                                    .font(.title)
-                            }
-                            Text(item.alternativeLabel)
-                        }
-                        .foregroundColor(.green)
-                    }
-                    .padding(.trailing, buttonPading)
-                    .padding(.bottom, buttonPading)
-                    
+            else if isRight {
+                VStack {
                     ZStack{
-                        Image(systemName: "checkmark")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 50)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color(red: 34/255, green: 169/255, blue: 1/255))
+                            .frame(width: 140, height: 100)
                         
-                        Image(systemName: "checkmark")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 45, height: 45)
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(red: 159/255, green: 252/255, blue: 191/255))
+                                .frame(width: 140, height: 100)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color(red: 34/255, green: 169/255, blue: 1/255), lineWidth: 3)
+                                )
+                            
+                            
+                            VStack {
+                                if item.alternativeImage != "" {
+                                    
+                                    if getSafeImage(named: item.alternativeImage!) {
+                                        
+                                        Image(item.alternativeImage!)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                    }
+                                    else {
+                                        Image(systemName: item.alternativeImage!)
+                                            .font(.title)
+                                    }
+                                }
+                                Text(item.alternativeLabel)
+                            }
                             .foregroundColor(.green)
-                            .bold()
-                    }.offset(x: 60, y: -55)
-                    
-                    
+                        }
+                        .padding(.trailing, buttonPading)
+                        .padding(.bottom, buttonPading)
+                        
+                        ZStack{
+                            Image(systemName: "checkmark")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(.white)
+                                .fontWeight(.black)
+                            
+                            Image(systemName: "checkmark")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 45, height: 45)
+                                .foregroundColor(.green)
+                                .bold()
+                        }.offset(x: 60, y: -55)
+                        
+                        
+                    }
                 }
             }
-        }
             else {
                 VStack {
                     ZStack{
@@ -155,14 +166,17 @@ struct ExerciseSoundButton: View {
                             
                             
                             VStack {
-                                if getSafeImage(named: item.alternativeImage){
-                                    Image(item.alternativeImage)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                }else{
-                                    Image(systemName: item.alternativeImage)
-                                        .font(.title)
+                                if item.alternativeImage != "" {
+                                    if getSafeImage(named: item.alternativeImage!) {
+                                        Image(item.alternativeImage!)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                    }
+                                    else {
+                                        Image(systemName: item.alternativeImage!)
+                                            .font(.title)
+                                    }
                                 }
                                 Text(item.alternativeLabel)
                             }
@@ -194,7 +208,7 @@ struct ExerciseSoundButton: View {
                 isWrong = false
                 isRight = false
             }
-        
+            
         })
         .onChange(of: selectedOption) { newValue in
             
@@ -207,6 +221,6 @@ struct ExerciseSoundButton: View {
                 buttonPading = 8
             }
         }
-       
+        
     }
 }

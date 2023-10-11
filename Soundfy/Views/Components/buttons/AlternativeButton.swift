@@ -37,14 +37,19 @@ struct AlternativeButton: View {
                     
                     
                     VStack {
-                        if getSafeImage(named: item.alternativeImage){
-                            Image(item.alternativeImage)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50, height: 50)
-                        }else{
-                            Image(systemName: item.alternativeImage).font(.title)
+                        if item.alternativeImage != ""  {
+                            if getSafeImage(named: item.alternativeImage!) {
+                                Image(item.alternativeImage!)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
+                            }
+                            else {
+                                Image(systemName: item.alternativeImage!)
+                                    .font(.title)
+                            }
                         }
+                        
                         Text(item.alternativeLabel)
                     }
                     .foregroundColor(.white)
@@ -63,7 +68,6 @@ struct AlternativeButton: View {
                 buttonPrimaryColor = Color(red: 238/255, green: 128/255, blue: 81/255)
                 buttonPading = 8
                 buttonAction()
-                
             }
         }, perform: { })
     }

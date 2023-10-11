@@ -27,6 +27,9 @@ struct FineshedView: View {
                     .bold()
                 
                 Image("frog_fineshed")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 180, height: 180)
                 
                 Text("Parabéns!")
                     .font(.title)
@@ -47,7 +50,7 @@ struct FineshedView: View {
                 progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
                 profileController.phasesDone.append(profileController.actualPhase!.phaseId)
                 profileController.onPhase = false
-            }, buttonText: "Concluir")
+            }, buttonText: "Concluir", isDisabled: .constant(false))
         }
         .padding(.horizontal, 30)
         .multilineTextAlignment(.center)

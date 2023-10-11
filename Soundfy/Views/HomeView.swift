@@ -17,6 +17,7 @@ struct HomeView: View {
     @FetchRequest(entity: PhaseCoreData.entity(), sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
     @Environment(\.managedObjectContext) var contexto
     @EnvironmentObject var progressionController: ProgressionController
+    @State var onProfile: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -41,21 +42,24 @@ struct HomeView: View {
                 TrailView(screenName: $screenName)
                     .ignoresSafeArea()
             }
-//            .navigationTitle(screenName)
             .navigationBarTitleDisplayMode(.inline)
-//            .toolbarBackground(Color(primaryController.primaryColor), for: .navigationBar)
-//            .toolbarBackground(.hidden, for: .navigationBar) // Linha do Background
-//            .toolbar {
-//                ToolbarItem(placement: .confirmationAction) {
-//                    Image(systemName: "chart.bar.xaxis")
-//                        .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
-//                        .font(.system(size: 25))
-//                }
-//            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {onProfile.toggle()}) {
+                        Image(systemName: "chart.bar.xaxis")
+                            .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
+                            .font(.system(size: 25))
+                    }
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $onProfile) {
+            ProfileView(onProfile: $onProfile)
         }
         .onAppear {
             let uuids: [UUID] = phasesDone.compactMap { $0.id }
             profileController.phasesDone = uuids
+            profileController.actualPhaseId = UUID(uuidString: "550e8410-e29b-41d4-a716-446655440001")!
             
             outerLoop: for section in contentController.soundsSections {
                 for phase in section.sectionPhases {
@@ -67,5 +71,6 @@ struct HomeView: View {
             }
 
         }
+        
     }
 }

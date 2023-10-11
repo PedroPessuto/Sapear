@@ -38,12 +38,21 @@ struct PhaseButton: View {
             
             if phase.phaseId == profileController.actualPhase?.phaseId {
                 Image("lilypad3")
+                    .resizable()
+                    .frame(width: 190, height: 150)
+                    
+                   
+                
             } else {
                 Image(isDone ? "lilypad2" : "lilypad")
+                    .resizable()
+                    .frame(width: 190, height: 100)
+                  
+                  
             }
             
         }
-        .frame(width: 190, height: 100)
+       
         .onAppear {
             checkIsDone()
         }

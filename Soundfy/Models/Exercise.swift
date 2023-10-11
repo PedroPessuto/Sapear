@@ -7,14 +7,7 @@
 
 import Foundation
 
-protocol Exercise {
-    var exerciseId: UUID { get }
-    var exerciseName: String { get set }
-    var exerciseDescription: String { get set }
-    var exerciseType: String { get set }
-}
-
-class SoundExercise: Exercise {
+class Exercise {
     var exerciseId: UUID
     var exerciseName: String
     var exerciseDescription: String
