@@ -24,16 +24,38 @@ struct ProfileView: View {
                         .font(.largeTitle)
                     
                     Text("Som")
-                    ProgressBar(value: $soundsValue, maxValue: 1.0)
-                        .frame(width: 200, height: 20)
+                    
+                    ZStack {
+                        
+                        ProgressBar(value: $soundsValue, maxValue: 1.0)
+                            
+                        
+                        HStack {
+                            
+                            Spacer()
+                            Text("\((profileController.soundsExercisesRight / profileController.soundsExercisesDone)*100,specifier: "%.0f")%")
+                                .font(.body)
+                                .padding(.trailing, 20)
+                            
+                        }
+                        
+                    }
+                    .frame(width: 200, height: 20)
+                    
+                    Text("Realizados: \(profileController.soundsExercisesDone, specifier: "%.0f")")
+                    Text("Acertados: \(profileController.soundsExercisesRight, specifier: "%.0f")")
                 }
+                .frame(maxWidth: .infinity)
+                .background(.white)
+                .cornerRadius(10)
                 
                 
             }
-            .onAppear {
-                soundsValue = Float(profileController.soundsExercisesRight / profileController.soundsExercisesDone)
-            }
+            .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onAppear {
+                soundsValue = Float((profileController.soundsExercisesRight / profileController.soundsExercisesDone))
+            }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button (action: {onProfile.toggle()}) {

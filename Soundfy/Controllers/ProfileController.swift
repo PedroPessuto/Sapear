@@ -54,10 +54,13 @@ class ProfileController: ObservableObject {
     }
     
     private let actualPhaseIdKey = "actualPhaseIdKey"
+    
     private let soundsExercisesDoneKey = "soundsExercisesDoneKey"
     private let soundsExercisesRightKey = "soundsExercisesRightKey"
+    
     private let phonemeExercisesDoneKey = "phonemeExercisesDoneKey"
     private let phonemeExercisesRightKey = "phonemeExercisesRightKey"
+    
     private let wordsExercisesDoneKey = "wordsExercisesDoneKey"
     private let wordsExercisesRightKey = "wordsExercisesRightKey"
 

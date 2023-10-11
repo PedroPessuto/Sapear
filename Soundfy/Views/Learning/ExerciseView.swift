@@ -26,7 +26,8 @@ struct ExerciseView: View {
     @State var buttonDisabled: Bool = true
     @State var palavraescrita: String = "B"
     @State var isTalking: Bool = false
-    
+    @State var isFirst: Bool = true
+
     func playSound(Nome: String){
         let url = Bundle.main.url(forResource: Nome, withExtension: "mp3")
         guard url != nil else{
@@ -55,6 +56,17 @@ struct ExerciseView: View {
             waringText = ""
             clickedAlternatives = []
             selectedOptionId = UUID()
+            isFirst = true
+            
+            if exercise.exerciseType == "soundExercise" {
+                profileController.soundsExercisesDone = profileController.soundsExercisesDone + 1
+            }
+            else if exercise.exerciseType == "phonemeExercise" {
+                profileController.phonemeExercisesDone = profileController.phonemeExercisesDone + 1
+            }
+            else {
+                profileController.wordsExercisesDone = profileController.wordsExercisesDone + 1
+            }
         }
         
         // Verifica se acertou
@@ -64,11 +76,24 @@ struct ExerciseView: View {
             waringText = "Parabéns"
             buttonText = "Próximo"
             
+            if isFirst{
+                if exercise.exerciseType == "soundExercise" {
+                    profileController.soundsExercisesRight = profileController.soundsExercisesRight + 1
+                    
+                }
+                else if exercise.exerciseType == "phonemeExercise" {
+                    profileController.phonemeExercisesRight = profileController.phonemeExercisesRight + 1
+                }
+                else {
+                    profileController.wordsExercisesRight = profileController.wordsExercisesRight + 1
+                }
+            }
         }
         
         // Verifica se errou
         if selectedOption != exerciseAwnser && selectedOption != -1 {
             waringText = "Tente Novamente"
+            isFirst = false
         }
         
         if !clickedAlternatives.contains(selectedOptionId) {

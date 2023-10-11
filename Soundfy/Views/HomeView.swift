@@ -43,10 +43,23 @@ struct HomeView: View {
                     .ignoresSafeArea()
             }
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {onProfile.toggle()}) {
+                        Image(systemName: "chart.bar.xaxis")
+                            .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
+                            .font(.system(size: 25))
+                    }
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $onProfile) {
+            ProfileView(onProfile: $onProfile)
         }
         .onAppear {
             let uuids: [UUID] = phasesDone.compactMap { $0.id }
             profileController.phasesDone = uuids
+            profileController.actualPhaseId = UUID(uuidString: "550e8410-e29b-41d4-a716-446655440001")!
             
             outerLoop: for section in contentController.soundsSections {
                 for phase in section.sectionPhases {
@@ -58,5 +71,6 @@ struct HomeView: View {
             }
 
         }
+        
     }
 }
