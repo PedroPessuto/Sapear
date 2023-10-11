@@ -11,6 +11,7 @@ struct ProgressBar: View {
     @Binding var value: Float
     var maxValue: Float
     @State private var animatedValue: Float = 0
+    var color: Color
     
     var body: some View {
         GeometryReader { geometry in
@@ -21,7 +22,7 @@ struct ProgressBar: View {
                 
                 Rectangle()
                     .frame(width: min(CGFloat(self.animatedValue/self.maxValue) * geometry.size.width, geometry.size.width), height: geometry.size.height)
-                    .foregroundColor(Color(UIColor.systemBlue))
+                    .foregroundColor(color)
                     .onAppear() {
                         withAnimation(.easeInOut(duration: 0.5)) {
                             animatedValue = value

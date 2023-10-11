@@ -146,7 +146,8 @@ struct ExerciseView: View {
                 .frame(height: 15)
                 .padding(.bottom)
             
-            PlayButton(buttonAction: {handleNextScreen()}, buttonText: buttonText, isDisabled: $buttonDisabled)
+            PlayButton(buttonAction: {handleNextScreen() 
+                playSound(Nome: "vazio")}, buttonText: buttonText, isDisabled: $buttonDisabled)
                 .onChange(of: selectedOption) { newValue in
                     if selectedOption != -1 {
                         buttonDisabled = false
