@@ -138,8 +138,7 @@ struct FrogTalking: View {
                             let aux = self.palavra(letras: palavraescrita).count
                             
                             self.index = (self.index + 1) % self.palavra(letras: palavraescrita).count
-                            print(self.index)
-                            print(palavraescrita)
+                          
                             contador += 1
                             
                             if contador == aux {

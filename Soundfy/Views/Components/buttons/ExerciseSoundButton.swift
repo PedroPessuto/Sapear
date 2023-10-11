@@ -23,6 +23,7 @@ struct ExerciseSoundButton: View {
     @State var buttonPading: CGFloat = 8
     
     func getSafeImage(named: String) -> Bool {
+        
         let uiImage =  (UIImage(named: named) ?? UIImage(named: "Default.png"))!
         if uiImage == UIImage(named: "Default.png"){
             return false
@@ -53,15 +54,15 @@ struct ExerciseSoundButton: View {
                             
                             
                             VStack {
-                                if item.alternativeImage != nil || item.alternativeImage != "" {
-                                    if getSafeImage(named: item.alternativeImage ?? "") {
-                                        Image(item.alternativeImage ?? "")
+                                if  item.alternativeImage != "" {
+                                    if getSafeImage(named: item.alternativeImage!) {
+                                        Image(item.alternativeImage!)
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
                                     }
                                     else {
-                                        Image(systemName: item.alternativeImage ?? "")
+                                        Image(systemName: item.alternativeImage!)
                                             .font(.title)
                                     }
                                 }
@@ -110,15 +111,17 @@ struct ExerciseSoundButton: View {
                             
                             
                             VStack {
-                                if item.alternativeImage != nil || item.alternativeImage != "" {
-                                    if getSafeImage(named: item.alternativeImage ?? "") {
-                                        Image(item.alternativeImage ?? "")
+                                if item.alternativeImage != "" {
+                                    
+                                    if getSafeImage(named: item.alternativeImage!) {
+                                        
+                                        Image(item.alternativeImage!)
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
                                     }
                                     else {
-                                        Image(systemName: item.alternativeImage ?? "")
+                                        Image(systemName: item.alternativeImage!)
                                             .font(.title)
                                     }
                                 }
@@ -163,15 +166,15 @@ struct ExerciseSoundButton: View {
                             
                             
                             VStack {
-                                if item.alternativeImage != nil || item.alternativeImage != "" {
-                                    if getSafeImage(named: item.alternativeImage ?? "") {
-                                        Image(item.alternativeImage ?? "")
+                                if item.alternativeImage != "" {
+                                    if getSafeImage(named: item.alternativeImage!) {
+                                        Image(item.alternativeImage!)
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
                                     }
                                     else {
-                                        Image(systemName: item.alternativeImage ?? "")
+                                        Image(systemName: item.alternativeImage!)
                                             .font(.title)
                                     }
                                 }

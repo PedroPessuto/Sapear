@@ -23,7 +23,7 @@ struct ExerciseView: View {
     @State var waringText: String = ""
     @State var clickedAlternatives: [UUID] = []
     @State var selectedOptionId: UUID = UUID()
-    
+    @State var buttonDisabled: Bool = true
     @State var palavraescrita: String = "B"
     @State var isTalking: Bool = false
     
@@ -120,9 +120,20 @@ struct ExerciseView: View {
             Text(waringText)
                 .frame(height: 15)
                 .padding(.bottom)
-            PlayButton(buttonAction: {handleNextScreen()}, buttonText: buttonText)
+            
+            PlayButton(buttonAction: {handleNextScreen()}, buttonText: buttonText, isDisabled: $buttonDisabled)
+                .onChange(of: selectedOption) { newValue in
+                    if selectedOption != -1 {
+                        buttonDisabled = false
+                    }
+                    else {
+                        buttonDisabled = true
+                    }
+                }
+               
         }
         .onAppear {
+            
             exerciseAwnser = exercise.exerciseAnswer
         }
         .onChange(of: count, perform: { _ in

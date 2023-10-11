@@ -88,7 +88,6 @@ struct PhaseManagerView: View {
                         LessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
                     }
                     else if lessonType == "phonemeClass" {
-//                        PhonemeLessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
                         LessonView(lesson: profileController.actualPhase!.phaseLessons[count], changeScreen: changeScreen, count: count, buttonText: $buttonText)
                     }
                     else if lessonType == "wordClass" {

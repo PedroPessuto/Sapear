@@ -8,6 +8,7 @@
 import SwiftUI
 import AVFoundation
 
+var player: AVAudioPlayer!
 struct LessonView: View {
     
     @EnvironmentObject var profileController: ProfileController
@@ -91,9 +92,9 @@ struct LessonView: View {
             }
             
             // ===== FOOTER =====
-            
+                    
             Spacer()
-            PlayButton(buttonAction: {changeScreen()}, buttonText: buttonText)
+            PlayButton(buttonAction: {changeScreen()}, buttonText: buttonText, isDisabled: .constant(false))
         }
         .padding(.horizontal, 30)
         .multilineTextAlignment(.center)

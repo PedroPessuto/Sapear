@@ -846,11 +846,11 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8490-e29b-41d4-a716-446655450070")!,
                                                         alternativeLabel: "E",
                                                         alternativeSoundName: "e",
-                                                        alternativeImage: "e.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8500-e29b-41d4-a716-446655450071")!,
                                                         alternativeLabel: "A",
                                                         alternativeSoundName: "a",
-                                                        alternativeImage: "a.square")
+                                                        alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
                           ])
@@ -866,11 +866,11 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8540-e29b-41d4-a716-446655440081")!,
                                                         alternativeLabel: "E",
                                                         alternativeSoundName: "e",
-                                                        alternativeImage: "e.sqaure"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8550-e29b-41d4-a716-446655440082")!,
                                                         alternativeLabel: "I",
                                                         alternativeSoundName: "i",
-                                                        alternativeImage: "i.square")
+                                                        alternativeImage: "")
                                         ]),
                             
                           ],
@@ -883,11 +883,11 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8640-e29b-41d4-a716-446655440091")!,
                                                         alternativeLabel: "E",
                                                         alternativeSoundName: "e",
-                                                        alternativeImage: "e.sqaure"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8670-e29b-41d4-a716-446655440094")!,
                                                         alternativeLabel: "I",
                                                         alternativeSoundName: "i",
-                                                        alternativeImage: "i.square")
+                                                        alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
                             
@@ -899,15 +899,15 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8620-e29b-41d4-a716-446651450034")!,
                                                         alternativeLabel: "E",
                                                         alternativeSoundName: "e",
-                                                        alternativeImage: "e.sqaure"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8640-e29b-41d4-a716-446655450091")!,
                                                         alternativeLabel: "I",
                                                         alternativeSoundName: "i",
-                                                        alternativeImage: "i.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8650-e29b-41d4-a716-446655450092")!,
                                                         alternativeLabel: "A",
                                                         alternativeSoundName: "a",
-                                                        alternativeImage: "a.square")
+                                                        alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0)
                           ])
@@ -923,11 +923,11 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8590-e29b-41d4-a716-446655440101")!,
                                                         alternativeLabel: "O",
                                                         alternativeSoundName: "o",
-                                                        alternativeImage: "o.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8600-e29b-41d4-a716-446655440102")!,
                                                         alternativeLabel: "U",
                                                         alternativeSoundName: "u",
-                                                        alternativeImage: "u.square")
+                                                        alternativeImage: "")
                                         ]),
                             
                           ],
@@ -940,19 +940,19 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8640-e29b-41d4-a716-446655440106")!,
                                                         alternativeLabel: "O",
                                                         alternativeSoundName: "o",
-                                                        alternativeImage: "o.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8650-e29b-41d4-a716-446655440107")!,
                                                         alternativeLabel: "A",
                                                         alternativeSoundName: "a",
-                                                        alternativeImage: "a.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8660-e29b-41d4-a716-446655440108")!,
                                                         alternativeLabel: "I",
                                                         alternativeSoundName: "i",
-                                                        alternativeImage: "i.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8670-e29b-41d4-a716-446655440109")!,
                                                         alternativeLabel: "U",
                                                         alternativeSoundName: "u",
-                                                        alternativeImage: "u.square")
+                                                        alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
                             Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450105")!,
@@ -963,19 +963,19 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8670-e29b-41d4-a716-446655450109")!,
                                                         alternativeLabel: "A",
                                                         alternativeSoundName: "a",
-                                                        alternativeImage: "a.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8640-e29b-41d4-a716-446655450106")!,
                                                         alternativeLabel: "O",
                                                         alternativeSoundName: "o",
-                                                        alternativeImage: "o.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8650-e29b-41d4-a716-446655450107")!,
                                                         alternativeLabel: "I",
                                                         alternativeSoundName: "i",
-                                                        alternativeImage: "i.square"),
+                                                        alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8660-e29b-41d4-a716-446655450108")!,
                                                         alternativeLabel: "U",
                                                         alternativeSoundName: "u",
-                                                        alternativeImage: "u.square")
+                                                        alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3)
                             

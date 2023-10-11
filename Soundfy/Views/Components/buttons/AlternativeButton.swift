@@ -37,15 +37,15 @@ struct AlternativeButton: View {
                     
                     
                     VStack {
-                        if item.alternativeImage != nil {
-                            if getSafeImage(named: item.alternativeImage ?? "") {
-                                Image(item.alternativeImage ?? "")
+                        if item.alternativeImage != ""  {
+                            if getSafeImage(named: item.alternativeImage!) {
+                                Image(item.alternativeImage!)
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 50, height: 50)
                             }
                             else {
-                                Image(systemName: item.alternativeImage ?? "")
+                                Image(systemName: item.alternativeImage!)
                                     .font(.title)
                             }
                         }
