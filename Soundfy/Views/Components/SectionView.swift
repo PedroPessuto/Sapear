@@ -15,20 +15,8 @@ struct SectionView: View {
     var body: some View {
         VStack {
             
-            // ===== SECTION HEADER =====
-            
-//            VStack {
-//                Text(section.sectionName)
-//                    .font(.title2)
-//                    .bold()
-//                Text(section.sectionDescription)
-//            }
-//            .foregroundColor(.white)
-//            .frame(maxWidth: .infinity)
-//            .frame(height: 100)
-//            .background(section.sectionColor)
-//            .padding(.bottom, 50)
-            
+            // ===== HEADER =====
+
             VStack {
                 Text(section.sectionName)
                     .font(Font.custom("Quicksand-Bold", size: 40))
@@ -40,7 +28,7 @@ struct SectionView: View {
             .cornerRadius(20)
             .padding(.bottom, 50)
             
-            // ===== SECTION BODY =====
+            // ===== BODY =====
             
             ForEach (section.sectionPhases.indices, id: \.self) {
                 index in

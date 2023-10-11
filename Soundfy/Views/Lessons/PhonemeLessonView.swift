@@ -129,6 +129,7 @@ struct PhonemeLessonView: View {
         
         return lista
     }
+    
     var body: some View {
         VStack {
             
@@ -188,7 +189,7 @@ struct PhonemeLessonView: View {
 //                                }
                             }
                     }
-                    else{
+                    else {
                         Image("BMP")
                             .resizable()
                             .scaledToFit()
@@ -199,22 +200,23 @@ struct PhonemeLessonView: View {
                     }
                 }
                 
-                
-                
                 LazyVGrid(columns: columns, spacing: 20) {
-                    if let soundLesson = profileController.actualPhase!.phaseLessons[count] as? SoundLesson {
-                        ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
-                            AlternativeButton(item: item, buttonAction: {
-                                playSound(Nome: item.alternativeSoundName)
-                                palavraescrita = item.alternativeLabel
-                                isTalking.toggle()
-                                contador = 0
-                                index = 0
-                                imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
-                            })
-                        }
+                    ForEach (lesson.lessonAlternatives, id: \.alternativeId) {
+                        alternative in
+                        AlternativeButton(item: alternative, buttonAction: {
+                            if alternative.alternativeSoundName != nil {
+                                playSound(Nome: alternative.alternativeSoundName ?? "")
+                            }
+                            
+                            palavraescrita = alternative.alternativeLabel
+                            isTalking.toggle()
+                            contador = 0
+                            index = 0
+                            imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+                        })
                     }
                 }
+                
             }
             
             // ===== FOOTER =====

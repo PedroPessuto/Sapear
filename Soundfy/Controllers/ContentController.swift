@@ -23,7 +23,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440001")!,
                           phaseName: "Natureza",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8420-e29b-41d4-a716-446655440002")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8420-e29b-41d4-a716-446655440002")!,
                                         lessonName: "Natureza",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -48,10 +48,10 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655440009")!,
-                                          exerciseName: "Identifique o som",
-                                          exerciseDescription: "Que som é esse?",
-                                          exerciseType: "soundExercise",
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655440009")!,
+                                            exerciseName: "Identifique o som",
+                                            exerciseDescription: "Que som é esse?",
+                                            exerciseType: "soundExercise",
                                           exerciseAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655440010")!,
                                                         alternativeLabel: "Chuva",
@@ -71,7 +71,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "wind")
                                           ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655410009")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655410009")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -94,7 +94,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "cloud.rain.fill")
                                           ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655430009")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655430009")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -118,7 +118,7 @@ class ContentController: ObservableObject {
                                           ],
                                           exerciseAnswer: 1),
                             
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655420009")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-446655420009")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -146,7 +146,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446555440019")!,
                           phaseName: "Natureza",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8530-e29b-41d4-a716-446655440020")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8530-e29b-41d4-a716-446655440020")!,
                                         lessonName: "Natureza",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -171,7 +171,7 @@ class ContentController: ObservableObject {
                             //... repita para todos os grupos de 4 sons em "NATUREZA"
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440040")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440040")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -195,7 +195,7 @@ class ContentController: ObservableObject {
                                             
                                           ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655430040")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655430040")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -218,7 +218,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "cow")
                                           ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450040")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450040")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -242,7 +242,7 @@ class ContentController: ObservableObject {
                                             
                                           ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655460040")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655460040")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -271,7 +271,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440029")!,
                           phaseName: "Natureza",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440030")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440030")!,
                                         lessonName: "Natureza",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -296,7 +296,7 @@ class ContentController: ObservableObject {
                             //... repita para todos os grupos de 4 sons em "NATUREZA"
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450050")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450050")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -319,7 +319,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "chicken")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655460050")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655460050")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -342,7 +342,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "chicken")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655470050")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655470050")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -365,7 +365,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "chicken")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655480050")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655480050")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -399,7 +399,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440061")!,
                           phaseName: "Urbano",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8420-e29b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8420-e29b-41d4-a716-446655440062")!,
                                         lessonName: "Urbano",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -424,7 +424,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -447,7 +447,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "car.front.waves.up")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -470,7 +470,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "car.fill")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966460069")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966460069")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -493,7 +493,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "clock.fill")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966470069")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966470069")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -522,7 +522,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440079")!,
                           phaseName: "Urbano",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8530-e29b-41d4-a716-446655440080")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8530-e29b-41d4-a716-446655440080")!,
                                         lessonName: "Urbano",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -539,7 +539,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440090")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440090")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -563,7 +563,7 @@ class ContentController: ObservableObject {
                                                                 ],
                                           exerciseAnswer: 0),
                             
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450090")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450090")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -591,7 +591,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440100")!,
                           phaseName: "Urbano",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540100")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540100")!,
                                         lessonName: "Urbano",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -608,7 +608,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446659440105")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446659440105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -631,7 +631,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "cow")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450105")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655450105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -664,7 +664,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655540001")!,
                           phaseName: "Instrumentos",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540002")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655540002")!,
                                         lessonName: "Instrumentos",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -680,7 +680,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440105")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655440105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -703,7 +703,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "guitar")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655650105")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655650105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -731,7 +731,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655640001")!,
                           phaseName: "Instruementos",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655640002")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655640002")!,
                                         lessonName: "Instrumentos",
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
@@ -748,7 +748,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446656440105")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446656440105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -771,7 +771,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "pianokeys")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655660105")!,
+                            Exercise(exerciseId: UUID(uuidString: "550e8630-e29b-41d4-a716-446655660105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
@@ -807,7 +807,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440061")!,
                           phaseName: "Vogais",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
                                         lessonName: "Vogais",
                                         lessonDescription: "Clique nas palavras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -823,7 +823,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Vogal",
                                           exerciseDescription: "Qual vogal o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -838,7 +838,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Vogal",
                                           exerciseDescription: "Qual vogal o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -858,7 +858,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440079")!,
                           phaseName: "Vogal",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8530-e29b-41d4-a716-446655440080")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8530-e29b-41d4-a716-446655440080")!,
                                         lessonName: "Vogais",
                                         lessonDescription: "Clique nas palavras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -875,7 +875,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655440090")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655440090")!,
                                           exerciseName: "Vogal",
                                           exerciseDescription: "Qual vogal o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -891,7 +891,7 @@ class ContentController: ObservableObject {
                                                                 ],
                                           exerciseAnswer: 1),
                             
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450090")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450090")!,
                                           exerciseName: "Vogal",
                                           exerciseDescription: "Qual vogal o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -915,7 +915,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440100")!,
                           phaseName: "Vogal",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655540100")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655540100")!,
                                         lessonName: "Vogais",
                                         lessonDescription: "Clique nas palavras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -932,7 +932,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446659440105")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446659440105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Qual vogal o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -955,7 +955,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "u.square")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450105")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450105")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Qual vogal o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -988,7 +988,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440001")!,
                           phaseName: "Consoante",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440002")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440002")!,
                                         lessonName: "Consoantes",
                                         lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -1013,7 +1013,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655440009")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655440009")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1036,7 +1036,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: ""),
                                           ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655410009")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655410009")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1059,7 +1059,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                           ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655430009")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655430009")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1083,7 +1083,7 @@ class ContentController: ObservableObject {
                                           ],
                                           exerciseAnswer: 2),
                             
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655420009")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-446655420009")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1111,7 +1111,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446555440019")!,
                           phaseName: "Consoante",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8530-e29b-41d4-a716-446655440020")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8530-e29b-41d4-a716-446655440020")!,
                                         lessonName: "Consoantes",
                                         lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -1136,7 +1136,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655440040")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655440040")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1160,7 +1160,7 @@ class ContentController: ObservableObject {
                                             
                                           ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655430040")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655430040")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1183,7 +1183,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                           ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450040")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450040")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1207,7 +1207,7 @@ class ContentController: ObservableObject {
                                             
                                           ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655460040")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655460040")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1236,7 +1236,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440029")!,
                           phaseName: "Consoante",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655440030")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655440030")!,
                                         lessonName: "Consoantes",
                                         lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -1261,7 +1261,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450050")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655450050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1284,7 +1284,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655460050")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655460050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1307,7 +1307,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655470050")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655470050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1330,7 +1330,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655480050")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8630-e29b-41d4-a716-446655480050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1359,7 +1359,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8510-e29b-41d4-a716-446655440029")!,
                           phaseName: "Consoante",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655440030")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8580-e29b-41d4-a716-446655440030")!,
                                         lessonName: "Consoantes",
                                         lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -1384,7 +1384,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "690e8630-e29b-41d4-a716-446655450050")!,
+                            Exercise(exerciseId: UUID(uuidString: "690e8630-e29b-41d4-a716-446655450050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1407,7 +1407,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "690e8630-e29b-41d4-a716-446655460050")!,
+                            Exercise(exerciseId: UUID(uuidString: "690e8630-e29b-41d4-a716-446655460050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1430,7 +1430,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "630e8630-e29b-41d4-a716-446655470050")!,
+                            Exercise(exerciseId: UUID(uuidString: "630e8630-e29b-41d4-a716-446655470050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1453,7 +1453,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "640e8630-e29b-41d4-a716-446655480050")!,
+                            Exercise(exerciseId: UUID(uuidString: "640e8630-e29b-41d4-a716-446655480050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1481,7 +1481,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655440029")!,
                           phaseName: "Consoante",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440030")!,
+                            Lesson(lessonId: UUID(uuidString: "550e8580-e29b-41d4-a716-446655440030")!,
                                         lessonName: "Consoantes",
                                         lessonDescription: "Clique nas letras para descobrir as pronúncias",
                                         lessonType: "phonemeClass",
@@ -1498,7 +1498,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "590e8630-e29b-41d4-a716-446655450050")!,
+                            Exercise(exerciseId: UUID(uuidString: "590e8630-e29b-41d4-a716-446655450050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1521,7 +1521,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "590e8630-e29b-41d4-a716-446655460050")!,
+                            Exercise(exerciseId: UUID(uuidString: "590e8630-e29b-41d4-a716-446655460050")!,
                                           exerciseName: "Consoante",
                                           exerciseDescription: "Qual consoante o sapo está falando?",
                                           exerciseType: "phonemeExercise",
@@ -1559,7 +1559,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8610-e29b-41d4-a716-446655440061")!,
                           phaseName: "Casa",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e23b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e23b-41d4-a716-446655440062")!,
                                         lessonName: "Casa",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -1583,7 +1583,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "651e8480-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "651e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1606,7 +1606,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966410069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966410069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1629,7 +1629,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449963450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449963450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1652,7 +1652,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-459966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-459966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1679,7 +1679,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440011")!,
                           phaseName: "Casa",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
                                         lessonName: "Casa",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -1703,7 +1703,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1726,7 +1726,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1749,7 +1749,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1772,7 +1772,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1799,7 +1799,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440021")!,
                           phaseName: "Casa",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
                                         lessonName: "Casa",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -1823,7 +1823,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1846,7 +1846,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1869,7 +1869,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1892,7 +1892,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1919,7 +1919,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446655440031")!,
                           phaseName: "Casa",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
                                         lessonName: "Casa",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -1943,7 +1943,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1966,7 +1966,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -1989,7 +1989,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2012,7 +2012,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2044,7 +2044,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a716-446625440061")!,
                           phaseName: "Escola",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446635440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446635440062")!,
                                         lessonName: "Escola",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -2068,7 +2068,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449166440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449166440069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2091,7 +2091,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "651e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "651e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2114,7 +2114,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "651e8480-e22b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "651e8480-e22b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2137,7 +2137,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449926450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449926450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2164,7 +2164,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a712-246655440061")!,
                           phaseName: "Escola",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e22b-42d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e22b-42d4-a716-446655440062")!,
                                         lessonName: "Escola",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -2188,7 +2188,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e09b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e09b-41d4-a716-449966440069")!,
                                           exerciseName: "Escola",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2211,7 +2211,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "620e8480-e29b-40d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "620e8480-e29b-40d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2234,7 +2234,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "620e8480-e29b-41d4-a726-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "620e8480-e29b-41d4-a726-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2257,7 +2257,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "150e8480-e29b-41d4-a716-449966450061")!,
+                            Exercise(exerciseId: UUID(uuidString: "150e8480-e29b-41d4-a716-449966450061")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2284,7 +2284,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8810-e29b-41d4-a716-446655440061")!,
                           phaseName: "Escola",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "650e8420-e29b-41d4-a716-446655440062")!,
                                         lessonName: "Escola",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -2308,7 +2308,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2331,7 +2331,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2354,7 +2354,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2377,7 +2377,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 3),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2404,7 +2404,7 @@ class ContentController: ObservableObject {
                     Phase(phaseId: UUID(uuidString: "650e8410-e29b-41d4-a711-446655440061")!,
                           phaseName: "Escola",
                           phaseLessons: [
-                            SoundLesson(lessonId: UUID(uuidString: "180e8420-e29b-41d4-a716-446655440062")!,
+                            Lesson(lessonId: UUID(uuidString: "180e8420-e29b-41d4-a716-446655440062")!,
                                         lessonName: "Escola",
                                         lessonDescription: "Aprenda os sons das Palavras.",
                                         lessonType: "wordClass",
@@ -2428,7 +2428,7 @@ class ContentController: ObservableObject {
                                         ]),
                           ],
                           phaseExercises: [
-                            SoundExercise(exerciseId: UUID(uuidString: "650e1080-e29b-41d4-a716-449966440069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e1080-e29b-41d4-a716-449966440069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2451,7 +2451,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
-                            SoundExercise(exerciseId: UUID(uuidString: "690e8480-e29b-41d4-a796-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "690e8480-e29b-41d4-a796-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2474,7 +2474,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 2),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a769-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a769-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
@@ -2497,7 +2497,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 1),
-                            SoundExercise(exerciseId: UUID(uuidString: "650e8475-e29b-41d4-a716-449966450069")!,
+                            Exercise(exerciseId: UUID(uuidString: "650e8475-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",

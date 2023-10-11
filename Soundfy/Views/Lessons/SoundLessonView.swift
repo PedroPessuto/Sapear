@@ -9,10 +9,15 @@ import SwiftUI
 import AVFoundation
 
 var player: AVAudioPlayer!
+
 struct SoundLessonView: View {
     
     @EnvironmentObject var profileController: ProfileController
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
+    var lesson: Lesson
+    var changeScreen: () -> Void
+    var count: Int
+    @Binding var buttonText: String
     
     func playSound(Nome: String){
         let url = Bundle.main.url(forResource: Nome, withExtension: "mp3")
@@ -26,11 +31,6 @@ struct SoundLessonView: View {
             print("\(error)")
         }
     }
-    
-    var lesson: Lesson
-    var changeScreen: () -> Void
-    var count: Int
-    @Binding var buttonText: String
     
     var body: some View {
         VStack {
@@ -49,10 +49,13 @@ struct SoundLessonView: View {
                     .fontWeight(.medium)
                 
                 LazyVGrid(columns: columns, spacing: 20) {
-                    if let soundLesson = profileController.actualPhase!.phaseLessons[count] as? SoundLesson {
-                        ForEach(soundLesson.lessonAlternatives, id: \.alternativeId) { item in
-                            AlternativeButton(item: item, buttonAction: { playSound(Nome: item.alternativeSoundName) })
-                        }
+                    ForEach (lesson.lessonAlternatives, id: \.alternativeId) {
+                        alternative in
+                        AlternativeButton(item: alternative, buttonAction: {
+                            if alternative.alternativeSoundName != nil {
+                                playSound(Nome: alternative.alternativeSoundName ?? "")
+                            }
+                        })
                     }
                 }
             }
