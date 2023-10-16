@@ -55,7 +55,7 @@
 		E5C72D982ACF8F43005A8137 /* futebol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D282ACF8F3F005A8137 /* futebol.mp3 */; };
 		E5C72D992ACF8F43005A8137 /* sabonete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D292ACF8F3F005A8137 /* sabonete.mp3 */; };
 		E5C72D9A2ACF8F43005A8137 /* cabra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2A2ACF8F3F005A8137 /* cabra.mp3 */; };
-		E5C72D9B2ACF8F43005A8137 /* mochila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2B2ACF8F3F005A8137 /* mochila.mp3 */; };
+		E5C72D9B2ACF8F43005A8137 /* moxila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2B2ACF8F3F005A8137 /* moxila.mp3 */; };
 		E5C72D9C2ACF8F43005A8137 /* praca-alimentacao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2C2ACF8F40005A8137 /* praca-alimentacao.mp3 */; };
 		E5C72D9D2ACF8F43005A8137 /* buzina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */; };
 		E5C72D9E2ACF8F43005A8137 /* algodao-doce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */; };
@@ -65,7 +65,7 @@
 		E5C72DA22ACF8F43005A8137 /* alarme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D322ACF8F40005A8137 /* alarme.mp3 */; };
 		E5C72DA32ACF8F43005A8137 /* cruz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D332ACF8F40005A8137 /* cruz.mp3 */; };
 		E5C72DA42ACF8F43005A8137 /* arvore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D342ACF8F40005A8137 /* arvore.mp3 */; };
-		E5C72DA52ACF8F43005A8137 /* colher.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D352ACF8F40005A8137 /* colher.mp3 */; };
+		E5C72DA52ACF8F43005A8137 /* coler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D352ACF8F40005A8137 /* coler.mp3 */; };
 		E5C72DA62ACF8F43005A8137 /* vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D362ACF8F40005A8137 /* vaca.mp3 */; };
 		E5C72DA72ACF8F43005A8137 /* papel-higienico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D372ACF8F40005A8137 /* papel-higienico.mp3 */; };
 		E5C72DA82ACF8F43005A8137 /* bola.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D382ACF8F40005A8137 /* bola.mp3 */; };
@@ -203,7 +203,7 @@
 		E5C72D282ACF8F3F005A8137 /* futebol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = futebol.mp3; sourceTree = "<group>"; };
 		E5C72D292ACF8F3F005A8137 /* sabonete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sabonete.mp3; sourceTree = "<group>"; };
 		E5C72D2A2ACF8F3F005A8137 /* cabra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cabra.mp3; sourceTree = "<group>"; };
-		E5C72D2B2ACF8F3F005A8137 /* mochila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mochila.mp3; sourceTree = "<group>"; };
+		E5C72D2B2ACF8F3F005A8137 /* moxila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moxila.mp3; sourceTree = "<group>"; };
 		E5C72D2C2ACF8F40005A8137 /* praca-alimentacao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "praca-alimentacao.mp3"; sourceTree = "<group>"; };
 		E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzina.mp3; sourceTree = "<group>"; };
 		E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "algodao-doce.mp3"; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 		E5C72D322ACF8F40005A8137 /* alarme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarme.mp3; sourceTree = "<group>"; };
 		E5C72D332ACF8F40005A8137 /* cruz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cruz.mp3; sourceTree = "<group>"; };
 		E5C72D342ACF8F40005A8137 /* arvore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arvore.mp3; sourceTree = "<group>"; };
-		E5C72D352ACF8F40005A8137 /* colher.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = colher.mp3; sourceTree = "<group>"; };
+		E5C72D352ACF8F40005A8137 /* coler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coler.mp3; sourceTree = "<group>"; };
 		E5C72D362ACF8F40005A8137 /* vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vaca.mp3; sourceTree = "<group>"; };
 		E5C72D372ACF8F40005A8137 /* papel-higienico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "papel-higienico.mp3"; sourceTree = "<group>"; };
 		E5C72D382ACF8F40005A8137 /* bola.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bola.mp3; sourceTree = "<group>"; };
@@ -468,7 +468,7 @@
 				E5C72D252ACF8F3F005A8137 /* chuva.mp3 */,
 				E5C72D752ACF8F42005A8137 /* chuveiro.mp3 */,
 				E5C72D662ACF8F42005A8137 /* colchao.mp3 */,
-				E5C72D352ACF8F40005A8137 /* colher.mp3 */,
+				E5C72D352ACF8F40005A8137 /* coler.mp3 */,
 				E5C72D532ACF8F41005A8137 /* condicionador.mp3 */,
 				E5C72D492ACF8F41005A8137 /* controle-remoto.mp3 */,
 				E5C72D842ACF8F43005A8137 /* copo.mp3 */,
@@ -504,7 +504,7 @@
 				E5C72D562ACF8F41005A8137 /* mar.mp3 */,
 				E5C72D1F2ACF8F3F005A8137 /* mesa.mp3 */,
 				E5C72D552ACF8F41005A8137 /* microfone.mp3 */,
-				E5C72D2B2ACF8F3F005A8137 /* mochila.mp3 */,
+				E5C72D2B2ACF8F3F005A8137 /* moxila.mp3 */,
 				E5C72D812ACF8F43005A8137 /* musica.mp3 */,
 				E5C72D4A2ACF8F41005A8137 /* n.mp3 */,
 				E5C72D682ACF8F42005A8137 /* o.mp3 */,
@@ -631,7 +631,7 @@
 				E5C72DCD2ACF8F43005A8137 /* estojo.mp3 in Resources */,
 				E5C72DF02ACF8F43005A8137 /* faca.mp3 in Resources */,
 				E5C72DD12ACF8F43005A8137 /* galinha.mp3 in Resources */,
-				E5C72D9B2ACF8F43005A8137 /* mochila.mp3 in Resources */,
+				E5C72D9B2ACF8F43005A8137 /* moxila.mp3 in Resources */,
 				E5C72DC32ACF8F43005A8137 /* condicionador.mp3 in Resources */,
 				E5C72DF52ACF8F43005A8137 /* f.mp3 in Resources */,
 				E5C72DAD2ACF8F43005A8137 /* sapatos.mp3 in Resources */,
@@ -648,7 +648,7 @@
 				E5C72DBF2ACF8F43005A8137 /* areia.mp3 in Resources */,
 				E5C72DBE2ACF8F43005A8137 /* lojas.mp3 in Resources */,
 				E5C72DC52ACF8F43005A8137 /* microfone.mp3 in Resources */,
-				E5C72DA52ACF8F43005A8137 /* colher.mp3 in Resources */,
+				E5C72DA52ACF8F43005A8137 /* coler.mp3 in Resources */,
 				E5B719B42AD73EB900449687 /* vazio.mp3 in Resources */,
 				E5C72DE32ACF8F43005A8137 /* caderno.mp3 in Resources */,
 				E5C72DB42ACF8F43005A8137 /* abajur.mp3 in Resources */,
@@ -898,8 +898,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -907,9 +906,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pedropessuto.Soundfy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -928,8 +930,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -937,9 +938,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pedropessuto.Soundfy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -67,7 +67,7 @@ struct LessonView: View {
                                     playSound(Nome: alternative.alternativeSoundName ?? "")
                                 }
                                 
-                                palavraescrita = alternative.alternativeLabel
+                                palavraescrita = alternative.alternativeSoundName!
                                 isTalking.toggle()
                             })
                         }
