@@ -49,20 +49,18 @@ struct FineshedView: View {
             PlayButton(buttonAction: {
                 changeScreen()
                 
-//                let phaseId = profileController.actualPhase!.phaseId
+                let phaseId = profileController.actualPhase!.phaseId
                 
-//                for number in phasesDone.indices {
-//                    if phasesDone[number].id == phaseId {
-//                        break
-//                    }
-//                    if number == phasesDone.count  {
-//
-//                        progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
-//                        profileController.phasesDone.append(profileController.actualPhase!.phaseId)
-//                    }
-//                }
-                progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
-                profileController.phasesDone.append(profileController.actualPhase!.phaseId)
+                for number in phasesDone.indices {
+                    if phasesDone[number].id == phaseId {
+                        break
+                    }
+                    if number == phasesDone.count - 1  {
+                        progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
+                        profileController.phasesDone.append(profileController.actualPhase!.phaseId)
+                    }
+                }
+              
                 
                 
                 profileController.onPhase = false
