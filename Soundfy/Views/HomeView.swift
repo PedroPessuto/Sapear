@@ -59,15 +59,40 @@ struct HomeView: View {
         .onAppear {
             let uuids: [UUID] = phasesDone.compactMap { $0.id }
             profileController.phasesDone = uuids
-            profileController.actualPhaseId = UUID(uuidString: "550e8410-e29b-41d4-a716-446655440001")!
+            var aux: Bool = false
             
             outerLoop: for section in contentController.soundsSections {
                 for phase in section.sectionPhases {
                     if phase.phaseId == profileController.actualPhaseId {
                         profileController.actualPhase = phase
+                        aux = true
                         break outerLoop
                     }
                 }
+            }
+            
+            outerLoop: for section in contentController.phonemesSection {
+                for phase in section.sectionPhases {
+                    if phase.phaseId == profileController.actualPhaseId {
+                        profileController.actualPhase = phase
+                        aux = true
+                        break outerLoop
+                    }
+                }
+            }
+            
+            outerLoop: for section in contentController.wordsSection {
+                for phase in section.sectionPhases {
+                    if phase.phaseId == profileController.actualPhaseId {
+                        profileController.actualPhase = phase
+                        aux = true
+                        break outerLoop
+                    }
+                }
+            }
+            
+            if !aux {
+                profileController.actualPhaseId = UUID(uuidString: "550e8410-e29b-41d4-a716-446655440001")!
             }
 
         }

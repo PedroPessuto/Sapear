@@ -23,6 +23,119 @@
 		BF591E4F2AC4C18000A1F002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4E2AC4C18000A1F002 /* HomeView.swift */; };
 		BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */; };
 		BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7646E22AC35841002AD16C /* PhaseButton.swift */; };
+		BFCEA0DB2ADDCEDC00663046 /* q.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06A2ADDCED900663046 /* q.mp3 */; };
+		BFCEA0DC2ADDCEDC00663046 /* c.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06B2ADDCED900663046 /* c.mp3 */; };
+		BFCEA0DD2ADDCEDC00663046 /* m.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06C2ADDCED900663046 /* m.mp3 */; };
+		BFCEA0DE2ADDCEDC00663046 /* n.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06D2ADDCED900663046 /* n.mp3 */; };
+		BFCEA0DF2ADDCEDC00663046 /* porco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06E2ADDCED900663046 /* porco.mp3 */; };
+		BFCEA0E02ADDCEDC00663046 /* teclado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06F2ADDCED900663046 /* teclado.mp3 */; };
+		BFCEA0E12ADDCEDC00663046 /* cama.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0702ADDCED900663046 /* cama.mp3 */; };
+		BFCEA0E22ADDCEDC00663046 /* colchao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0712ADDCED900663046 /* colchao.mp3 */; };
+		BFCEA0E32ADDCEDC00663046 /* lousa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0722ADDCED900663046 /* lousa.mp3 */; };
+		BFCEA0E42ADDCEDC00663046 /* cadeiras.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0732ADDCED900663046 /* cadeiras.mp3 */; };
+		BFCEA0E52ADDCEDC00663046 /* carteira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0742ADDCED900663046 /* carteira.mp3 */; };
+		BFCEA0E62ADDCEDC00663046 /* r.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0752ADDCED900663046 /* r.mp3 */; };
+		BFCEA0E72ADDCEDC00663046 /* microfone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0762ADDCED900663046 /* microfone.mp3 */; };
+		BFCEA0E82ADDCEDC00663046 /* panela.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0772ADDCED900663046 /* panela.mp3 */; };
+		BFCEA0E92ADDCEDC00663046 /* l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0782ADDCED900663046 /* l.mp3 */; };
+		BFCEA0EA2ADDCEDC00663046 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0792ADDCED900663046 /* e.mp3 */; };
+		BFCEA0EB2ADDCEDC00663046 /* televisao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA07A2ADDCED900663046 /* televisao.mp3 */; };
+		BFCEA0EC2ADDCEDC00663046 /* faca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA07B2ADDCED900663046 /* faca.mp3 */; };
+		BFCEA0ED2ADDCEDC00663046 /* aviao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA07C2ADDCED900663046 /* aviao.mp3 */; };
+		BFCEA0EE2ADDCEDC00663046 /* j.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA07D2ADDCED900663046 /* j.mp3 */; };
+		BFCEA0EF2ADDCEDC00663046 /* estojo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA07E2ADDCED900663046 /* estojo.mp3 */; };
+		BFCEA0F02ADDCEDC00663046 /* z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA07F2ADDCED900663046 /* z.mp3 */; };
+		BFCEA0F12ADDCEDC00663046 /* geladeira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0802ADDCED900663046 /* geladeira.mp3 */; };
+		BFCEA0F22ADDCEDC00663046 /* estacionamento.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0812ADDCED900663046 /* estacionamento.mp3 */; };
+		BFCEA0F32ADDCEDC00663046 /* papel-higienico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0822ADDCED900663046 /* papel-higienico.mp3 */; };
+		BFCEA0F42ADDCEDC00663046 /* alarme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0832ADDCED900663046 /* alarme.mp3 */; };
+		BFCEA0F52ADDCEDC00663046 /* moxila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0842ADDCED900663046 /* moxila.mp3 */; };
+		BFCEA0F62ADDCEDC00663046 /* condicionador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0852ADDCED900663046 /* condicionador.mp3 */; };
+		BFCEA0F72ADDCEDC00663046 /* copo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0862ADDCED900663046 /* copo.mp3 */; };
+		BFCEA0F82ADDCEDC00663046 /* travesseiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0872ADDCEDA00663046 /* travesseiro.mp3 */; };
+		BFCEA0F92ADDCEDC00663046 /* mesa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0882ADDCEDA00663046 /* mesa.mp3 */; };
+		BFCEA0FA2ADDCEDC00663046 /* onda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0892ADDCEDA00663046 /* onda.mp3 */; };
+		BFCEA0FB2ADDCEDC00663046 /* tigre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08A2ADDCEDA00663046 /* tigre.mp3 */; };
+		BFCEA0FC2ADDCEDC00663046 /* sino.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08B2ADDCEDA00663046 /* sino.mp3 */; };
+		BFCEA0FD2ADDCEDC00663046 /* d.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08C2ADDCEDA00663046 /* d.mp3 */; };
+		BFCEA0FE2ADDCEDC00663046 /* tapete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08D2ADDCEDA00663046 /* tapete.mp3 */; };
+		BFCEA0FF2ADDCEDC00663046 /* banco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08E2ADDCEDA00663046 /* banco.mp3 */; };
+		BFCEA1002ADDCEDC00663046 /* vento.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08F2ADDCEDA00663046 /* vento.mp3 */; };
+		BFCEA1012ADDCEDC00663046 /* guitarra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0902ADDCEDA00663046 /* guitarra.mp3 */; };
+		BFCEA1022ADDCEDC00663046 /* arvore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0912ADDCEDA00663046 /* arvore.mp3 */; };
+		BFCEA1032ADDCEDC00663046 /* lago.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0922ADDCEDA00663046 /* lago.mp3 */; };
+		BFCEA1042ADDCEDC00663046 /* sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0932ADDCEDA00663046 /* sol.mp3 */; };
+		BFCEA1052ADDCEDC00663046 /* u.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0942ADDCEDA00663046 /* u.mp3 */; };
+		BFCEA1062ADDCEDC00663046 /* basqete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0952ADDCEDA00663046 /* basqete.mp3 */; };
+		BFCEA1072ADDCEDC00663046 /* sabonete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0962ADDCEDA00663046 /* sabonete.mp3 */; };
+		BFCEA1082ADDCEDC00663046 /* presentes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0972ADDCEDA00663046 /* presentes.mp3 */; };
+		BFCEA1092ADDCEDC00663046 /* lapis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0982ADDCEDA00663046 /* lapis.mp3 */; };
+		BFCEA10A2ADDCEDC00663046 /* armario.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0992ADDCEDA00663046 /* armario.mp3 */; };
+		BFCEA10B2ADDCEDC00663046 /* vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA09A2ADDCEDA00663046 /* vaca.mp3 */; };
+		BFCEA10C2ADDCEDC00663046 /* shampoo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA09B2ADDCEDA00663046 /* shampoo.mp3 */; };
+		BFCEA10D2ADDCEDC00663046 /* chuva.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA09C2ADDCEDA00663046 /* chuva.mp3 */; };
+		BFCEA10E2ADDCEDC00663046 /* almofada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA09D2ADDCEDA00663046 /* almofada.mp3 */; };
+		BFCEA10F2ADDCEDC00663046 /* piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA09E2ADDCEDA00663046 /* piano.mp3 */; };
+		BFCEA1102ADDCEDC00663046 /* cabra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA09F2ADDCEDA00663046 /* cabra.mp3 */; };
+		BFCEA1112ADDCEDC00663046 /* lojas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A02ADDCEDA00663046 /* lojas.mp3 */; };
+		BFCEA1122ADDCEDC00663046 /* sorvete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A12ADDCEDA00663046 /* sorvete.mp3 */; };
+		BFCEA1132ADDCEDC00663046 /* toalha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A22ADDCEDA00663046 /* toalha.mp3 */; };
+		BFCEA1142ADDCEDC00663046 /* quadro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A32ADDCEDA00663046 /* quadro.mp3 */; };
+		BFCEA1152ADDCEDC00663046 /* sapatos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A42ADDCEDA00663046 /* sapatos.mp3 */; };
+		BFCEA1162ADDCEDC00663046 /* i.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A52ADDCEDA00663046 /* i.mp3 */; };
+		BFCEA1172ADDCEDC00663046 /* algodao-doce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A62ADDCEDA00663046 /* algodao-doce.mp3 */; };
+		BFCEA1182ADDCEDC00663046 /* buzina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A72ADDCEDA00663046 /* buzina.mp3 */; };
+		BFCEA1192ADDCEDC00663046 /* flauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A82ADDCEDA00663046 /* flauta.mp3 */; };
+		BFCEA11A2ADDCEDC00663046 /* ovelha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0A92ADDCEDA00663046 /* ovelha.mp3 */; };
+		BFCEA11B2ADDCEDC00663046 /* k.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0AA2ADDCEDA00663046 /* k.mp3 */; };
+		BFCEA11C2ADDCEDC00663046 /* bicicleta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0AB2ADDCEDB00663046 /* bicicleta.mp3 */; };
+		BFCEA11D2ADDCEDC00663046 /* v.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0AC2ADDCEDB00663046 /* v.mp3 */; };
+		BFCEA11E2ADDCEDC00663046 /* roupas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0AD2ADDCEDB00663046 /* roupas.mp3 */; };
+		BFCEA11F2ADDCEDC00663046 /* f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0AE2ADDCEDB00663046 /* f.mp3 */; };
+		BFCEA1202ADDCEDC00663046 /* garfo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0AF2ADDCEDB00663046 /* garfo.mp3 */; };
+		BFCEA1212ADDCEDC00663046 /* volei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B02ADDCEDB00663046 /* volei.mp3 */; };
+		BFCEA1222ADDCEDC00663046 /* abajur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B12ADDCEDB00663046 /* abajur.mp3 */; };
+		BFCEA1232ADDCEDC00663046 /* sofa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B22ADDCEDB00663046 /* sofa.mp3 */; };
+		BFCEA1242ADDCEDC00663046 /* coler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B32ADDCEDB00663046 /* coler.mp3 */; };
+		BFCEA1252ADDCEDC00663046 /* galinha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B42ADDCEDB00663046 /* galinha.mp3 */; };
+		BFCEA1262ADDCEDC00663046 /* t.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B52ADDCEDB00663046 /* t.mp3 */; };
+		BFCEA1272ADDCEDC00663046 /* musica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B62ADDCEDB00663046 /* musica.mp3 */; };
+		BFCEA1282ADDCEDC00663046 /* privada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B72ADDCEDB00663046 /* privada.mp3 */; };
+		BFCEA1292ADDCEDC00663046 /* cesta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B82ADDCEDB00663046 /* cesta.mp3 */; };
+		BFCEA12A2ADDCEDC00663046 /* campainha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B92ADDCEDB00663046 /* campainha.mp3 */; };
+		BFCEA12B2ADDCEDC00663046 /* espelho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BA2ADDCEDB00663046 /* espelho.mp3 */; };
+		BFCEA12C2ADDCEDC00663046 /* cruz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BB2ADDCEDB00663046 /* cruz.mp3 */; };
+		BFCEA12D2ADDCEDC00663046 /* x.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BC2ADDCEDB00663046 /* x.mp3 */; };
+		BFCEA12E2ADDCEDC00663046 /* guarda-sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BD2ADDCEDB00663046 /* guarda-sol.mp3 */; };
+		BFCEA12F2ADDCEDC00663046 /* biblia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BE2ADDCEDB00663046 /* biblia.mp3 */; };
+		BFCEA1302ADDCEDC00663046 /* mar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BF2ADDCEDB00663046 /* mar.mp3 */; };
+		BFCEA1312ADDCEDC00663046 /* futebol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C02ADDCEDB00663046 /* futebol.mp3 */; };
+		BFCEA1322ADDCEDC00663046 /* o.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C12ADDCEDB00663046 /* o.mp3 */; };
+		BFCEA1332ADDCEDC00663046 /* p.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C22ADDCEDB00663046 /* p.mp3 */; };
+		BFCEA1342ADDCEDC00663046 /* s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C32ADDCEDB00663046 /* s.mp3 */; };
+		BFCEA1352ADDCEDC00663046 /* fogao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C42ADDCEDB00663046 /* fogao.mp3 */; };
+		BFCEA1362ADDCEDC00663046 /* caderno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C52ADDCEDB00663046 /* caderno.mp3 */; };
+		BFCEA1372ADDCEDC00663046 /* bateria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C62ADDCEDB00663046 /* bateria.mp3 */; };
+		BFCEA1382ADDCEDC00663046 /* escada-rolante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C72ADDCEDB00663046 /* escada-rolante.mp3 */; };
+		BFCEA1392ADDCEDC00663046 /* g.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C82ADDCEDB00663046 /* g.mp3 */; };
+		BFCEA13A2ADDCEDC00663046 /* praca-alimentacao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0C92ADDCEDB00663046 /* praca-alimentacao.mp3 */; };
+		BFCEA13B2ADDCEDC00663046 /* boia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0CA2ADDCEDB00663046 /* boia.mp3 */; };
+		BFCEA13C2ADDCEDC00663046 /* borracha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0CB2ADDCEDB00663046 /* borracha.mp3 */; };
+		BFCEA13D2ADDCEDC00663046 /* trovao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0CC2ADDCEDC00663046 /* trovao.mp3 */; };
+		BFCEA13E2ADDCEDC00663046 /* cortina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0CD2ADDCEDC00663046 /* cortina.mp3 */; };
+		BFCEA13F2ADDCEDC00663046 /* gato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0CE2ADDCEDC00663046 /* gato.mp3 */; };
+		BFCEA1402ADDCEDC00663046 /* b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0CF2ADDCEDC00663046 /* b.mp3 */; };
+		BFCEA1412ADDCEDC00663046 /* controle-remoto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D02ADDCEDC00663046 /* controle-remoto.mp3 */; };
+		BFCEA1422ADDCEDC00663046 /* chuveiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D12ADDCEDC00663046 /* chuveiro.mp3 */; };
+		BFCEA1432ADDCEDC00663046 /* elevador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D22ADDCEDC00663046 /* elevador.mp3 */; };
+		BFCEA1442ADDCEDC00663046 /* telefone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D32ADDCEDC00663046 /* telefone.mp3 */; };
+		BFCEA1452ADDCEDC00663046 /* piquenique.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D42ADDCEDC00663046 /* piquenique.mp3 */; };
+		BFCEA1462ADDCEDC00663046 /* relogio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D52ADDCEDC00663046 /* relogio.mp3 */; };
+		BFCEA1472ADDCEDC00663046 /* biquini.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D62ADDCEDC00663046 /* biquini.mp3 */; };
+		BFCEA1482ADDCEDC00663046 /* areia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D72ADDCEDC00663046 /* areia.mp3 */; };
+		BFCEA1492ADDCEDC00663046 /* caneta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D82ADDCEDC00663046 /* caneta.mp3 */; };
+		BFCEA14A2ADDCEDC00663046 /* a.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0D92ADDCEDC00663046 /* a.mp3 */; };
+		BFCEA14B2ADDCEDC00663046 /* bola.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0DA2ADDCEDC00663046 /* bola.mp3 */; };
 		BFE802642ACB316800A33A7B /* ExerciseSoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE802632ACB316800A33A7B /* ExerciseSoundButton.swift */; };
 		BFF53F6F2AD5E70700AFA543 /* FrogTalking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF53F6E2AD5E70700AFA543 /* FrogTalking.swift */; };
 		BFF53F712AD5EBD000AFA543 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF53F702AD5EBD000AFA543 /* LessonView.swift */; };
@@ -37,120 +150,7 @@
 		E5A22C512ACB618E0079C432 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5A22C4E2ACB60AE0079C432 /* Quicksand-Bold.ttf */; };
 		E5AB74432AC21F8A00006406 /* TrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74422AC21F8A00006406 /* TrailView.swift */; };
 		E5AB74452AC21F9B00006406 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB74442AC21F9B00006406 /* ProfileView.swift */; };
-		E5B719AD2AD4948200449687 /* cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5B719AC2AD4948200449687 /* cachorro.mp3 */; };
 		E5B719B42AD73EB900449687 /* vazio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5B719B32AD73EB900449687 /* vazio.mp3 */; };
-		E5C72D8B2ACF8F43005A8137 /* elevador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1B2ACF8F3F005A8137 /* elevador.mp3 */; };
-		E5C72D8C2ACF8F43005A8137 /* toalha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1C2ACF8F3F005A8137 /* toalha.mp3 */; };
-		E5C72D8D2ACF8F43005A8137 /* u.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1D2ACF8F3F005A8137 /* u.mp3 */; };
-		E5C72D8E2ACF8F43005A8137 /* c.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1E2ACF8F3F005A8137 /* c.mp3 */; };
-		E5C72D8F2ACF8F43005A8137 /* mesa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D1F2ACF8F3F005A8137 /* mesa.mp3 */; };
-		E5C72D902ACF8F43005A8137 /* sorvete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D202ACF8F3F005A8137 /* sorvete.mp3 */; };
-		E5C72D912ACF8F43005A8137 /* armario.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D212ACF8F3F005A8137 /* armario.mp3 */; };
-		E5C72D922ACF8F43005A8137 /* porco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D222ACF8F3F005A8137 /* porco.mp3 */; };
-		E5C72D932ACF8F43005A8137 /* a.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D232ACF8F3F005A8137 /* a.mp3 */; };
-		E5C72D942ACF8F43005A8137 /* bateria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D242ACF8F3F005A8137 /* bateria.mp3 */; };
-		E5C72D952ACF8F43005A8137 /* chuva.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D252ACF8F3F005A8137 /* chuva.mp3 */; };
-		E5C72D962ACF8F43005A8137 /* piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D262ACF8F3F005A8137 /* piano.mp3 */; };
-		E5C72D972ACF8F43005A8137 /* k.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D272ACF8F3F005A8137 /* k.mp3 */; };
-		E5C72D982ACF8F43005A8137 /* futebol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D282ACF8F3F005A8137 /* futebol.mp3 */; };
-		E5C72D992ACF8F43005A8137 /* sabonete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D292ACF8F3F005A8137 /* sabonete.mp3 */; };
-		E5C72D9A2ACF8F43005A8137 /* cabra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2A2ACF8F3F005A8137 /* cabra.mp3 */; };
-		E5C72D9B2ACF8F43005A8137 /* moxila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2B2ACF8F3F005A8137 /* moxila.mp3 */; };
-		E5C72D9C2ACF8F43005A8137 /* praca-alimentacao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2C2ACF8F40005A8137 /* praca-alimentacao.mp3 */; };
-		E5C72D9D2ACF8F43005A8137 /* buzina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */; };
-		E5C72D9E2ACF8F43005A8137 /* algodao-doce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */; };
-		E5C72D9F2ACF8F43005A8137 /* banco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D2F2ACF8F40005A8137 /* banco.mp3 */; };
-		E5C72DA02ACF8F43005A8137 /* r.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D302ACF8F40005A8137 /* r.mp3 */; };
-		E5C72DA12ACF8F43005A8137 /* televisao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D312ACF8F40005A8137 /* televisao.mp3 */; };
-		E5C72DA22ACF8F43005A8137 /* alarme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D322ACF8F40005A8137 /* alarme.mp3 */; };
-		E5C72DA32ACF8F43005A8137 /* cruz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D332ACF8F40005A8137 /* cruz.mp3 */; };
-		E5C72DA42ACF8F43005A8137 /* arvore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D342ACF8F40005A8137 /* arvore.mp3 */; };
-		E5C72DA52ACF8F43005A8137 /* coler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D352ACF8F40005A8137 /* coler.mp3 */; };
-		E5C72DA62ACF8F43005A8137 /* vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D362ACF8F40005A8137 /* vaca.mp3 */; };
-		E5C72DA72ACF8F43005A8137 /* papel-higienico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D372ACF8F40005A8137 /* papel-higienico.mp3 */; };
-		E5C72DA82ACF8F43005A8137 /* bola.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D382ACF8F40005A8137 /* bola.mp3 */; };
-		E5C72DA92ACF8F43005A8137 /* b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D392ACF8F40005A8137 /* b.mp3 */; };
-		E5C72DAA2ACF8F43005A8137 /* vento.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3A2ACF8F40005A8137 /* vento.mp3 */; };
-		E5C72DAB2ACF8F43005A8137 /* cortina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3B2ACF8F40005A8137 /* cortina.mp3 */; };
-		E5C72DAC2ACF8F43005A8137 /* v.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3C2ACF8F40005A8137 /* v.mp3 */; };
-		E5C72DAD2ACF8F43005A8137 /* sapatos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3D2ACF8F40005A8137 /* sapatos.mp3 */; };
-		E5C72DAF2ACF8F43005A8137 /* garfo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D3F2ACF8F40005A8137 /* garfo.mp3 */; };
-		E5C72DB02ACF8F43005A8137 /* almofada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D402ACF8F40005A8137 /* almofada.mp3 */; };
-		E5C72DB12ACF8F43005A8137 /* boia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D412ACF8F40005A8137 /* boia.mp3 */; };
-		E5C72DB22ACF8F43005A8137 /* shampoo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D422ACF8F40005A8137 /* shampoo.mp3 */; };
-		E5C72DB32ACF8F43005A8137 /* l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D432ACF8F40005A8137 /* l.mp3 */; };
-		E5C72DB42ACF8F43005A8137 /* abajur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D442ACF8F40005A8137 /* abajur.mp3 */; };
-		E5C72DB52ACF8F43005A8137 /* t.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D452ACF8F40005A8137 /* t.mp3 */; };
-		E5C72DB62ACF8F43005A8137 /* presentes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D462ACF8F40005A8137 /* presentes.mp3 */; };
-		E5C72DB72ACF8F43005A8137 /* travesseiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D472ACF8F41005A8137 /* travesseiro.mp3 */; };
-		E5C72DB82ACF8F43005A8137 /* sofa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D482ACF8F41005A8137 /* sofa.mp3 */; };
-		E5C72DB92ACF8F43005A8137 /* controle-remoto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D492ACF8F41005A8137 /* controle-remoto.mp3 */; };
-		E5C72DBA2ACF8F43005A8137 /* n.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D4A2ACF8F41005A8137 /* n.mp3 */; };
-		E5C72DBB2ACF8F43005A8137 /* roupas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D4B2ACF8F41005A8137 /* roupas.mp3 */; };
-		E5C72DBC2ACF8F43005A8137 /* cama.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D4C2ACF8F41005A8137 /* cama.mp3 */; };
-		E5C72DBD2ACF8F43005A8137 /* guarda-sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D4D2ACF8F41005A8137 /* guarda-sol.mp3 */; };
-		E5C72DBE2ACF8F43005A8137 /* lojas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D4E2ACF8F41005A8137 /* lojas.mp3 */; };
-		E5C72DBF2ACF8F43005A8137 /* areia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D4F2ACF8F41005A8137 /* areia.mp3 */; };
-		E5C72DC02ACF8F43005A8137 /* flauta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D502ACF8F41005A8137 /* flauta.mp3 */; };
-		E5C72DC12ACF8F43005A8137 /* g.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D512ACF8F41005A8137 /* g.mp3 */; };
-		E5C72DC22ACF8F43005A8137 /* borracha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D522ACF8F41005A8137 /* borracha.mp3 */; };
-		E5C72DC32ACF8F43005A8137 /* condicionador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D532ACF8F41005A8137 /* condicionador.mp3 */; };
-		E5C72DC42ACF8F43005A8137 /* lousa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D542ACF8F41005A8137 /* lousa.mp3 */; };
-		E5C72DC52ACF8F43005A8137 /* microfone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D552ACF8F41005A8137 /* microfone.mp3 */; };
-		E5C72DC62ACF8F43005A8137 /* mar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D562ACF8F41005A8137 /* mar.mp3 */; };
-		E5C72DC72ACF8F43005A8137 /* onda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D572ACF8F41005A8137 /* onda.mp3 */; };
-		E5C72DC82ACF8F43005A8137 /* aviao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D582ACF8F41005A8137 /* aviao.mp3 */; };
-		E5C72DC92ACF8F43005A8137 /* z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D592ACF8F41005A8137 /* z.mp3 */; };
-		E5C72DCA2ACF8F43005A8137 /* x.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5A2ACF8F41005A8137 /* x.mp3 */; };
-		E5C72DCB2ACF8F43005A8137 /* j.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5B2ACF8F41005A8137 /* j.mp3 */; };
-		E5C72DCC2ACF8F43005A8137 /* biblia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5C2ACF8F41005A8137 /* biblia.mp3 */; };
-		E5C72DCD2ACF8F43005A8137 /* estojo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5D2ACF8F41005A8137 /* estojo.mp3 */; };
-		E5C72DCE2ACF8F43005A8137 /* trovao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5E2ACF8F41005A8137 /* trovao.mp3 */; };
-		E5C72DCF2ACF8F43005A8137 /* bicicleta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D5F2ACF8F41005A8137 /* bicicleta.mp3 */; };
-		E5C72DD02ACF8F43005A8137 /* d.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D602ACF8F41005A8137 /* d.mp3 */; };
-		E5C72DD12ACF8F43005A8137 /* galinha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D612ACF8F42005A8137 /* galinha.mp3 */; };
-		E5C72DD22ACF8F43005A8137 /* campainha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D622ACF8F42005A8137 /* campainha.mp3 */; };
-		E5C72DD32ACF8F43005A8137 /* m.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D632ACF8F42005A8137 /* m.mp3 */; };
-		E5C72DD42ACF8F43005A8137 /* sino.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D642ACF8F42005A8137 /* sino.mp3 */; };
-		E5C72DD52ACF8F43005A8137 /* p.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D652ACF8F42005A8137 /* p.mp3 */; };
-		E5C72DD62ACF8F43005A8137 /* colchao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D662ACF8F42005A8137 /* colchao.mp3 */; };
-		E5C72DD72ACF8F43005A8137 /* q.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D672ACF8F42005A8137 /* q.mp3 */; };
-		E5C72DD82ACF8F43005A8137 /* o.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D682ACF8F42005A8137 /* o.mp3 */; };
-		E5C72DD92ACF8F43005A8137 /* geladeira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D692ACF8F42005A8137 /* geladeira.mp3 */; };
-		E5C72DDA2ACF8F43005A8137 /* telefone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6A2ACF8F42005A8137 /* telefone.mp3 */; };
-		E5C72DDB2ACF8F43005A8137 /* cadeira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6B2ACF8F42005A8137 /* cadeira.mp3 */; };
-		E5C72DDC2ACF8F43005A8137 /* tapete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6C2ACF8F42005A8137 /* tapete.mp3 */; };
-		E5C72DDD2ACF8F43005A8137 /* quadro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6D2ACF8F42005A8137 /* quadro.mp3 */; };
-		E5C72DDE2ACF8F43005A8137 /* basquete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6E2ACF8F42005A8137 /* basquete.mp3 */; };
-		E5C72DDF2ACF8F43005A8137 /* caneta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D6F2ACF8F42005A8137 /* caneta.mp3 */; };
-		E5C72DE02ACF8F43005A8137 /* lapis.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D702ACF8F42005A8137 /* lapis.mp3 */; };
-		E5C72DE12ACF8F43005A8137 /* piquenique.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D712ACF8F42005A8137 /* piquenique.mp3 */; };
-		E5C72DE22ACF8F43005A8137 /* gato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D722ACF8F42005A8137 /* gato.mp3 */; };
-		E5C72DE32ACF8F43005A8137 /* caderno.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D732ACF8F42005A8137 /* caderno.mp3 */; };
-		E5C72DE42ACF8F43005A8137 /* espelho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D742ACF8F42005A8137 /* espelho.mp3 */; };
-		E5C72DE52ACF8F43005A8137 /* chuveiro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D752ACF8F42005A8137 /* chuveiro.mp3 */; };
-		E5C72DE62ACF8F43005A8137 /* tigre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D762ACF8F42005A8137 /* tigre.mp3 */; };
-		E5C72DE72ACF8F43005A8137 /* volei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D772ACF8F42005A8137 /* volei.mp3 */; };
-		E5C72DE82ACF8F43005A8137 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D782ACF8F42005A8137 /* e.mp3 */; };
-		E5C72DE92ACF8F43005A8137 /* estacionamento.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D792ACF8F42005A8137 /* estacionamento.mp3 */; };
-		E5C72DEA2ACF8F43005A8137 /* i.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D7A2ACF8F42005A8137 /* i.mp3 */; };
-		E5C72DEB2ACF8F43005A8137 /* escada-rolante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D7B2ACF8F43005A8137 /* escada-rolante.mp3 */; };
-		E5C72DEC2ACF8F43005A8137 /* cesta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D7C2ACF8F43005A8137 /* cesta.mp3 */; };
-		E5C72DED2ACF8F43005A8137 /* sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D7D2ACF8F43005A8137 /* sol.mp3 */; };
-		E5C72DEE2ACF8F43005A8137 /* relogio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D7E2ACF8F43005A8137 /* relogio.mp3 */; };
-		E5C72DEF2ACF8F43005A8137 /* panela.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D7F2ACF8F43005A8137 /* panela.mp3 */; };
-		E5C72DF02ACF8F43005A8137 /* faca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D802ACF8F43005A8137 /* faca.mp3 */; };
-		E5C72DF12ACF8F43005A8137 /* musica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D812ACF8F43005A8137 /* musica.mp3 */; };
-		E5C72DF22ACF8F43005A8137 /* fogao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D822ACF8F43005A8137 /* fogao.mp3 */; };
-		E5C72DF32ACF8F43005A8137 /* carteira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D832ACF8F43005A8137 /* carteira.mp3 */; };
-		E5C72DF42ACF8F43005A8137 /* copo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D842ACF8F43005A8137 /* copo.mp3 */; };
-		E5C72DF52ACF8F43005A8137 /* f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D852ACF8F43005A8137 /* f.mp3 */; };
-		E5C72DF62ACF8F43005A8137 /* privada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D862ACF8F43005A8137 /* privada.mp3 */; };
-		E5C72DF72ACF8F43005A8137 /* s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D872ACF8F43005A8137 /* s.mp3 */; };
-		E5C72DF82ACF8F43005A8137 /* biquini.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D882ACF8F43005A8137 /* biquini.mp3 */; };
-		E5C72DF92ACF8F43005A8137 /* lago.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D892ACF8F43005A8137 /* lago.mp3 */; };
-		E5C72DFA2ACF8F43005A8137 /* ovelha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72D8A2ACF8F43005A8137 /* ovelha.mp3 */; };
-		E5C72DFC2AD0836F005A8137 /* teclado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5C72DFB2AD0836F005A8137 /* teclado.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +170,119 @@
 		BF591E4E2AC4C18000A1F002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseManagerView.swift; sourceTree = "<group>"; };
 		BF7646E22AC35841002AD16C /* PhaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseButton.swift; sourceTree = "<group>"; };
+		BFCEA06A2ADDCED900663046 /* q.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q.mp3; sourceTree = "<group>"; };
+		BFCEA06B2ADDCED900663046 /* c.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c.mp3; sourceTree = "<group>"; };
+		BFCEA06C2ADDCED900663046 /* m.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m.mp3; sourceTree = "<group>"; };
+		BFCEA06D2ADDCED900663046 /* n.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = n.mp3; sourceTree = "<group>"; };
+		BFCEA06E2ADDCED900663046 /* porco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porco.mp3; sourceTree = "<group>"; };
+		BFCEA06F2ADDCED900663046 /* teclado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teclado.mp3; sourceTree = "<group>"; };
+		BFCEA0702ADDCED900663046 /* cama.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cama.mp3; sourceTree = "<group>"; };
+		BFCEA0712ADDCED900663046 /* colchao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = colchao.mp3; sourceTree = "<group>"; };
+		BFCEA0722ADDCED900663046 /* lousa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lousa.mp3; sourceTree = "<group>"; };
+		BFCEA0732ADDCED900663046 /* cadeiras.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cadeiras.mp3; sourceTree = "<group>"; };
+		BFCEA0742ADDCED900663046 /* carteira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = carteira.mp3; sourceTree = "<group>"; };
+		BFCEA0752ADDCED900663046 /* r.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = r.mp3; sourceTree = "<group>"; };
+		BFCEA0762ADDCED900663046 /* microfone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = microfone.mp3; sourceTree = "<group>"; };
+		BFCEA0772ADDCED900663046 /* panela.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panela.mp3; sourceTree = "<group>"; };
+		BFCEA0782ADDCED900663046 /* l.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = l.mp3; sourceTree = "<group>"; };
+		BFCEA0792ADDCED900663046 /* e.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = e.mp3; sourceTree = "<group>"; };
+		BFCEA07A2ADDCED900663046 /* televisao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = televisao.mp3; sourceTree = "<group>"; };
+		BFCEA07B2ADDCED900663046 /* faca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = faca.mp3; sourceTree = "<group>"; };
+		BFCEA07C2ADDCED900663046 /* aviao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aviao.mp3; sourceTree = "<group>"; };
+		BFCEA07D2ADDCED900663046 /* j.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = j.mp3; sourceTree = "<group>"; };
+		BFCEA07E2ADDCED900663046 /* estojo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = estojo.mp3; sourceTree = "<group>"; };
+		BFCEA07F2ADDCED900663046 /* z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = z.mp3; sourceTree = "<group>"; };
+		BFCEA0802ADDCED900663046 /* geladeira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geladeira.mp3; sourceTree = "<group>"; };
+		BFCEA0812ADDCED900663046 /* estacionamento.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = estacionamento.mp3; sourceTree = "<group>"; };
+		BFCEA0822ADDCED900663046 /* papel-higienico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "papel-higienico.mp3"; sourceTree = "<group>"; };
+		BFCEA0832ADDCED900663046 /* alarme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarme.mp3; sourceTree = "<group>"; };
+		BFCEA0842ADDCED900663046 /* moxila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moxila.mp3; sourceTree = "<group>"; };
+		BFCEA0852ADDCED900663046 /* condicionador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = condicionador.mp3; sourceTree = "<group>"; };
+		BFCEA0862ADDCED900663046 /* copo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = copo.mp3; sourceTree = "<group>"; };
+		BFCEA0872ADDCEDA00663046 /* travesseiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = travesseiro.mp3; sourceTree = "<group>"; };
+		BFCEA0882ADDCEDA00663046 /* mesa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mesa.mp3; sourceTree = "<group>"; };
+		BFCEA0892ADDCEDA00663046 /* onda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onda.mp3; sourceTree = "<group>"; };
+		BFCEA08A2ADDCEDA00663046 /* tigre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tigre.mp3; sourceTree = "<group>"; };
+		BFCEA08B2ADDCEDA00663046 /* sino.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sino.mp3; sourceTree = "<group>"; };
+		BFCEA08C2ADDCEDA00663046 /* d.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = d.mp3; sourceTree = "<group>"; };
+		BFCEA08D2ADDCEDA00663046 /* tapete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapete.mp3; sourceTree = "<group>"; };
+		BFCEA08E2ADDCEDA00663046 /* banco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banco.mp3; sourceTree = "<group>"; };
+		BFCEA08F2ADDCEDA00663046 /* vento.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vento.mp3; sourceTree = "<group>"; };
+		BFCEA0902ADDCEDA00663046 /* guitarra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = guitarra.mp3; path = ../../../../../../Downloads/Sons/guitarra.mp3; sourceTree = "<group>"; };
+		BFCEA0912ADDCEDA00663046 /* arvore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arvore.mp3; sourceTree = "<group>"; };
+		BFCEA0922ADDCEDA00663046 /* lago.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lago.mp3; sourceTree = "<group>"; };
+		BFCEA0932ADDCEDA00663046 /* sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sol.mp3; sourceTree = "<group>"; };
+		BFCEA0942ADDCEDA00663046 /* u.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = u.mp3; sourceTree = "<group>"; };
+		BFCEA0952ADDCEDA00663046 /* basqete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = basqete.mp3; sourceTree = "<group>"; };
+		BFCEA0962ADDCEDA00663046 /* sabonete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sabonete.mp3; sourceTree = "<group>"; };
+		BFCEA0972ADDCEDA00663046 /* presentes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = presentes.mp3; sourceTree = "<group>"; };
+		BFCEA0982ADDCEDA00663046 /* lapis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lapis.mp3; sourceTree = "<group>"; };
+		BFCEA0992ADDCEDA00663046 /* armario.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = armario.mp3; sourceTree = "<group>"; };
+		BFCEA09A2ADDCEDA00663046 /* vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vaca.mp3; sourceTree = "<group>"; };
+		BFCEA09B2ADDCEDA00663046 /* shampoo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shampoo.mp3; sourceTree = "<group>"; };
+		BFCEA09C2ADDCEDA00663046 /* chuva.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chuva.mp3; sourceTree = "<group>"; };
+		BFCEA09D2ADDCEDA00663046 /* almofada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = almofada.mp3; sourceTree = "<group>"; };
+		BFCEA09E2ADDCEDA00663046 /* piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano.mp3; sourceTree = "<group>"; };
+		BFCEA09F2ADDCEDA00663046 /* cabra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cabra.mp3; sourceTree = "<group>"; };
+		BFCEA0A02ADDCEDA00663046 /* lojas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lojas.mp3; sourceTree = "<group>"; };
+		BFCEA0A12ADDCEDA00663046 /* sorvete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sorvete.mp3; sourceTree = "<group>"; };
+		BFCEA0A22ADDCEDA00663046 /* toalha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toalha.mp3; sourceTree = "<group>"; };
+		BFCEA0A32ADDCEDA00663046 /* quadro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quadro.mp3; sourceTree = "<group>"; };
+		BFCEA0A42ADDCEDA00663046 /* sapatos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sapatos.mp3; sourceTree = "<group>"; };
+		BFCEA0A52ADDCEDA00663046 /* i.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i.mp3; sourceTree = "<group>"; };
+		BFCEA0A62ADDCEDA00663046 /* algodao-doce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "algodao-doce.mp3"; sourceTree = "<group>"; };
+		BFCEA0A72ADDCEDA00663046 /* buzina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzina.mp3; sourceTree = "<group>"; };
+		BFCEA0A82ADDCEDA00663046 /* flauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flauta.mp3; sourceTree = "<group>"; };
+		BFCEA0A92ADDCEDA00663046 /* ovelha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ovelha.mp3; sourceTree = "<group>"; };
+		BFCEA0AA2ADDCEDA00663046 /* k.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = k.mp3; sourceTree = "<group>"; };
+		BFCEA0AB2ADDCEDB00663046 /* bicicleta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicicleta.mp3; sourceTree = "<group>"; };
+		BFCEA0AC2ADDCEDB00663046 /* v.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = v.mp3; sourceTree = "<group>"; };
+		BFCEA0AD2ADDCEDB00663046 /* roupas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = roupas.mp3; sourceTree = "<group>"; };
+		BFCEA0AE2ADDCEDB00663046 /* f.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f.mp3; sourceTree = "<group>"; };
+		BFCEA0AF2ADDCEDB00663046 /* garfo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = garfo.mp3; sourceTree = "<group>"; };
+		BFCEA0B02ADDCEDB00663046 /* volei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = volei.mp3; sourceTree = "<group>"; };
+		BFCEA0B12ADDCEDB00663046 /* abajur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = abajur.mp3; sourceTree = "<group>"; };
+		BFCEA0B22ADDCEDB00663046 /* sofa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sofa.mp3; sourceTree = "<group>"; };
+		BFCEA0B32ADDCEDB00663046 /* coler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coler.mp3; sourceTree = "<group>"; };
+		BFCEA0B42ADDCEDB00663046 /* galinha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = galinha.mp3; sourceTree = "<group>"; };
+		BFCEA0B52ADDCEDB00663046 /* t.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = t.mp3; sourceTree = "<group>"; };
+		BFCEA0B62ADDCEDB00663046 /* musica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica.mp3; sourceTree = "<group>"; };
+		BFCEA0B72ADDCEDB00663046 /* privada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = privada.mp3; sourceTree = "<group>"; };
+		BFCEA0B82ADDCEDB00663046 /* cesta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cesta.mp3; sourceTree = "<group>"; };
+		BFCEA0B92ADDCEDB00663046 /* campainha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = campainha.mp3; sourceTree = "<group>"; };
+		BFCEA0BA2ADDCEDB00663046 /* espelho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = espelho.mp3; sourceTree = "<group>"; };
+		BFCEA0BB2ADDCEDB00663046 /* cruz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cruz.mp3; sourceTree = "<group>"; };
+		BFCEA0BC2ADDCEDB00663046 /* x.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = x.mp3; sourceTree = "<group>"; };
+		BFCEA0BD2ADDCEDB00663046 /* guarda-sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "guarda-sol.mp3"; sourceTree = "<group>"; };
+		BFCEA0BE2ADDCEDB00663046 /* biblia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biblia.mp3; sourceTree = "<group>"; };
+		BFCEA0BF2ADDCEDB00663046 /* mar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mar.mp3; sourceTree = "<group>"; };
+		BFCEA0C02ADDCEDB00663046 /* futebol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = futebol.mp3; sourceTree = "<group>"; };
+		BFCEA0C12ADDCEDB00663046 /* o.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = o.mp3; sourceTree = "<group>"; };
+		BFCEA0C22ADDCEDB00663046 /* p.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = p.mp3; sourceTree = "<group>"; };
+		BFCEA0C32ADDCEDB00663046 /* s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = s.mp3; sourceTree = "<group>"; };
+		BFCEA0C42ADDCEDB00663046 /* fogao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fogao.mp3; sourceTree = "<group>"; };
+		BFCEA0C52ADDCEDB00663046 /* caderno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caderno.mp3; sourceTree = "<group>"; };
+		BFCEA0C62ADDCEDB00663046 /* bateria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bateria.mp3; sourceTree = "<group>"; };
+		BFCEA0C72ADDCEDB00663046 /* escada-rolante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "escada-rolante.mp3"; sourceTree = "<group>"; };
+		BFCEA0C82ADDCEDB00663046 /* g.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = g.mp3; sourceTree = "<group>"; };
+		BFCEA0C92ADDCEDB00663046 /* praca-alimentacao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "praca-alimentacao.mp3"; sourceTree = "<group>"; };
+		BFCEA0CA2ADDCEDB00663046 /* boia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boia.mp3; sourceTree = "<group>"; };
+		BFCEA0CB2ADDCEDB00663046 /* borracha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = borracha.mp3; sourceTree = "<group>"; };
+		BFCEA0CC2ADDCEDC00663046 /* trovao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trovao.mp3; sourceTree = "<group>"; };
+		BFCEA0CD2ADDCEDC00663046 /* cortina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cortina.mp3; sourceTree = "<group>"; };
+		BFCEA0CE2ADDCEDC00663046 /* gato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gato.mp3; sourceTree = "<group>"; };
+		BFCEA0CF2ADDCEDC00663046 /* b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b.mp3; sourceTree = "<group>"; };
+		BFCEA0D02ADDCEDC00663046 /* controle-remoto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "controle-remoto.mp3"; sourceTree = "<group>"; };
+		BFCEA0D12ADDCEDC00663046 /* chuveiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chuveiro.mp3; sourceTree = "<group>"; };
+		BFCEA0D22ADDCEDC00663046 /* elevador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elevador.mp3; sourceTree = "<group>"; };
+		BFCEA0D32ADDCEDC00663046 /* telefone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = telefone.mp3; sourceTree = "<group>"; };
+		BFCEA0D42ADDCEDC00663046 /* piquenique.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piquenique.mp3; sourceTree = "<group>"; };
+		BFCEA0D52ADDCEDC00663046 /* relogio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relogio.mp3; sourceTree = "<group>"; };
+		BFCEA0D62ADDCEDC00663046 /* biquini.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biquini.mp3; sourceTree = "<group>"; };
+		BFCEA0D72ADDCEDC00663046 /* areia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = areia.mp3; sourceTree = "<group>"; };
+		BFCEA0D82ADDCEDC00663046 /* caneta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caneta.mp3; sourceTree = "<group>"; };
+		BFCEA0D92ADDCEDC00663046 /* a.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a.mp3; sourceTree = "<group>"; };
+		BFCEA0DA2ADDCEDC00663046 /* bola.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bola.mp3; sourceTree = "<group>"; };
 		BFE802632ACB316800A33A7B /* ExerciseSoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSoundButton.swift; sourceTree = "<group>"; };
 		BFF53F6E2AD5E70700AFA543 /* FrogTalking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogTalking.swift; sourceTree = "<group>"; };
 		BFF53F702AD5EBD000AFA543 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
@@ -185,120 +298,7 @@
 		E5A22C4F2ACB60AF0079C432 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		E5AB74422AC21F8A00006406 /* TrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailView.swift; sourceTree = "<group>"; };
 		E5AB74442AC21F9B00006406 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E5B719AC2AD4948200449687 /* cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cachorro.mp3; sourceTree = "<group>"; };
 		E5B719B32AD73EB900449687 /* vazio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vazio.mp3; sourceTree = "<group>"; };
-		E5C72D1B2ACF8F3F005A8137 /* elevador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elevador.mp3; sourceTree = "<group>"; };
-		E5C72D1C2ACF8F3F005A8137 /* toalha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toalha.mp3; sourceTree = "<group>"; };
-		E5C72D1D2ACF8F3F005A8137 /* u.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = u.mp3; sourceTree = "<group>"; };
-		E5C72D1E2ACF8F3F005A8137 /* c.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c.mp3; sourceTree = "<group>"; };
-		E5C72D1F2ACF8F3F005A8137 /* mesa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mesa.mp3; sourceTree = "<group>"; };
-		E5C72D202ACF8F3F005A8137 /* sorvete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sorvete.mp3; sourceTree = "<group>"; };
-		E5C72D212ACF8F3F005A8137 /* armario.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = armario.mp3; sourceTree = "<group>"; };
-		E5C72D222ACF8F3F005A8137 /* porco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porco.mp3; sourceTree = "<group>"; };
-		E5C72D232ACF8F3F005A8137 /* a.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a.mp3; sourceTree = "<group>"; };
-		E5C72D242ACF8F3F005A8137 /* bateria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bateria.mp3; sourceTree = "<group>"; };
-		E5C72D252ACF8F3F005A8137 /* chuva.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chuva.mp3; sourceTree = "<group>"; };
-		E5C72D262ACF8F3F005A8137 /* piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano.mp3; sourceTree = "<group>"; };
-		E5C72D272ACF8F3F005A8137 /* k.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = k.mp3; sourceTree = "<group>"; };
-		E5C72D282ACF8F3F005A8137 /* futebol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = futebol.mp3; sourceTree = "<group>"; };
-		E5C72D292ACF8F3F005A8137 /* sabonete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sabonete.mp3; sourceTree = "<group>"; };
-		E5C72D2A2ACF8F3F005A8137 /* cabra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cabra.mp3; sourceTree = "<group>"; };
-		E5C72D2B2ACF8F3F005A8137 /* moxila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moxila.mp3; sourceTree = "<group>"; };
-		E5C72D2C2ACF8F40005A8137 /* praca-alimentacao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "praca-alimentacao.mp3"; sourceTree = "<group>"; };
-		E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzina.mp3; sourceTree = "<group>"; };
-		E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "algodao-doce.mp3"; sourceTree = "<group>"; };
-		E5C72D2F2ACF8F40005A8137 /* banco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banco.mp3; sourceTree = "<group>"; };
-		E5C72D302ACF8F40005A8137 /* r.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = r.mp3; sourceTree = "<group>"; };
-		E5C72D312ACF8F40005A8137 /* televisao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = televisao.mp3; sourceTree = "<group>"; };
-		E5C72D322ACF8F40005A8137 /* alarme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarme.mp3; sourceTree = "<group>"; };
-		E5C72D332ACF8F40005A8137 /* cruz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cruz.mp3; sourceTree = "<group>"; };
-		E5C72D342ACF8F40005A8137 /* arvore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arvore.mp3; sourceTree = "<group>"; };
-		E5C72D352ACF8F40005A8137 /* coler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coler.mp3; sourceTree = "<group>"; };
-		E5C72D362ACF8F40005A8137 /* vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vaca.mp3; sourceTree = "<group>"; };
-		E5C72D372ACF8F40005A8137 /* papel-higienico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "papel-higienico.mp3"; sourceTree = "<group>"; };
-		E5C72D382ACF8F40005A8137 /* bola.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bola.mp3; sourceTree = "<group>"; };
-		E5C72D392ACF8F40005A8137 /* b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b.mp3; sourceTree = "<group>"; };
-		E5C72D3A2ACF8F40005A8137 /* vento.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vento.mp3; sourceTree = "<group>"; };
-		E5C72D3B2ACF8F40005A8137 /* cortina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cortina.mp3; sourceTree = "<group>"; };
-		E5C72D3C2ACF8F40005A8137 /* v.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = v.mp3; sourceTree = "<group>"; };
-		E5C72D3D2ACF8F40005A8137 /* sapatos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sapatos.mp3; sourceTree = "<group>"; };
-		E5C72D3F2ACF8F40005A8137 /* garfo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = garfo.mp3; sourceTree = "<group>"; };
-		E5C72D402ACF8F40005A8137 /* almofada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = almofada.mp3; sourceTree = "<group>"; };
-		E5C72D412ACF8F40005A8137 /* boia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boia.mp3; sourceTree = "<group>"; };
-		E5C72D422ACF8F40005A8137 /* shampoo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shampoo.mp3; sourceTree = "<group>"; };
-		E5C72D432ACF8F40005A8137 /* l.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = l.mp3; sourceTree = "<group>"; };
-		E5C72D442ACF8F40005A8137 /* abajur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = abajur.mp3; sourceTree = "<group>"; };
-		E5C72D452ACF8F40005A8137 /* t.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = t.mp3; sourceTree = "<group>"; };
-		E5C72D462ACF8F40005A8137 /* presentes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = presentes.mp3; sourceTree = "<group>"; };
-		E5C72D472ACF8F41005A8137 /* travesseiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = travesseiro.mp3; sourceTree = "<group>"; };
-		E5C72D482ACF8F41005A8137 /* sofa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sofa.mp3; sourceTree = "<group>"; };
-		E5C72D492ACF8F41005A8137 /* controle-remoto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "controle-remoto.mp3"; sourceTree = "<group>"; };
-		E5C72D4A2ACF8F41005A8137 /* n.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = n.mp3; sourceTree = "<group>"; };
-		E5C72D4B2ACF8F41005A8137 /* roupas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = roupas.mp3; sourceTree = "<group>"; };
-		E5C72D4C2ACF8F41005A8137 /* cama.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cama.mp3; sourceTree = "<group>"; };
-		E5C72D4D2ACF8F41005A8137 /* guarda-sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "guarda-sol.mp3"; sourceTree = "<group>"; };
-		E5C72D4E2ACF8F41005A8137 /* lojas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lojas.mp3; sourceTree = "<group>"; };
-		E5C72D4F2ACF8F41005A8137 /* areia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = areia.mp3; sourceTree = "<group>"; };
-		E5C72D502ACF8F41005A8137 /* flauta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flauta.mp3; sourceTree = "<group>"; };
-		E5C72D512ACF8F41005A8137 /* g.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = g.mp3; sourceTree = "<group>"; };
-		E5C72D522ACF8F41005A8137 /* borracha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = borracha.mp3; sourceTree = "<group>"; };
-		E5C72D532ACF8F41005A8137 /* condicionador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = condicionador.mp3; sourceTree = "<group>"; };
-		E5C72D542ACF8F41005A8137 /* lousa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lousa.mp3; sourceTree = "<group>"; };
-		E5C72D552ACF8F41005A8137 /* microfone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = microfone.mp3; sourceTree = "<group>"; };
-		E5C72D562ACF8F41005A8137 /* mar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mar.mp3; sourceTree = "<group>"; };
-		E5C72D572ACF8F41005A8137 /* onda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onda.mp3; sourceTree = "<group>"; };
-		E5C72D582ACF8F41005A8137 /* aviao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aviao.mp3; sourceTree = "<group>"; };
-		E5C72D592ACF8F41005A8137 /* z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = z.mp3; sourceTree = "<group>"; };
-		E5C72D5A2ACF8F41005A8137 /* x.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = x.mp3; sourceTree = "<group>"; };
-		E5C72D5B2ACF8F41005A8137 /* j.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = j.mp3; sourceTree = "<group>"; };
-		E5C72D5C2ACF8F41005A8137 /* biblia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biblia.mp3; sourceTree = "<group>"; };
-		E5C72D5D2ACF8F41005A8137 /* estojo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = estojo.mp3; sourceTree = "<group>"; };
-		E5C72D5E2ACF8F41005A8137 /* trovao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trovao.mp3; sourceTree = "<group>"; };
-		E5C72D5F2ACF8F41005A8137 /* bicicleta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bicicleta.mp3; sourceTree = "<group>"; };
-		E5C72D602ACF8F41005A8137 /* d.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = d.mp3; sourceTree = "<group>"; };
-		E5C72D612ACF8F42005A8137 /* galinha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = galinha.mp3; sourceTree = "<group>"; };
-		E5C72D622ACF8F42005A8137 /* campainha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = campainha.mp3; sourceTree = "<group>"; };
-		E5C72D632ACF8F42005A8137 /* m.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m.mp3; sourceTree = "<group>"; };
-		E5C72D642ACF8F42005A8137 /* sino.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sino.mp3; sourceTree = "<group>"; };
-		E5C72D652ACF8F42005A8137 /* p.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = p.mp3; sourceTree = "<group>"; };
-		E5C72D662ACF8F42005A8137 /* colchao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = colchao.mp3; sourceTree = "<group>"; };
-		E5C72D672ACF8F42005A8137 /* q.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q.mp3; sourceTree = "<group>"; };
-		E5C72D682ACF8F42005A8137 /* o.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = o.mp3; sourceTree = "<group>"; };
-		E5C72D692ACF8F42005A8137 /* geladeira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = geladeira.mp3; sourceTree = "<group>"; };
-		E5C72D6A2ACF8F42005A8137 /* telefone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = telefone.mp3; sourceTree = "<group>"; };
-		E5C72D6B2ACF8F42005A8137 /* cadeira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cadeira.mp3; sourceTree = "<group>"; };
-		E5C72D6C2ACF8F42005A8137 /* tapete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapete.mp3; sourceTree = "<group>"; };
-		E5C72D6D2ACF8F42005A8137 /* quadro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = quadro.mp3; sourceTree = "<group>"; };
-		E5C72D6E2ACF8F42005A8137 /* basquete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = basquete.mp3; sourceTree = "<group>"; };
-		E5C72D6F2ACF8F42005A8137 /* caneta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caneta.mp3; sourceTree = "<group>"; };
-		E5C72D702ACF8F42005A8137 /* lapis.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lapis.mp3; sourceTree = "<group>"; };
-		E5C72D712ACF8F42005A8137 /* piquenique.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piquenique.mp3; sourceTree = "<group>"; };
-		E5C72D722ACF8F42005A8137 /* gato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gato.mp3; sourceTree = "<group>"; };
-		E5C72D732ACF8F42005A8137 /* caderno.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caderno.mp3; sourceTree = "<group>"; };
-		E5C72D742ACF8F42005A8137 /* espelho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = espelho.mp3; sourceTree = "<group>"; };
-		E5C72D752ACF8F42005A8137 /* chuveiro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chuveiro.mp3; sourceTree = "<group>"; };
-		E5C72D762ACF8F42005A8137 /* tigre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tigre.mp3; sourceTree = "<group>"; };
-		E5C72D772ACF8F42005A8137 /* volei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = volei.mp3; sourceTree = "<group>"; };
-		E5C72D782ACF8F42005A8137 /* e.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = e.mp3; sourceTree = "<group>"; };
-		E5C72D792ACF8F42005A8137 /* estacionamento.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = estacionamento.mp3; sourceTree = "<group>"; };
-		E5C72D7A2ACF8F42005A8137 /* i.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = i.mp3; sourceTree = "<group>"; };
-		E5C72D7B2ACF8F43005A8137 /* escada-rolante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "escada-rolante.mp3"; sourceTree = "<group>"; };
-		E5C72D7C2ACF8F43005A8137 /* cesta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cesta.mp3; sourceTree = "<group>"; };
-		E5C72D7D2ACF8F43005A8137 /* sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sol.mp3; sourceTree = "<group>"; };
-		E5C72D7E2ACF8F43005A8137 /* relogio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relogio.mp3; sourceTree = "<group>"; };
-		E5C72D7F2ACF8F43005A8137 /* panela.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panela.mp3; sourceTree = "<group>"; };
-		E5C72D802ACF8F43005A8137 /* faca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = faca.mp3; sourceTree = "<group>"; };
-		E5C72D812ACF8F43005A8137 /* musica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica.mp3; sourceTree = "<group>"; };
-		E5C72D822ACF8F43005A8137 /* fogao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fogao.mp3; sourceTree = "<group>"; };
-		E5C72D832ACF8F43005A8137 /* carteira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = carteira.mp3; sourceTree = "<group>"; };
-		E5C72D842ACF8F43005A8137 /* copo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = copo.mp3; sourceTree = "<group>"; };
-		E5C72D852ACF8F43005A8137 /* f.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f.mp3; sourceTree = "<group>"; };
-		E5C72D862ACF8F43005A8137 /* privada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = privada.mp3; sourceTree = "<group>"; };
-		E5C72D872ACF8F43005A8137 /* s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = s.mp3; sourceTree = "<group>"; };
-		E5C72D882ACF8F43005A8137 /* biquini.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biquini.mp3; sourceTree = "<group>"; };
-		E5C72D892ACF8F43005A8137 /* lago.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lago.mp3; sourceTree = "<group>"; };
-		E5C72D8A2ACF8F43005A8137 /* ovelha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ovelha.mp3; sourceTree = "<group>"; };
-		E5C72DFB2AD0836F005A8137 /* teclado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teclado.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,120 +433,120 @@
 		E5C72D1A2ACF8F27005A8137 /* Sons */ = {
 			isa = PBXGroup;
 			children = (
+				BFCEA0D92ADDCEDC00663046 /* a.mp3 */,
+				BFCEA0B12ADDCEDB00663046 /* abajur.mp3 */,
+				BFCEA0832ADDCED900663046 /* alarme.mp3 */,
+				BFCEA0A62ADDCEDA00663046 /* algodao-doce.mp3 */,
+				BFCEA09D2ADDCEDA00663046 /* almofada.mp3 */,
+				BFCEA0D72ADDCEDC00663046 /* areia.mp3 */,
+				BFCEA0992ADDCEDA00663046 /* armario.mp3 */,
+				BFCEA0912ADDCEDA00663046 /* arvore.mp3 */,
+				BFCEA07C2ADDCED900663046 /* aviao.mp3 */,
+				BFCEA0CF2ADDCEDC00663046 /* b.mp3 */,
+				BFCEA08E2ADDCEDA00663046 /* banco.mp3 */,
+				BFCEA0952ADDCEDA00663046 /* basqete.mp3 */,
+				BFCEA0C62ADDCEDB00663046 /* bateria.mp3 */,
+				BFCEA0BE2ADDCEDB00663046 /* biblia.mp3 */,
+				BFCEA0AB2ADDCEDB00663046 /* bicicleta.mp3 */,
+				BFCEA0D62ADDCEDC00663046 /* biquini.mp3 */,
+				BFCEA0CA2ADDCEDB00663046 /* boia.mp3 */,
+				BFCEA0DA2ADDCEDC00663046 /* bola.mp3 */,
+				BFCEA0CB2ADDCEDB00663046 /* borracha.mp3 */,
+				BFCEA0A72ADDCEDA00663046 /* buzina.mp3 */,
+				BFCEA06B2ADDCED900663046 /* c.mp3 */,
+				BFCEA09F2ADDCEDA00663046 /* cabra.mp3 */,
+				BFCEA0732ADDCED900663046 /* cadeiras.mp3 */,
+				BFCEA0C52ADDCEDB00663046 /* caderno.mp3 */,
+				BFCEA0702ADDCED900663046 /* cama.mp3 */,
+				BFCEA0B92ADDCEDB00663046 /* campainha.mp3 */,
+				BFCEA0D82ADDCEDC00663046 /* caneta.mp3 */,
+				BFCEA0742ADDCED900663046 /* carteira.mp3 */,
+				BFCEA0B82ADDCEDB00663046 /* cesta.mp3 */,
+				BFCEA09C2ADDCEDA00663046 /* chuva.mp3 */,
+				BFCEA0D12ADDCEDC00663046 /* chuveiro.mp3 */,
+				BFCEA0712ADDCED900663046 /* colchao.mp3 */,
+				BFCEA0B32ADDCEDB00663046 /* coler.mp3 */,
+				BFCEA0852ADDCED900663046 /* condicionador.mp3 */,
+				BFCEA0D02ADDCEDC00663046 /* controle-remoto.mp3 */,
+				BFCEA0862ADDCED900663046 /* copo.mp3 */,
+				BFCEA0CD2ADDCEDC00663046 /* cortina.mp3 */,
+				BFCEA0BB2ADDCEDB00663046 /* cruz.mp3 */,
+				BFCEA08C2ADDCEDA00663046 /* d.mp3 */,
+				BFCEA0792ADDCED900663046 /* e.mp3 */,
+				BFCEA0D22ADDCEDC00663046 /* elevador.mp3 */,
+				BFCEA0C72ADDCEDB00663046 /* escada-rolante.mp3 */,
+				BFCEA0BA2ADDCEDB00663046 /* espelho.mp3 */,
+				BFCEA0812ADDCED900663046 /* estacionamento.mp3 */,
+				BFCEA07E2ADDCED900663046 /* estojo.mp3 */,
+				BFCEA0AE2ADDCEDB00663046 /* f.mp3 */,
+				BFCEA07B2ADDCED900663046 /* faca.mp3 */,
+				BFCEA0A82ADDCEDA00663046 /* flauta.mp3 */,
+				BFCEA0C42ADDCEDB00663046 /* fogao.mp3 */,
+				BFCEA0C02ADDCEDB00663046 /* futebol.mp3 */,
+				BFCEA0C82ADDCEDB00663046 /* g.mp3 */,
+				BFCEA0B42ADDCEDB00663046 /* galinha.mp3 */,
+				BFCEA0AF2ADDCEDB00663046 /* garfo.mp3 */,
+				BFCEA0CE2ADDCEDC00663046 /* gato.mp3 */,
+				BFCEA0802ADDCED900663046 /* geladeira.mp3 */,
+				BFCEA0BD2ADDCEDB00663046 /* guarda-sol.mp3 */,
+				BFCEA0902ADDCEDA00663046 /* guitarra.mp3 */,
+				BFCEA0A52ADDCEDA00663046 /* i.mp3 */,
+				BFCEA07D2ADDCED900663046 /* j.mp3 */,
+				BFCEA0AA2ADDCEDA00663046 /* k.mp3 */,
+				BFCEA0782ADDCED900663046 /* l.mp3 */,
+				BFCEA0922ADDCEDA00663046 /* lago.mp3 */,
+				BFCEA0982ADDCEDA00663046 /* lapis.mp3 */,
+				BFCEA0A02ADDCEDA00663046 /* lojas.mp3 */,
+				BFCEA0722ADDCED900663046 /* lousa.mp3 */,
+				BFCEA06C2ADDCED900663046 /* m.mp3 */,
+				BFCEA0BF2ADDCEDB00663046 /* mar.mp3 */,
+				BFCEA0882ADDCEDA00663046 /* mesa.mp3 */,
+				BFCEA0762ADDCED900663046 /* microfone.mp3 */,
+				BFCEA0842ADDCED900663046 /* moxila.mp3 */,
+				BFCEA0B62ADDCEDB00663046 /* musica.mp3 */,
+				BFCEA06D2ADDCED900663046 /* n.mp3 */,
+				BFCEA0C12ADDCEDB00663046 /* o.mp3 */,
+				BFCEA0892ADDCEDA00663046 /* onda.mp3 */,
+				BFCEA0A92ADDCEDA00663046 /* ovelha.mp3 */,
+				BFCEA0C22ADDCEDB00663046 /* p.mp3 */,
+				BFCEA0772ADDCED900663046 /* panela.mp3 */,
+				BFCEA0822ADDCED900663046 /* papel-higienico.mp3 */,
+				BFCEA09E2ADDCEDA00663046 /* piano.mp3 */,
+				BFCEA0D42ADDCEDC00663046 /* piquenique.mp3 */,
+				BFCEA06E2ADDCED900663046 /* porco.mp3 */,
+				BFCEA0C92ADDCEDB00663046 /* praca-alimentacao.mp3 */,
+				BFCEA0972ADDCEDA00663046 /* presentes.mp3 */,
+				BFCEA0B72ADDCEDB00663046 /* privada.mp3 */,
+				BFCEA06A2ADDCED900663046 /* q.mp3 */,
+				BFCEA0A32ADDCEDA00663046 /* quadro.mp3 */,
+				BFCEA0752ADDCED900663046 /* r.mp3 */,
+				BFCEA0D52ADDCEDC00663046 /* relogio.mp3 */,
+				BFCEA0AD2ADDCEDB00663046 /* roupas.mp3 */,
+				BFCEA0C32ADDCEDB00663046 /* s.mp3 */,
+				BFCEA0962ADDCEDA00663046 /* sabonete.mp3 */,
+				BFCEA0A42ADDCEDA00663046 /* sapatos.mp3 */,
+				BFCEA09B2ADDCEDA00663046 /* shampoo.mp3 */,
+				BFCEA08B2ADDCEDA00663046 /* sino.mp3 */,
+				BFCEA0B22ADDCEDB00663046 /* sofa.mp3 */,
+				BFCEA0932ADDCEDA00663046 /* sol.mp3 */,
+				BFCEA0A12ADDCEDA00663046 /* sorvete.mp3 */,
+				BFCEA0B52ADDCEDB00663046 /* t.mp3 */,
+				BFCEA08D2ADDCEDA00663046 /* tapete.mp3 */,
+				BFCEA06F2ADDCED900663046 /* teclado.mp3 */,
+				BFCEA0D32ADDCEDC00663046 /* telefone.mp3 */,
+				BFCEA07A2ADDCED900663046 /* televisao.mp3 */,
+				BFCEA08A2ADDCEDA00663046 /* tigre.mp3 */,
+				BFCEA0A22ADDCEDA00663046 /* toalha.mp3 */,
+				BFCEA0872ADDCEDA00663046 /* travesseiro.mp3 */,
+				BFCEA0CC2ADDCEDC00663046 /* trovao.mp3 */,
+				BFCEA0942ADDCEDA00663046 /* u.mp3 */,
+				BFCEA0AC2ADDCEDB00663046 /* v.mp3 */,
+				BFCEA09A2ADDCEDA00663046 /* vaca.mp3 */,
+				BFCEA08F2ADDCEDA00663046 /* vento.mp3 */,
+				BFCEA0B02ADDCEDB00663046 /* volei.mp3 */,
+				BFCEA0BC2ADDCEDB00663046 /* x.mp3 */,
+				BFCEA07F2ADDCED900663046 /* z.mp3 */,
 				E5B719B32AD73EB900449687 /* vazio.mp3 */,
-				E5C72D232ACF8F3F005A8137 /* a.mp3 */,
-				E5C72DFB2AD0836F005A8137 /* teclado.mp3 */,
-				E5C72D442ACF8F40005A8137 /* abajur.mp3 */,
-				E5C72D322ACF8F40005A8137 /* alarme.mp3 */,
-				E5C72D2E2ACF8F40005A8137 /* algodao-doce.mp3 */,
-				E5C72D402ACF8F40005A8137 /* almofada.mp3 */,
-				E5C72D4F2ACF8F41005A8137 /* areia.mp3 */,
-				E5C72D212ACF8F3F005A8137 /* armario.mp3 */,
-				E5C72D342ACF8F40005A8137 /* arvore.mp3 */,
-				E5C72D582ACF8F41005A8137 /* aviao.mp3 */,
-				E5C72D392ACF8F40005A8137 /* b.mp3 */,
-				E5C72D2F2ACF8F40005A8137 /* banco.mp3 */,
-				E5C72D6E2ACF8F42005A8137 /* basquete.mp3 */,
-				E5C72D242ACF8F3F005A8137 /* bateria.mp3 */,
-				E5C72D5C2ACF8F41005A8137 /* biblia.mp3 */,
-				E5C72D5F2ACF8F41005A8137 /* bicicleta.mp3 */,
-				E5C72D882ACF8F43005A8137 /* biquini.mp3 */,
-				E5C72D412ACF8F40005A8137 /* boia.mp3 */,
-				E5C72D382ACF8F40005A8137 /* bola.mp3 */,
-				E5C72D522ACF8F41005A8137 /* borracha.mp3 */,
-				E5C72D2D2ACF8F40005A8137 /* buzina.mp3 */,
-				E5C72D1E2ACF8F3F005A8137 /* c.mp3 */,
-				E5C72D2A2ACF8F3F005A8137 /* cabra.mp3 */,
-				E5B719AC2AD4948200449687 /* cachorro.mp3 */,
-				E5C72D6B2ACF8F42005A8137 /* cadeira.mp3 */,
-				E5C72D732ACF8F42005A8137 /* caderno.mp3 */,
-				E5C72D4C2ACF8F41005A8137 /* cama.mp3 */,
-				E5C72D622ACF8F42005A8137 /* campainha.mp3 */,
-				E5C72D6F2ACF8F42005A8137 /* caneta.mp3 */,
-				E5C72D832ACF8F43005A8137 /* carteira.mp3 */,
-				E5C72D7C2ACF8F43005A8137 /* cesta.mp3 */,
-				E5C72D252ACF8F3F005A8137 /* chuva.mp3 */,
-				E5C72D752ACF8F42005A8137 /* chuveiro.mp3 */,
-				E5C72D662ACF8F42005A8137 /* colchao.mp3 */,
-				E5C72D352ACF8F40005A8137 /* coler.mp3 */,
-				E5C72D532ACF8F41005A8137 /* condicionador.mp3 */,
-				E5C72D492ACF8F41005A8137 /* controle-remoto.mp3 */,
-				E5C72D842ACF8F43005A8137 /* copo.mp3 */,
-				E5C72D3B2ACF8F40005A8137 /* cortina.mp3 */,
-				E5C72D332ACF8F40005A8137 /* cruz.mp3 */,
-				E5C72D602ACF8F41005A8137 /* d.mp3 */,
-				E5C72D782ACF8F42005A8137 /* e.mp3 */,
-				E5C72D1B2ACF8F3F005A8137 /* elevador.mp3 */,
-				E5C72D7B2ACF8F43005A8137 /* escada-rolante.mp3 */,
-				E5C72D742ACF8F42005A8137 /* espelho.mp3 */,
-				E5C72D792ACF8F42005A8137 /* estacionamento.mp3 */,
-				E5C72D5D2ACF8F41005A8137 /* estojo.mp3 */,
-				E5C72D852ACF8F43005A8137 /* f.mp3 */,
-				E5C72D802ACF8F43005A8137 /* faca.mp3 */,
-				E5C72D502ACF8F41005A8137 /* flauta.mp3 */,
-				E5C72D822ACF8F43005A8137 /* fogao.mp3 */,
-				E5C72D282ACF8F3F005A8137 /* futebol.mp3 */,
-				E5C72D512ACF8F41005A8137 /* g.mp3 */,
-				E5C72D612ACF8F42005A8137 /* galinha.mp3 */,
-				E5C72D3F2ACF8F40005A8137 /* garfo.mp3 */,
-				E5C72D722ACF8F42005A8137 /* gato.mp3 */,
-				E5C72D692ACF8F42005A8137 /* geladeira.mp3 */,
-				E5C72D4D2ACF8F41005A8137 /* guarda-sol.mp3 */,
-				E5C72D7A2ACF8F42005A8137 /* i.mp3 */,
-				E5C72D5B2ACF8F41005A8137 /* j.mp3 */,
-				E5C72D272ACF8F3F005A8137 /* k.mp3 */,
-				E5C72D432ACF8F40005A8137 /* l.mp3 */,
-				E5C72D892ACF8F43005A8137 /* lago.mp3 */,
-				E5C72D702ACF8F42005A8137 /* lapis.mp3 */,
-				E5C72D4E2ACF8F41005A8137 /* lojas.mp3 */,
-				E5C72D542ACF8F41005A8137 /* lousa.mp3 */,
-				E5C72D632ACF8F42005A8137 /* m.mp3 */,
-				E5C72D562ACF8F41005A8137 /* mar.mp3 */,
-				E5C72D1F2ACF8F3F005A8137 /* mesa.mp3 */,
-				E5C72D552ACF8F41005A8137 /* microfone.mp3 */,
-				E5C72D2B2ACF8F3F005A8137 /* moxila.mp3 */,
-				E5C72D812ACF8F43005A8137 /* musica.mp3 */,
-				E5C72D4A2ACF8F41005A8137 /* n.mp3 */,
-				E5C72D682ACF8F42005A8137 /* o.mp3 */,
-				E5C72D572ACF8F41005A8137 /* onda.mp3 */,
-				E5C72D8A2ACF8F43005A8137 /* ovelha.mp3 */,
-				E5C72D652ACF8F42005A8137 /* p.mp3 */,
-				E5C72D7F2ACF8F43005A8137 /* panela.mp3 */,
-				E5C72D372ACF8F40005A8137 /* papel-higienico.mp3 */,
-				E5C72D262ACF8F3F005A8137 /* piano.mp3 */,
-				E5C72D712ACF8F42005A8137 /* piquenique.mp3 */,
-				E5C72D222ACF8F3F005A8137 /* porco.mp3 */,
-				E5C72D2C2ACF8F40005A8137 /* praca-alimentacao.mp3 */,
-				E5C72D462ACF8F40005A8137 /* presentes.mp3 */,
-				E5C72D862ACF8F43005A8137 /* privada.mp3 */,
-				E5C72D672ACF8F42005A8137 /* q.mp3 */,
-				E5C72D6D2ACF8F42005A8137 /* quadro.mp3 */,
-				E5C72D302ACF8F40005A8137 /* r.mp3 */,
-				E5C72D7E2ACF8F43005A8137 /* relogio.mp3 */,
-				E5C72D4B2ACF8F41005A8137 /* roupas.mp3 */,
-				E5C72D872ACF8F43005A8137 /* s.mp3 */,
-				E5C72D292ACF8F3F005A8137 /* sabonete.mp3 */,
-				E5C72D3D2ACF8F40005A8137 /* sapatos.mp3 */,
-				E5C72D422ACF8F40005A8137 /* shampoo.mp3 */,
-				E5C72D642ACF8F42005A8137 /* sino.mp3 */,
-				E5C72D482ACF8F41005A8137 /* sofa.mp3 */,
-				E5C72D7D2ACF8F43005A8137 /* sol.mp3 */,
-				E5C72D202ACF8F3F005A8137 /* sorvete.mp3 */,
-				E5C72D452ACF8F40005A8137 /* t.mp3 */,
-				E5C72D6C2ACF8F42005A8137 /* tapete.mp3 */,
-				E5C72D6A2ACF8F42005A8137 /* telefone.mp3 */,
-				E5C72D312ACF8F40005A8137 /* televisao.mp3 */,
-				E5C72D762ACF8F42005A8137 /* tigre.mp3 */,
-				E5C72D1C2ACF8F3F005A8137 /* toalha.mp3 */,
-				E5C72D472ACF8F41005A8137 /* travesseiro.mp3 */,
-				E5C72D5E2ACF8F41005A8137 /* trovao.mp3 */,
-				E5C72D1D2ACF8F3F005A8137 /* u.mp3 */,
-				E5C72D3C2ACF8F40005A8137 /* v.mp3 */,
-				E5C72D362ACF8F40005A8137 /* vaca.mp3 */,
-				E5C72D3A2ACF8F40005A8137 /* vento.mp3 */,
-				E5C72D772ACF8F42005A8137 /* volei.mp3 */,
-				E5C72D5A2ACF8F41005A8137 /* x.mp3 */,
-				E5C72D592ACF8F41005A8137 /* z.mp3 */,
 			);
 			path = Sons;
 			sourceTree = "<group>";
@@ -609,124 +609,124 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5C72DD32ACF8F43005A8137 /* m.mp3 in Resources */,
-				E5C72DF42ACF8F43005A8137 /* copo.mp3 in Resources */,
-				E5C72DA82ACF8F43005A8137 /* bola.mp3 in Resources */,
-				E5C72DE62ACF8F43005A8137 /* tigre.mp3 in Resources */,
-				E5C72DE02ACF8F43005A8137 /* lapis.mp3 in Resources */,
-				E5C72DC72ACF8F43005A8137 /* onda.mp3 in Resources */,
-				E5C72D972ACF8F43005A8137 /* k.mp3 in Resources */,
-				E5C72DCF2ACF8F43005A8137 /* bicicleta.mp3 in Resources */,
-				E5C72DA62ACF8F43005A8137 /* vaca.mp3 in Resources */,
+				BFCEA1422ADDCEDC00663046 /* chuveiro.mp3 in Resources */,
+				BFCEA0DD2ADDCEDC00663046 /* m.mp3 in Resources */,
+				BFCEA0DB2ADDCEDC00663046 /* q.mp3 in Resources */,
+				BFCEA0FA2ADDCEDC00663046 /* onda.mp3 in Resources */,
+				BFCEA1322ADDCEDC00663046 /* o.mp3 in Resources */,
+				BFCEA10C2ADDCEDC00663046 /* shampoo.mp3 in Resources */,
+				BFCEA11E2ADDCEDC00663046 /* roupas.mp3 in Resources */,
+				BFCEA1392ADDCEDC00663046 /* g.mp3 in Resources */,
+				BFCEA1222ADDCEDC00663046 /* abajur.mp3 in Resources */,
+				BFCEA1152ADDCEDC00663046 /* sapatos.mp3 in Resources */,
+				BFCEA0E22ADDCEDC00663046 /* colchao.mp3 in Resources */,
+				BFCEA1332ADDCEDC00663046 /* p.mp3 in Resources */,
+				BFCEA0E32ADDCEDC00663046 /* lousa.mp3 in Resources */,
+				BFCEA0E42ADDCEDC00663046 /* cadeiras.mp3 in Resources */,
+				BFCEA11B2ADDCEDC00663046 /* k.mp3 in Resources */,
+				BFCEA12D2ADDCEDC00663046 /* x.mp3 in Resources */,
+				BFCEA1442ADDCEDC00663046 /* telefone.mp3 in Resources */,
+				BFCEA11D2ADDCEDC00663046 /* v.mp3 in Resources */,
+				BFCEA1452ADDCEDC00663046 /* piquenique.mp3 in Resources */,
+				BFCEA1132ADDCEDC00663046 /* toalha.mp3 in Resources */,
+				BFCEA1402ADDCEDC00663046 /* b.mp3 in Resources */,
+				BFCEA0F62ADDCEDC00663046 /* condicionador.mp3 in Resources */,
+				BFCEA1142ADDCEDC00663046 /* quadro.mp3 in Resources */,
+				BFCEA0FD2ADDCEDC00663046 /* d.mp3 in Resources */,
+				BFCEA12E2ADDCEDC00663046 /* guarda-sol.mp3 in Resources */,
+				BFCEA1092ADDCEDC00663046 /* lapis.mp3 in Resources */,
+				BFCEA0F12ADDCEDC00663046 /* geladeira.mp3 in Resources */,
+				BFCEA1382ADDCEDC00663046 /* escada-rolante.mp3 in Resources */,
+				BFCEA0EE2ADDCEDC00663046 /* j.mp3 in Resources */,
+				BFCEA13E2ADDCEDC00663046 /* cortina.mp3 in Resources */,
+				BFCEA1472ADDCEDC00663046 /* biquini.mp3 in Resources */,
+				BFCEA1372ADDCEDC00663046 /* bateria.mp3 in Resources */,
+				BFCEA13F2ADDCEDC00663046 /* gato.mp3 in Resources */,
+				BFCEA1212ADDCEDC00663046 /* volei.mp3 in Resources */,
+				BFCEA0EB2ADDCEDC00663046 /* televisao.mp3 in Resources */,
+				BFCEA0E52ADDCEDC00663046 /* carteira.mp3 in Resources */,
+				BFCEA10E2ADDCEDC00663046 /* almofada.mp3 in Resources */,
+				BFCEA0ED2ADDCEDC00663046 /* aviao.mp3 in Resources */,
+				BFCEA1112ADDCEDC00663046 /* lojas.mp3 in Resources */,
+				BFCEA1012ADDCEDC00663046 /* guitarra.mp3 in Resources */,
+				BFCEA1182ADDCEDC00663046 /* buzina.mp3 in Resources */,
+				BFCEA1302ADDCEDC00663046 /* mar.mp3 in Resources */,
+				BFCEA14B2ADDCEDC00663046 /* bola.mp3 in Resources */,
+				BFCEA1292ADDCEDC00663046 /* cesta.mp3 in Resources */,
+				BFCEA0DF2ADDCEDC00663046 /* porco.mp3 in Resources */,
+				BFCEA1032ADDCEDC00663046 /* lago.mp3 in Resources */,
+				BFCEA0EF2ADDCEDC00663046 /* estojo.mp3 in Resources */,
+				BFCEA10F2ADDCEDC00663046 /* piano.mp3 in Resources */,
+				BFCEA0FC2ADDCEDC00663046 /* sino.mp3 in Resources */,
+				BFCEA13B2ADDCEDC00663046 /* boia.mp3 in Resources */,
+				BFCEA0F82ADDCEDC00663046 /* travesseiro.mp3 in Resources */,
+				BFCEA1202ADDCEDC00663046 /* garfo.mp3 in Resources */,
+				BFCEA1162ADDCEDC00663046 /* i.mp3 in Resources */,
+				BFCEA1232ADDCEDC00663046 /* sofa.mp3 in Resources */,
+				BFCEA0F22ADDCEDC00663046 /* estacionamento.mp3 in Resources */,
+				BFCEA14A2ADDCEDC00663046 /* a.mp3 in Resources */,
+				BFCEA0E62ADDCEDC00663046 /* r.mp3 in Resources */,
 				BFF815A52ABE0D1A00ACF5A7 /* Preview Assets.xcassets in Resources */,
-				E5C72DA72ACF8F43005A8137 /* papel-higienico.mp3 in Resources */,
-				E5C72DC62ACF8F43005A8137 /* mar.mp3 in Resources */,
-				E5C72D8B2ACF8F43005A8137 /* elevador.mp3 in Resources */,
-				E5C72D932ACF8F43005A8137 /* a.mp3 in Resources */,
-				E5C72D922ACF8F43005A8137 /* porco.mp3 in Resources */,
-				E5C72DC22ACF8F43005A8137 /* borracha.mp3 in Resources */,
-				E5C72DC42ACF8F43005A8137 /* lousa.mp3 in Resources */,
-				E5C72DDB2ACF8F43005A8137 /* cadeira.mp3 in Resources */,
-				E5C72D8F2ACF8F43005A8137 /* mesa.mp3 in Resources */,
-				E5C72DCD2ACF8F43005A8137 /* estojo.mp3 in Resources */,
-				E5C72DF02ACF8F43005A8137 /* faca.mp3 in Resources */,
-				E5C72DD12ACF8F43005A8137 /* galinha.mp3 in Resources */,
-				E5C72D9B2ACF8F43005A8137 /* moxila.mp3 in Resources */,
-				E5C72DC32ACF8F43005A8137 /* condicionador.mp3 in Resources */,
-				E5C72DF52ACF8F43005A8137 /* f.mp3 in Resources */,
-				E5C72DAD2ACF8F43005A8137 /* sapatos.mp3 in Resources */,
-				E5C72DDF2ACF8F43005A8137 /* caneta.mp3 in Resources */,
-				E5C72D9F2ACF8F43005A8137 /* banco.mp3 in Resources */,
-				E5C72DD92ACF8F43005A8137 /* geladeira.mp3 in Resources */,
-				E5C72D912ACF8F43005A8137 /* armario.mp3 in Resources */,
-				E5C72DF82ACF8F43005A8137 /* biquini.mp3 in Resources */,
-				E5C72DA12ACF8F43005A8137 /* televisao.mp3 in Resources */,
-				E5C72DC82ACF8F43005A8137 /* aviao.mp3 in Resources */,
-				E5C72DC12ACF8F43005A8137 /* g.mp3 in Resources */,
-				E5C72D9D2ACF8F43005A8137 /* buzina.mp3 in Resources */,
-				E5C72D952ACF8F43005A8137 /* chuva.mp3 in Resources */,
-				E5C72DBF2ACF8F43005A8137 /* areia.mp3 in Resources */,
-				E5C72DBE2ACF8F43005A8137 /* lojas.mp3 in Resources */,
-				E5C72DC52ACF8F43005A8137 /* microfone.mp3 in Resources */,
-				E5C72DA52ACF8F43005A8137 /* coler.mp3 in Resources */,
+				BFCEA12A2ADDCEDC00663046 /* campainha.mp3 in Resources */,
+				BFCEA0F32ADDCEDC00663046 /* papel-higienico.mp3 in Resources */,
+				BFCEA13D2ADDCEDC00663046 /* trovao.mp3 in Resources */,
 				E5B719B42AD73EB900449687 /* vazio.mp3 in Resources */,
-				E5C72DE32ACF8F43005A8137 /* caderno.mp3 in Resources */,
-				E5C72DB42ACF8F43005A8137 /* abajur.mp3 in Resources */,
-				E5C72DA92ACF8F43005A8137 /* b.mp3 in Resources */,
-				E5C72DCC2ACF8F43005A8137 /* biblia.mp3 in Resources */,
-				E5C72DEB2ACF8F43005A8137 /* escada-rolante.mp3 in Resources */,
+				BFCEA13A2ADDCEDC00663046 /* praca-alimentacao.mp3 in Resources */,
+				BFCEA1062ADDCEDC00663046 /* basqete.mp3 in Resources */,
+				BFCEA1052ADDCEDC00663046 /* u.mp3 in Resources */,
+				BFCEA13C2ADDCEDC00663046 /* borracha.mp3 in Resources */,
+				BFCEA0E02ADDCEDC00663046 /* teclado.mp3 in Resources */,
+				BFCEA1352ADDCEDC00663046 /* fogao.mp3 in Resources */,
+				BFCEA0F92ADDCEDC00663046 /* mesa.mp3 in Resources */,
+				BFCEA1252ADDCEDC00663046 /* galinha.mp3 in Resources */,
+				BFCEA10D2ADDCEDC00663046 /* chuva.mp3 in Resources */,
+				BFCEA1022ADDCEDC00663046 /* arvore.mp3 in Resources */,
+				BFCEA0FB2ADDCEDC00663046 /* tigre.mp3 in Resources */,
+				BFCEA1192ADDCEDC00663046 /* flauta.mp3 in Resources */,
+				BFCEA0F52ADDCEDC00663046 /* moxila.mp3 in Resources */,
+				BFCEA1072ADDCEDC00663046 /* sabonete.mp3 in Resources */,
+				BFCEA1002ADDCEDC00663046 /* vento.mp3 in Resources */,
+				BFCEA11C2ADDCEDC00663046 /* bicicleta.mp3 in Resources */,
+				BFCEA0F02ADDCEDC00663046 /* z.mp3 in Resources */,
+				BFCEA0E92ADDCEDC00663046 /* l.mp3 in Resources */,
 				E5A22C502ACB618C0079C432 /* Quicksand-Regular.ttf in Resources */,
-				E5C72DBC2ACF8F43005A8137 /* cama.mp3 in Resources */,
-				E5C72D8D2ACF8F43005A8137 /* u.mp3 in Resources */,
-				E5C72DB82ACF8F43005A8137 /* sofa.mp3 in Resources */,
-				E5C72D902ACF8F43005A8137 /* sorvete.mp3 in Resources */,
-				E5C72DD52ACF8F43005A8137 /* p.mp3 in Resources */,
-				E5C72DF72ACF8F43005A8137 /* s.mp3 in Resources */,
-				E5C72DE82ACF8F43005A8137 /* e.mp3 in Resources */,
-				E5C72DDD2ACF8F43005A8137 /* quadro.mp3 in Resources */,
-				E5C72DB32ACF8F43005A8137 /* l.mp3 in Resources */,
-				E5C72DC02ACF8F43005A8137 /* flauta.mp3 in Resources */,
-				E5C72D942ACF8F43005A8137 /* bateria.mp3 in Resources */,
-				E5C72DA32ACF8F43005A8137 /* cruz.mp3 in Resources */,
-				E5C72DE22ACF8F43005A8137 /* gato.mp3 in Resources */,
-				E5C72DE52ACF8F43005A8137 /* chuveiro.mp3 in Resources */,
-				E5C72DE72ACF8F43005A8137 /* volei.mp3 in Resources */,
-				E5C72DF92ACF8F43005A8137 /* lago.mp3 in Resources */,
-				E5C72DD02ACF8F43005A8137 /* d.mp3 in Resources */,
-				E5C72DAF2ACF8F43005A8137 /* garfo.mp3 in Resources */,
-				E5C72DEE2ACF8F43005A8137 /* relogio.mp3 in Resources */,
-				E5C72DB92ACF8F43005A8137 /* controle-remoto.mp3 in Resources */,
-				E5C72D9E2ACF8F43005A8137 /* algodao-doce.mp3 in Resources */,
-				E5C72DED2ACF8F43005A8137 /* sol.mp3 in Resources */,
-				E5C72DD82ACF8F43005A8137 /* o.mp3 in Resources */,
-				E5C72DC92ACF8F43005A8137 /* z.mp3 in Resources */,
-				E5C72D9A2ACF8F43005A8137 /* cabra.mp3 in Resources */,
-				E5C72DD62ACF8F43005A8137 /* colchao.mp3 in Resources */,
-				E5C72D982ACF8F43005A8137 /* futebol.mp3 in Resources */,
-				E5C72DBD2ACF8F43005A8137 /* guarda-sol.mp3 in Resources */,
-				E5C72D9C2ACF8F43005A8137 /* praca-alimentacao.mp3 in Resources */,
-				E5C72D8C2ACF8F43005A8137 /* toalha.mp3 in Resources */,
-				E5C72DEF2ACF8F43005A8137 /* panela.mp3 in Resources */,
-				E5C72DF12ACF8F43005A8137 /* musica.mp3 in Resources */,
-				E5C72DD42ACF8F43005A8137 /* sino.mp3 in Resources */,
-				E5C72DDE2ACF8F43005A8137 /* basquete.mp3 in Resources */,
-				E5C72DF22ACF8F43005A8137 /* fogao.mp3 in Resources */,
-				E5C72DCA2ACF8F43005A8137 /* x.mp3 in Resources */,
-				E5C72DD22ACF8F43005A8137 /* campainha.mp3 in Resources */,
-				E5C72DF62ACF8F43005A8137 /* privada.mp3 in Resources */,
-				E5C72DE42ACF8F43005A8137 /* espelho.mp3 in Resources */,
-				E5C72DEA2ACF8F43005A8137 /* i.mp3 in Resources */,
-				E5C72DB52ACF8F43005A8137 /* t.mp3 in Resources */,
-				E5B719AD2AD4948200449687 /* cachorro.mp3 in Resources */,
-				E5C72DEC2ACF8F43005A8137 /* cesta.mp3 in Resources */,
-				E5C72D992ACF8F43005A8137 /* sabonete.mp3 in Resources */,
-				E5C72DFC2AD0836F005A8137 /* teclado.mp3 in Resources */,
-				E5C72DE12ACF8F43005A8137 /* piquenique.mp3 in Resources */,
-				E5C72DA22ACF8F43005A8137 /* alarme.mp3 in Resources */,
-				E5C72DFA2ACF8F43005A8137 /* ovelha.mp3 in Resources */,
-				E5C72DE92ACF8F43005A8137 /* estacionamento.mp3 in Resources */,
-				E5C72DCB2ACF8F43005A8137 /* j.mp3 in Resources */,
-				E5C72DA02ACF8F43005A8137 /* r.mp3 in Resources */,
-				E5C72DA42ACF8F43005A8137 /* arvore.mp3 in Resources */,
-				E5C72DB62ACF8F43005A8137 /* presentes.mp3 in Resources */,
-				E5C72DAA2ACF8F43005A8137 /* vento.mp3 in Resources */,
-				E5C72DBA2ACF8F43005A8137 /* n.mp3 in Resources */,
-				E5C72DAB2ACF8F43005A8137 /* cortina.mp3 in Resources */,
-				E5C72DD72ACF8F43005A8137 /* q.mp3 in Resources */,
-				E5C72DB22ACF8F43005A8137 /* shampoo.mp3 in Resources */,
 				BFF815A22ABE0D1A00ACF5A7 /* Assets.xcassets in Resources */,
-				E5C72D8E2ACF8F43005A8137 /* c.mp3 in Resources */,
-				E5C72DBB2ACF8F43005A8137 /* roupas.mp3 in Resources */,
-				E5C72DDC2ACF8F43005A8137 /* tapete.mp3 in Resources */,
-				E5C72DDA2ACF8F43005A8137 /* telefone.mp3 in Resources */,
-				E5C72DAC2ACF8F43005A8137 /* v.mp3 in Resources */,
-				E5C72D962ACF8F43005A8137 /* piano.mp3 in Resources */,
-				E5C72DCE2ACF8F43005A8137 /* trovao.mp3 in Resources */,
-				E5C72DB12ACF8F43005A8137 /* boia.mp3 in Resources */,
+				BFCEA1362ADDCEDC00663046 /* caderno.mp3 in Resources */,
+				BFCEA1282ADDCEDC00663046 /* privada.mp3 in Resources */,
+				BFCEA12B2ADDCEDC00663046 /* espelho.mp3 in Resources */,
+				BFCEA1272ADDCEDC00663046 /* musica.mp3 in Resources */,
+				BFCEA1492ADDCEDC00663046 /* caneta.mp3 in Resources */,
+				BFCEA11A2ADDCEDC00663046 /* ovelha.mp3 in Resources */,
+				BFCEA1242ADDCEDC00663046 /* coler.mp3 in Resources */,
+				BFCEA1262ADDCEDC00663046 /* t.mp3 in Resources */,
+				BFCEA0FF2ADDCEDC00663046 /* banco.mp3 in Resources */,
+				BFCEA1312ADDCEDC00663046 /* futebol.mp3 in Resources */,
+				BFCEA1432ADDCEDC00663046 /* elevador.mp3 in Resources */,
+				BFCEA0EC2ADDCEDC00663046 /* faca.mp3 in Resources */,
+				BFCEA1082ADDCEDC00663046 /* presentes.mp3 in Resources */,
+				BFCEA0E72ADDCEDC00663046 /* microfone.mp3 in Resources */,
+				BFCEA1462ADDCEDC00663046 /* relogio.mp3 in Resources */,
+				BFCEA1042ADDCEDC00663046 /* sol.mp3 in Resources */,
+				BFCEA0E12ADDCEDC00663046 /* cama.mp3 in Resources */,
+				BFCEA0FE2ADDCEDC00663046 /* tapete.mp3 in Resources */,
+				BFCEA11F2ADDCEDC00663046 /* f.mp3 in Resources */,
+				BFCEA12C2ADDCEDC00663046 /* cruz.mp3 in Resources */,
+				BFCEA0DE2ADDCEDC00663046 /* n.mp3 in Resources */,
+				BFCEA0DC2ADDCEDC00663046 /* c.mp3 in Resources */,
+				BFCEA10B2ADDCEDC00663046 /* vaca.mp3 in Resources */,
+				BFCEA1482ADDCEDC00663046 /* areia.mp3 in Resources */,
+				BFCEA10A2ADDCEDC00663046 /* armario.mp3 in Resources */,
+				BFCEA0F42ADDCEDC00663046 /* alarme.mp3 in Resources */,
+				BFCEA0EA2ADDCEDC00663046 /* e.mp3 in Resources */,
+				BFCEA1342ADDCEDC00663046 /* s.mp3 in Resources */,
+				BFCEA0E82ADDCEDC00663046 /* panela.mp3 in Resources */,
 				E5A22C512ACB618E0079C432 /* Quicksand-Bold.ttf in Resources */,
-				E5C72DB02ACF8F43005A8137 /* almofada.mp3 in Resources */,
-				E5C72DB72ACF8F43005A8137 /* travesseiro.mp3 in Resources */,
-				E5C72DF32ACF8F43005A8137 /* carteira.mp3 in Resources */,
+				BFCEA1412ADDCEDC00663046 /* controle-remoto.mp3 in Resources */,
+				BFCEA1102ADDCEDC00663046 /* cabra.mp3 in Resources */,
+				BFCEA1172ADDCEDC00663046 /* algodao-doce.mp3 in Resources */,
+				BFCEA0F72ADDCEDC00663046 /* copo.mp3 in Resources */,
+				BFCEA1122ADDCEDC00663046 /* sorvete.mp3 in Resources */,
+				BFCEA12F2ADDCEDC00663046 /* biblia.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
