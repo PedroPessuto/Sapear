@@ -165,7 +165,7 @@ struct FrogTalking: View {
             if newValue == false {
                 contador = 0
                 index = 0
-                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 3 : 0.3, on: .main, in: .common).autoconnect()
+                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 3 : 0.15, on: .main, in: .common).autoconnect()
                 isTalking = false
             } else {
                 isTalking = true
@@ -183,14 +183,14 @@ struct FrogTalking: View {
                 
                 contador = 0
                 index = 0
-                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 3 : 0.3, on: .main, in: .common).autoconnect()
+                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 3 : 0.15, on: .main, in: .common).autoconnect()
             }
         }
         .onAppear {
             if type == "phonemeClass" {
                 imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
             } else {
-                imageSwitchTimer = Timer.publish(every: 0.3, on: .main, in: .common).autoconnect()
+                imageSwitchTimer = Timer.publish(every: 0.15, on: .main, in: .common).autoconnect()
             }
         }
     }
