@@ -23,6 +23,7 @@
 		BF591E4F2AC4C18000A1F002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4E2AC4C18000A1F002 /* HomeView.swift */; };
 		BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */; };
 		BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7646E22AC35841002AD16C /* PhaseButton.swift */; };
+		BFB2CFDD2ADDD1D5007D6B43 /* qeimada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFB2CFDC2ADDD1D5007D6B43 /* qeimada.mp3 */; };
 		BFCEA0DB2ADDCEDC00663046 /* q.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06A2ADDCED900663046 /* q.mp3 */; };
 		BFCEA0DC2ADDCEDC00663046 /* c.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06B2ADDCED900663046 /* c.mp3 */; };
 		BFCEA0DD2ADDCEDC00663046 /* m.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06C2ADDCED900663046 /* m.mp3 */; };
@@ -170,6 +171,7 @@
 		BF591E4E2AC4C18000A1F002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseManagerView.swift; sourceTree = "<group>"; };
 		BF7646E22AC35841002AD16C /* PhaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseButton.swift; sourceTree = "<group>"; };
+		BFB2CFDC2ADDD1D5007D6B43 /* qeimada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = qeimada.mp3; sourceTree = "<group>"; };
 		BFCEA06A2ADDCED900663046 /* q.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q.mp3; sourceTree = "<group>"; };
 		BFCEA06B2ADDCED900663046 /* c.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c.mp3; sourceTree = "<group>"; };
 		BFCEA06C2ADDCED900663046 /* m.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m.mp3; sourceTree = "<group>"; };
@@ -519,6 +521,7 @@
 				BFCEA0B72ADDCEDB00663046 /* privada.mp3 */,
 				BFCEA06A2ADDCED900663046 /* q.mp3 */,
 				BFCEA0A32ADDCEDA00663046 /* quadro.mp3 */,
+				BFB2CFDC2ADDD1D5007D6B43 /* qeimada.mp3 */,
 				BFCEA0752ADDCED900663046 /* r.mp3 */,
 				BFCEA0D52ADDCEDC00663046 /* relogio.mp3 */,
 				BFCEA0AD2ADDCEDB00663046 /* roupas.mp3 */,
@@ -630,6 +633,7 @@
 				BFCEA1452ADDCEDC00663046 /* piquenique.mp3 in Resources */,
 				BFCEA1132ADDCEDC00663046 /* toalha.mp3 in Resources */,
 				BFCEA1402ADDCEDC00663046 /* b.mp3 in Resources */,
+				BFB2CFDD2ADDD1D5007D6B43 /* qeimada.mp3 in Resources */,
 				BFCEA0F62ADDCEDC00663046 /* condicionador.mp3 in Resources */,
 				BFCEA1142ADDCEDC00663046 /* quadro.mp3 in Resources */,
 				BFCEA0FD2ADDCEDC00663046 /* d.mp3 in Resources */,
