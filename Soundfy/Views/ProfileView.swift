@@ -35,7 +35,7 @@ struct ProfileView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.white)
                         .frame(width: 300, height: 300)
-                    Image("sapoEstatisitca")
+                    Image("sapoEstatistica")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 130, height: 130)
