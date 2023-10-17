@@ -22,6 +22,7 @@
 		BF591E4D2AC4C07300A1F002 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4C2AC4C07300A1F002 /* ProfileController.swift */; };
 		BF591E4F2AC4C18000A1F002 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E4E2AC4C18000A1F002 /* HomeView.swift */; };
 		BF591E512AC4CAC600A1F002 /* PhaseManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */; };
+		BF675AAA2ADEFC46003EC42F /* guitarra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF675AA92ADEFC46003EC42F /* guitarra.mp3 */; };
 		BF7646E32AC35841002AD16C /* PhaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7646E22AC35841002AD16C /* PhaseButton.swift */; };
 		BFCEA0DB2ADDCEDC00663046 /* q.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06A2ADDCED900663046 /* q.mp3 */; };
 		BFCEA0DC2ADDCEDC00663046 /* c.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA06B2ADDCED900663046 /* c.mp3 */; };
@@ -61,7 +62,6 @@
 		BFCEA0FE2ADDCEDC00663046 /* tapete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08D2ADDCEDA00663046 /* tapete.mp3 */; };
 		BFCEA0FF2ADDCEDC00663046 /* banco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08E2ADDCEDA00663046 /* banco.mp3 */; };
 		BFCEA1002ADDCEDC00663046 /* vento.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA08F2ADDCEDA00663046 /* vento.mp3 */; };
-		BFCEA1012ADDCEDC00663046 /* guitarra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0902ADDCEDA00663046 /* guitarra.mp3 */; };
 		BFCEA1022ADDCEDC00663046 /* arvore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0912ADDCEDA00663046 /* arvore.mp3 */; };
 		BFCEA1032ADDCEDC00663046 /* lago.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0922ADDCEDA00663046 /* lago.mp3 */; };
 		BFCEA1042ADDCEDC00663046 /* sol.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0932ADDCEDA00663046 /* sol.mp3 */; };
@@ -169,6 +169,7 @@
 		BF591E4C2AC4C07300A1F002 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		BF591E4E2AC4C18000A1F002 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BF591E502AC4CAC600A1F002 /* PhaseManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseManagerView.swift; sourceTree = "<group>"; };
+		BF675AA92ADEFC46003EC42F /* guitarra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guitarra.mp3; sourceTree = "<group>"; };
 		BF7646E22AC35841002AD16C /* PhaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseButton.swift; sourceTree = "<group>"; };
 		BFCEA06A2ADDCED900663046 /* q.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q.mp3; sourceTree = "<group>"; };
 		BFCEA06B2ADDCED900663046 /* c.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c.mp3; sourceTree = "<group>"; };
@@ -208,7 +209,6 @@
 		BFCEA08D2ADDCEDA00663046 /* tapete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapete.mp3; sourceTree = "<group>"; };
 		BFCEA08E2ADDCEDA00663046 /* banco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banco.mp3; sourceTree = "<group>"; };
 		BFCEA08F2ADDCEDA00663046 /* vento.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vento.mp3; sourceTree = "<group>"; };
-		BFCEA0902ADDCEDA00663046 /* guitarra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = guitarra.mp3; path = ../../../../../../Downloads/Sons/guitarra.mp3; sourceTree = "<group>"; };
 		BFCEA0912ADDCEDA00663046 /* arvore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arvore.mp3; sourceTree = "<group>"; };
 		BFCEA0922ADDCEDA00663046 /* lago.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lago.mp3; sourceTree = "<group>"; };
 		BFCEA0932ADDCEDA00663046 /* sol.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sol.mp3; sourceTree = "<group>"; };
@@ -489,7 +489,7 @@
 				BFCEA0CE2ADDCEDC00663046 /* gato.mp3 */,
 				BFCEA0802ADDCED900663046 /* geladeira.mp3 */,
 				BFCEA0BD2ADDCEDB00663046 /* guarda-sol.mp3 */,
-				BFCEA0902ADDCEDA00663046 /* guitarra.mp3 */,
+				BF675AA92ADEFC46003EC42F /* guitarra.mp3 */,
 				BFCEA0A52ADDCEDA00663046 /* i.mp3 */,
 				BFCEA07D2ADDCED900663046 /* j.mp3 */,
 				BFCEA0AA2ADDCEDA00663046 /* k.mp3 */,
@@ -648,7 +648,6 @@
 				BFCEA10E2ADDCEDC00663046 /* almofada.mp3 in Resources */,
 				BFCEA0ED2ADDCEDC00663046 /* aviao.mp3 in Resources */,
 				BFCEA1112ADDCEDC00663046 /* lojas.mp3 in Resources */,
-				BFCEA1012ADDCEDC00663046 /* guitarra.mp3 in Resources */,
 				BFCEA1182ADDCEDC00663046 /* buzina.mp3 in Resources */,
 				BFCEA1302ADDCEDC00663046 /* mar.mp3 in Resources */,
 				BFCEA14B2ADDCEDC00663046 /* bola.mp3 in Resources */,
@@ -725,6 +724,7 @@
 				BFCEA1102ADDCEDC00663046 /* cabra.mp3 in Resources */,
 				BFCEA1172ADDCEDC00663046 /* algodao-doce.mp3 in Resources */,
 				BFCEA0F72ADDCEDC00663046 /* copo.mp3 in Resources */,
+				BF675AAA2ADEFC46003EC42F /* guitarra.mp3 in Resources */,
 				BFCEA1122ADDCEDC00663046 /* sorvete.mp3 in Resources */,
 				BFCEA12F2ADDCEDC00663046 /* biblia.mp3 in Resources */,
 			);
