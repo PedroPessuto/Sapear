@@ -39,7 +39,7 @@ struct ProfileView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 130, height: 130)
-                        .offset(x:140, y:-150)
+                        .offset(x:100, y:-139)
                     
                     VStack {
                         
@@ -71,7 +71,8 @@ struct ProfileView: View {
                                 ProgressBar(value: $phonemeValue, maxValue: 1.0, color: .green)
                                 HStack {
                                     Spacer()
-                                    Text("\((profileController.phonemeExercisesRight / profileController.phonemeExercisesDone)*100,specifier: "%.0f")%")
+                                        
+                                    Text("\( profileController.phonemeExercisesDone.isZero ? 0 :(profileController.phonemeExercisesRight / profileController.phonemeExercisesDone)*100,specifier: "%.0f")%")
                                         .font(.body)
                                         .padding(.trailing, 20)
                                 }
@@ -86,7 +87,7 @@ struct ProfileView: View {
                                 ProgressBar(value: $wordsValue, maxValue: 1.0, color: .green)
                                 HStack {
                                     Spacer()
-                                    Text("\((profileController.wordsExercisesRight / profileController.wordsExercisesDone)*100,specifier: "%.0f")%")
+                                    Text("\( profileController.wordsExercisesDone.isZero ? 0 :(profileController.wordsExercisesRight / profileController.wordsExercisesDone)*100,specifier: "%.0f")%")
                                         .font(.body)
                                         .padding(.trailing, 20)
                                 }

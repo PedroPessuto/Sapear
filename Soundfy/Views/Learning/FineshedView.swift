@@ -55,12 +55,16 @@ struct FineshedView: View {
                     if phasesDone[number].id == phaseId {
                         break
                     }
-                    if number == phasesDone.count - 1  {
+                    if number == phasesDone.count - 1 {
                         progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
                         profileController.phasesDone.append(profileController.actualPhase!.phaseId)
                     }
                 }
-              
+                
+                if phasesDone.count == 0 {
+                    progressionController.addPhaseDone(id: profileController.actualPhase!.phaseId , context: managedObjContext)
+                    profileController.phasesDone.append(profileController.actualPhase!.phaseId)
+                }
                 
                 
                 profileController.onPhase = false
