@@ -56,7 +56,7 @@ struct ProfileView: View {
                                 ProgressBar(value: $soundsValue, maxValue: 1.0, color: .green)
                                 HStack {
                                     Spacer()
-                                    Text("\((profileController.soundsExercisesRight / profileController.soundsExercisesDone)*100,specifier: "%.0f")%")
+                                    Text("\(profileController.soundsExercisesDone.isZero ? 0 : (profileController.soundsExercisesRight / profileController.soundsExercisesDone)*100,specifier: "%.0f")%")
                                         .font(.body)
                                         .padding(.trailing, 20)
                                 }
@@ -72,7 +72,7 @@ struct ProfileView: View {
                                 HStack {
                                     Spacer()
                                         
-                                    Text("\( profileController.phonemeExercisesDone.isZero ? 0 :(profileController.phonemeExercisesRight / profileController.phonemeExercisesDone)*100,specifier: "%.0f")%")
+                                    Text("\( profileController.phonemeExercisesDone.isZero ? 0 : (profileController.phonemeExercisesRight / profileController.phonemeExercisesDone)*100,specifier: "%.0f")%")
                                         .font(.body)
                                         .padding(.trailing, 20)
                                 }
