@@ -349,6 +349,7 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
+                            
                             Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
@@ -373,6 +374,7 @@ class ContentController: ObservableObject {
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
                                           exerciseAlternatives: [//Relogio
+                                            
                                             Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655460070")!,
                                                         alternativeLabel: "Avião",
                                                         alternativeSoundName: "aviao",
@@ -396,6 +398,7 @@ class ContentController: ObservableObject {
                                                         alternativeLabel: "Relógio",
                                                         alternativeSoundName: "relogio",
                                                         alternativeImage: "clock.fill"),
+                                            
                                             Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655470073")!,
                                                         alternativeLabel: "Buzina",
                                                         alternativeSoundName: "buzina",
