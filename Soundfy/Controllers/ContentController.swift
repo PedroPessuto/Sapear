@@ -332,10 +332,7 @@ class ContentController: ObservableObject {
                                         lessonDescription: "Clique nas imagens para descobrir os sons",
                                         lessonType: "soundClass",
                                         lessonAlternatives: [
-                                            Alternative(alternativeId: UUID(uuidString: "550e8430-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Carro",
-                                                        alternativeSoundName: "carro",
-                                                        alternativeImage: "car.fill"),
+                                            
                                             Alternative(alternativeId: UUID(uuidString: "550e8440-e29b-41d4-a716-446655440064")!,
                                                         alternativeLabel: "Buzina",
                                                         alternativeSoundName: "buzina",
@@ -352,29 +349,6 @@ class ContentController: ObservableObject {
                             
                           ],
                           phaseExercises: [
-                            Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966440069")!,
-                                          exerciseName: "Identifique o som",
-                                          exerciseDescription: "Que som é esse?",
-                                          exerciseType: "soundExercise",
-                                          exerciseAlternatives: [//carro
-                                            Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655440070")!,
-                                                        alternativeLabel: "Avião",
-                                                        alternativeSoundName: "aviao",
-                                                        alternativeImage: "airplane"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8500-e29b-41d4-a716-446655440071")!,
-                                                        alternativeLabel: "Relógio",
-                                                        alternativeSoundName: "relogio",
-                                                        alternativeImage: "clock.fill"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655440072")!,
-                                                        alternativeLabel: "Carro",
-                                                        alternativeSoundName: "carro",
-                                                        alternativeImage: "car.fill"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655440073")!,
-                                                        alternativeLabel: "Buzina",
-                                                        alternativeSoundName: "buzina",
-                                                        alternativeImage: "car.front.waves.up")
-                                                                ],
-                                          exerciseAnswer: 2),
                             Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966450069")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
@@ -391,11 +365,7 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655450073")!,
                                                         alternativeLabel: "Buzina",
                                                         alternativeSoundName: "buzina",
-                                                        alternativeImage: "car.front.waves.up"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655450072")!,
-                                                        alternativeLabel: "Carro",
-                                                        alternativeSoundName: "carro",
-                                                        alternativeImage: "car.fill")
+                                                        alternativeImage: "car.front.waves.up")
                                                                 ],
                                           exerciseAnswer: 0),
                             Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966460069")!,
@@ -403,10 +373,6 @@ class ContentController: ObservableObject {
                                           exerciseDescription: "Que som é esse?",
                                           exerciseType: "soundExercise",
                                           exerciseAlternatives: [//Relogio
-                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655460072")!,
-                                                        alternativeLabel: "Carro",
-                                                        alternativeSoundName: "carro",
-                                                        alternativeImage: "car.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8490-e29b-41d4-a716-446655460070")!,
                                                         alternativeLabel: "Avião",
                                                         alternativeSoundName: "aviao",
@@ -420,7 +386,7 @@ class ContentController: ObservableObject {
                                                         alternativeSoundName: "relogio",
                                                         alternativeImage: "clock.fill")
                                                                 ],
-                                          exerciseAnswer: 3),
+                                          exerciseAnswer: 2),
                             Exercise(exerciseId: UUID(uuidString: "550e8480-e29b-41d4-a716-449966470069")!,
                                           exerciseName: "Identifique o som",
                                           exerciseDescription: "Que som é esse?",
@@ -430,10 +396,6 @@ class ContentController: ObservableObject {
                                                         alternativeLabel: "Relógio",
                                                         alternativeSoundName: "relogio",
                                                         alternativeImage: "clock.fill"),
-                                            Alternative(alternativeId: UUID(uuidString: "550e8510-e29b-41d4-a716-446655470072")!,
-                                                        alternativeLabel: "Carro",
-                                                        alternativeSoundName: "carro",
-                                                        alternativeImage: "car.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8520-e29b-41d4-a716-446655470073")!,
                                                         alternativeLabel: "Buzina",
                                                         alternativeSoundName: "buzina",
@@ -444,7 +406,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "airplane")
                                             
                                                                 ],
-                                          exerciseAnswer: 2)
+                                          exerciseAnswer: 1)
                           ])
                     ,
                     Phase(phaseId: UUID(uuidString: "550e8410-e29b-41d4-a716-446655440079")!,
@@ -461,7 +423,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "bell.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8550-e29b-41d4-a716-446655440082")!,
                                                         alternativeLabel: "Campainha",
-                                                        alternativeSoundName: "gato",
+                                                        alternativeSoundName: "campainha",
                                                         alternativeImage: "doorbell")
                                         ]),
                             
@@ -510,7 +472,7 @@ class ContentController: ObservableObject {
                                                         alternativeImage: "clock.fill"),
                                             Alternative(alternativeId: UUID(uuidString: "550e8660-e29b-41d4-a716-446655450093")!,
                                                         alternativeLabel: "Campainha",
-                                                        alternativeSoundName: "gato",
+                                                        alternativeSoundName: "campainha",
                                                         alternativeImage: "doorbell")
                                                                 ],
                                           exerciseAnswer: 3)
@@ -2275,15 +2237,8 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "200e8440-e29b-41d4-a716-446655440064")!,
                                                         alternativeLabel: "Cesta",
                                                         alternativeSoundName: "cesta",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "210e8430-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Gol",
-                                                        alternativeSoundName: "gol",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "230e8430-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Rede",
-                                                        alternativeSoundName: "rede",
                                                         alternativeImage: "")
+                                            
                                         ]),
                           ],
                           phaseExercises: [
@@ -2291,7 +2246,7 @@ class ContentController: ObservableObject {
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
-                                          exerciseAlternatives: [//E
+                                          exerciseAlternatives: [//Bola
                                             Alternative(alternativeId: UUID(uuidString: "650e1030-e29b-41d4-a716-446655440063")!,
                                                         alternativeLabel: "Bola",
                                                         alternativeSoundName: "bola",
@@ -2299,14 +2254,6 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8440-e29b-41d4-a716-441055440064")!,
                                                         alternativeLabel: "Cesta",
                                                         alternativeSoundName: "cesta",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e8430-e29b-41d4-a710-446655440063")!,
-                                                        alternativeLabel: "Gol",
-                                                        alternativeSoundName: "gol",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e8430-e10b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Rede",
-                                                        alternativeSoundName: "rede",
                                                         alternativeImage: "")
                                                                 ],
                                           exerciseAnswer: 0),
@@ -2314,7 +2261,7 @@ class ContentController: ObservableObject {
                                           exerciseName: "Casa",
                                           exerciseDescription: "Qual palavra o sapo está falando?",
                                           exerciseType: "wordExercise",
-                                          exerciseAlternatives: [//A
+                                          exerciseAlternatives: [//Cesta
                                             Alternative(alternativeId: UUID(uuidString: "650e8530-e29b-41d4-a716-446655440063")!,
                                                         alternativeLabel: "Bola",
                                                         alternativeSoundName: "bola",
@@ -2322,63 +2269,10 @@ class ContentController: ObservableObject {
                                             Alternative(alternativeId: UUID(uuidString: "650e8640-e29b-41d4-a716-446655440064")!,
                                                         alternativeLabel: "Cesta",
                                                         alternativeSoundName: "cesta",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e6730-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Gol",
-                                                        alternativeSoundName: "gol",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e6830-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Rede",
-                                                        alternativeSoundName: "rede",
                                                         alternativeImage: "")
                                                                 ],
-                                          exerciseAnswer: 2),
-                            Exercise(exerciseId: UUID(uuidString: "650e8480-e29b-41d4-a769-449966450069")!,
-                                          exerciseName: "Casa",
-                                          exerciseDescription: "Qual palavra o sapo está falando?",
-                                          exerciseType: "wordExercise",
-                                          exerciseAlternatives: [//A
-                                            Alternative(alternativeId: UUID(uuidString: "650e8471-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Bola",
-                                                        alternativeSoundName: "bola",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e8472-e29b-41d4-a716-446655440064")!,
-                                                        alternativeLabel: "Cesta",
-                                                        alternativeSoundName: "cesta",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e8473-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Gol",
-                                                        alternativeSoundName: "gol",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e8474-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Rede",
-                                                        alternativeSoundName: "rede",
-                                                        alternativeImage: "")
-                                                                ],
-                                          exerciseAnswer: 1),
-                            Exercise(exerciseId: UUID(uuidString: "650e8475-e29b-41d4-a716-449966450069")!,
-                                          exerciseName: "Casa",
-                                          exerciseDescription: "Qual palavra o sapo está falando?",
-                                          exerciseType: "wordExercise",
-                                          exerciseAlternatives: [//A
-                                            Alternative(alternativeId: UUID(uuidString: "650e8476-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Bola",
-                                                        alternativeSoundName: "bola",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e8477-e29b-41d4-a716-446655440064")!,
-                                                        alternativeLabel: "Cesta",
-                                                        alternativeSoundName: "cesta",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e7830-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Gol",
-                                                        alternativeSoundName: "gol",
-                                                        alternativeImage: ""),
-                                            Alternative(alternativeId: UUID(uuidString: "650e8479-e29b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Rede",
-                                                        alternativeSoundName: "rede",
-                                                        alternativeImage: "")
-                                                                ],
-                                          exerciseAnswer: 3),
+                                          exerciseAnswer: 1)
+                            
                           ])
         
                 ])

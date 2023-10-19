@@ -58,15 +58,7 @@ struct ExerciseView: View {
             selectedOptionId = UUID()
             isFirst = true
             
-            if exercise.exerciseType == "soundExercise" {
-                profileController.soundsExercisesDone = profileController.soundsExercisesDone + 1
-            }
-            else if exercise.exerciseType == "phonemeExercise" {
-                profileController.phonemeExercisesDone = profileController.phonemeExercisesDone + 1
-            }
-            else {
-                profileController.wordsExercisesDone = profileController.wordsExercisesDone + 1
-            }
+            
         }
         
         // Verifica se acertou
@@ -79,13 +71,15 @@ struct ExerciseView: View {
             if isFirst{
                 if exercise.exerciseType == "soundExercise" {
                     profileController.soundsExercisesRight = profileController.soundsExercisesRight + 1
-                    
+                    profileController.soundsExercisesDone = profileController.soundsExercisesDone + 1
                 }
                 else if exercise.exerciseType == "phonemeExercise" {
                     profileController.phonemeExercisesRight = profileController.phonemeExercisesRight + 1
+                    profileController.phonemeExercisesDone = profileController.phonemeExercisesDone + 1
                 }
                 else {
                     profileController.wordsExercisesRight = profileController.wordsExercisesRight + 1
+                    profileController.wordsExercisesDone = profileController.wordsExercisesDone + 1
                 }
             }
         }
@@ -93,6 +87,19 @@ struct ExerciseView: View {
         // Verifica se errou
         if selectedOption != exerciseAwnser && selectedOption != -1 {
             waringText = "Tente Novamente"
+            
+            if isFirst{
+                if exercise.exerciseType == "soundExercise" {
+                    profileController.soundsExercisesDone = profileController.soundsExercisesDone + 1
+                }
+                else if exercise.exerciseType == "phonemeExercise" {
+                    profileController.phonemeExercisesDone = profileController.phonemeExercisesDone + 1
+                }
+                else {
+                    profileController.wordsExercisesDone = profileController.wordsExercisesDone + 1
+                }
+            }
+            
             isFirst = false
         }
         
