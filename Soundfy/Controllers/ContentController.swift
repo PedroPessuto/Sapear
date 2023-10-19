@@ -2183,7 +2183,7 @@ class ContentController: ObservableObject {
                                         lessonType: "wordClass",
                                         lessonAlternatives: [
                                             Alternative(alternativeId: UUID(uuidString: "650e8430-e82b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Volei",
+                                                        alternativeLabel: "Vôlei",
                                                         alternativeSoundName: "volei",
                                                         alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8440-e29b-41d4-a716-446655440064")!,
@@ -2199,7 +2199,7 @@ class ContentController: ObservableObject {
                                           exerciseType: "wordExercise",
                                           exerciseAlternatives: [//E
                                             Alternative(alternativeId: UUID(uuidString: "650e8430-e85b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Volei",
+                                                        alternativeLabel: "Vôlei",
                                                         alternativeSoundName: "volei",
                                                         alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8440-e29b-41d4-a716-446655440064")!,
@@ -2214,7 +2214,7 @@ class ContentController: ObservableObject {
                                           exerciseType: "wordExercise",
                                           exerciseAlternatives: [//A
                                             Alternative(alternativeId: UUID(uuidString: "650e8430-e88b-41d4-a716-446655440063")!,
-                                                        alternativeLabel: "Volei",
+                                                        alternativeLabel: "Vôlei",
                                                         alternativeSoundName: "volei",
                                                         alternativeImage: ""),
                                             Alternative(alternativeId: UUID(uuidString: "650e8440-e29b-41d4-a716-446655440064")!,

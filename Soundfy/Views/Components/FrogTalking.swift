@@ -146,6 +146,7 @@ struct FrogTalking: View {
                             }
                         }
                 }
+                .padding(.top)
             }
             else {
                 VStack{
@@ -157,6 +158,7 @@ struct FrogTalking: View {
                         .frame(width: 60, height: 20)
                     
                 }
+                .padding(.top)
             }
         }
         .onChange(of: isTalking, perform: { newValue in

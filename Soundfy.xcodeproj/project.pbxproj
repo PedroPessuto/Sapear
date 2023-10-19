@@ -102,7 +102,7 @@
 		BFCEA1272ADDCEDC00663046 /* musica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B62ADDCEDB00663046 /* musica.mp3 */; };
 		BFCEA1282ADDCEDC00663046 /* privada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B72ADDCEDB00663046 /* privada.mp3 */; };
 		BFCEA1292ADDCEDC00663046 /* cesta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B82ADDCEDB00663046 /* cesta.mp3 */; };
-		BFCEA12A2ADDCEDC00663046 /* campaina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B92ADDCEDB00663046 /* campaina.mp3 */; };
+		BFCEA12A2ADDCEDC00663046 /* campainha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0B92ADDCEDB00663046 /* campainha.mp3 */; };
 		BFCEA12B2ADDCEDC00663046 /* espelho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BA2ADDCEDB00663046 /* espelho.mp3 */; };
 		BFCEA12C2ADDCEDC00663046 /* cruz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BB2ADDCEDB00663046 /* cruz.mp3 */; };
 		BFCEA12D2ADDCEDC00663046 /* x.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFCEA0BC2ADDCEDB00663046 /* x.mp3 */; };
@@ -249,7 +249,7 @@
 		BFCEA0B62ADDCEDB00663046 /* musica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica.mp3; sourceTree = "<group>"; };
 		BFCEA0B72ADDCEDB00663046 /* privada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = privada.mp3; sourceTree = "<group>"; };
 		BFCEA0B82ADDCEDB00663046 /* cesta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cesta.mp3; sourceTree = "<group>"; };
-		BFCEA0B92ADDCEDB00663046 /* campaina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = campaina.mp3; sourceTree = "<group>"; };
+		BFCEA0B92ADDCEDB00663046 /* campainha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = campainha.mp3; sourceTree = "<group>"; };
 		BFCEA0BA2ADDCEDB00663046 /* espelho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = espelho.mp3; sourceTree = "<group>"; };
 		BFCEA0BB2ADDCEDB00663046 /* cruz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cruz.mp3; sourceTree = "<group>"; };
 		BFCEA0BC2ADDCEDB00663046 /* x.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = x.mp3; sourceTree = "<group>"; };
@@ -458,7 +458,7 @@
 				BFCEA0732ADDCED900663046 /* cadeiras.mp3 */,
 				BFCEA0C52ADDCEDB00663046 /* caderno.mp3 */,
 				BFCEA0702ADDCED900663046 /* cama.mp3 */,
-				BFCEA0B92ADDCEDB00663046 /* campaina.mp3 */,
+				BFCEA0B92ADDCEDB00663046 /* campainha.mp3 */,
 				BFCEA0D82ADDCEDC00663046 /* caneta.mp3 */,
 				BFCEA0742ADDCED900663046 /* carteira.mp3 */,
 				BFCEA0B82ADDCEDB00663046 /* cesta.mp3 */,
@@ -666,7 +666,7 @@
 				BFCEA14A2ADDCEDC00663046 /* a.mp3 in Resources */,
 				BFCEA0E62ADDCEDC00663046 /* r.mp3 in Resources */,
 				BFF815A52ABE0D1A00ACF5A7 /* Preview Assets.xcassets in Resources */,
-				BFCEA12A2ADDCEDC00663046 /* campaina.mp3 in Resources */,
+				BFCEA12A2ADDCEDC00663046 /* campainha.mp3 in Resources */,
 				BFCEA0F32ADDCEDC00663046 /* papel-higienico.mp3 in Resources */,
 				BFCEA13D2ADDCEDC00663046 /* trovao.mp3 in Resources */,
 				E5B719B42AD73EB900449687 /* vazio.mp3 in Resources */,
