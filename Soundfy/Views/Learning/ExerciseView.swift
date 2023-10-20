@@ -27,6 +27,9 @@ struct ExerciseView: View {
     @State var palavraescrita: String = "B"
     @State var isTalking: Bool = false
     @State var isFirst: Bool = true
+    
+    @State private var hasBeenRead = false
+
 
     func playSound(Nome: String){
         let url = Bundle.main.url(forResource: Nome, withExtension: "mp3")
@@ -119,16 +122,21 @@ struct ExerciseView: View {
                     .multilineTextAlignment(.center)
                     .lineLimit(nil)
                 
-                if exercise.exerciseType == "soundExercise" {
-                    SoundButton(buttonAction: {playSound(Nome: getSound())})
-                        .accessibilityElement(children: .ignore)
-                        .accessibilityLabel(Text("Áudio Botão"))
+                VStack {
+                    if exercise.exerciseType == "soundExercise" {
+                        SoundButton(buttonAction: {playSound(Nome: getSound())})
+                            .accessibilityElement(children: .ignore)
+                            .accessibility(label: Text(hasBeenRead ? "" : "Áudio Botão"))
+                    }
+                    
+                    else {
+                        FrogTalking(playSound: playSound, getSound: getSound, palavraescrita: $palavraescrita, isDisabled: false, isTalking: $isTalking, type: exercise.exerciseType)
+                            .accessibilityElement(children: .ignore)
+                            .accessibility(label: Text(hasBeenRead ? "" : "Sapo Botão"))
+                    }
                 }
-                
-                else {
-                    FrogTalking(playSound: playSound, getSound: getSound, palavraescrita: $palavraescrita, isDisabled: false, isTalking: $isTalking, type: exercise.exerciseType)
-                        .accessibilityElement(children: .ignore)
-                        .accessibilityLabel(Text("Sapo Botão"))
+                .onTapGesture {
+                    hasBeenRead = true
                 }
                 
                 LazyVGrid(columns: columns, spacing: 20) {
@@ -140,7 +148,7 @@ struct ExerciseView: View {
                             }
                         }, selectedOption: $selectedOption, selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives)
                         .accessibilityElement(children: .ignore)
-                        .accessibilityLabel(Text("Alternativa \(exercise.exerciseAlternatives[number].alternativeLabel)"))
+                        .accessibilityLabel(Text("Alternativa \(exercise.exerciseAlternatives[number].alternativeLabel) Botão"))
                     }
                 }
             }

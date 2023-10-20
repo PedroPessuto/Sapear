@@ -40,6 +40,8 @@ struct ProfileView: View {
                         .scaledToFit()
                         .frame(width: 130, height: 130)
                         .offset(x:100, y:-139)
+                        .accessibilityHidden(true)
+
                     
                     VStack {
                         

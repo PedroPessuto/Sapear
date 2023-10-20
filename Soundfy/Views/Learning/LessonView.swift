@@ -9,6 +9,7 @@ import SwiftUI
 import AVFoundation
 
 var player: AVAudioPlayer!
+
 struct LessonView: View {
     
     @EnvironmentObject var profileController: ProfileController
@@ -56,6 +57,8 @@ struct LessonView: View {
                 if (lesson.lessonType != "soundClass") {
                     VStack {
                         FrogTalking(playSound: playSound, getSound: {return ""}, palavraescrita: $palavraescrita, isDisabled: true, isTalking: $isTalking, type: lesson.lessonType)
+                            .accessibilityHidden(true)
+
                     }
                     
                     
@@ -71,7 +74,7 @@ struct LessonView: View {
                                 isTalking.toggle()
                             })
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel(Text("Alternativa \(alternative.alternativeLabel)"))
+                            .accessibilityLabel(Text("Alternativa \(alternative.alternativeLabel) Botão"))
                             
                         }
                     }
@@ -86,6 +89,8 @@ struct LessonView: View {
                                     playSound(Nome: alternative.alternativeSoundName ?? "")
                                 }
                             })
+                            .accessibilityElement(children: .ignore)
+                            .accessibilityLabel(Text("Alternativa \(alternative.alternativeLabel) Botão"))
                         }
                     }
                 }
