@@ -40,7 +40,7 @@ struct FrogTalking: View {
     @State var contador = 0
     
     var palavraindex: [Int] = []
-    @State var imageSwitchTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State var imageSwitchTimer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var transition: AnyTransition {
         switch index {
@@ -130,7 +130,6 @@ struct FrogTalking: View {
                 VStack{
                     Image(bocas[palavra(letras: palavraescrita)[index]])
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
                         .scaledToFit()
                         .frame(width: 60, height: 20)
                         .transition(transition)
@@ -165,7 +164,7 @@ struct FrogTalking: View {
             if newValue == false {
                 contador = 0
                 index = 0
-                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 3 : 0.15, on: .main, in: .common).autoconnect()
+                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 0.5 : 0.15, on: .main, in: .common).autoconnect()
                 isTalking = false
             } else {
                 isTalking = true
@@ -183,12 +182,12 @@ struct FrogTalking: View {
                 
                 contador = 0
                 index = 0
-                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 3 : 0.15, on: .main, in: .common).autoconnect()
+                imageSwitchTimer = Timer.publish(every: type == "phonemeClass" ? 0.5 : 0.15, on: .main, in: .common).autoconnect()
             }
         }
         .onAppear {
             if type == "phonemeClass" {
-                imageSwitchTimer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+                imageSwitchTimer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
             } else {
                 imageSwitchTimer = Timer.publish(every: 0.15, on: .main, in: .common).autoconnect()
             }

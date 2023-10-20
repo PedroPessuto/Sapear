@@ -11,7 +11,8 @@ struct HomeView: View {
     
     @State var screenName: String = "Sons"
     @State var screens = ["Sons",  "Fonemas", "Palavras"]
-
+    @State var aux: Bool = false
+    
     @EnvironmentObject var profileController: ProfileController
     @EnvironmentObject var contentController: ContentController
     @FetchRequest(entity: PhaseCoreData.entity(), sortDescriptors: []) var phasesDone: FetchedResults<PhaseCoreData>
@@ -54,19 +55,19 @@ struct HomeView: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $onProfile) {
-            ProfileView(onProfile: $onProfile)
-        }
+        
         .onAppear {
+            
             let uuids: [UUID] = phasesDone.compactMap { $0.id }
             profileController.phasesDone = uuids
-            var aux: Bool = true
+            
             
             outerLoop: for section in contentController.soundsSections {
                 for phase in section.sectionPhases {
                     if phase.phaseId == profileController.actualPhaseId {
                         profileController.actualPhase = phase
-                        aux = false
+                       
+                        aux = true
                         break outerLoop
                     }
                 }
@@ -76,7 +77,8 @@ struct HomeView: View {
                 for phase in section.sectionPhases {
                     if phase.phaseId == profileController.actualPhaseId {
                         profileController.actualPhase = phase
-                        aux = false
+                        
+                        aux = true
                         break outerLoop
                     }
                 }
@@ -86,16 +88,53 @@ struct HomeView: View {
                 for phase in section.sectionPhases {
                     if phase.phaseId == profileController.actualPhaseId {
                         profileController.actualPhase = phase
-                        aux = false
+                       
+                        aux = true
                         break outerLoop
                     }
                 }
             }
             
-            if aux {
+            if !aux {
                 profileController.actualPhaseId = UUID(uuidString: "550e8410-e29b-41d4-a716-446655440001")!
+                
+            outerLoop: for section in contentController.soundsSections {
+                    for phase in section.sectionPhases {
+                        if phase.phaseId == profileController.actualPhaseId {
+                            profileController.actualPhase = phase
+                           
+                            aux = true
+                            break outerLoop
+                        }
+                    }
+                }
+                
+                outerLoop: for section in contentController.phonemesSection {
+                    for phase in section.sectionPhases {
+                        if phase.phaseId == profileController.actualPhaseId {
+                            profileController.actualPhase = phase
+                           
+                            aux = true
+                            break outerLoop
+                        }
+                    }
+                }
+                
+                outerLoop: for section in contentController.wordsSection {
+                    for phase in section.sectionPhases {
+                        if phase.phaseId == profileController.actualPhaseId {
+                            profileController.actualPhase = phase
+                           
+                            aux = true
+                            break outerLoop
+                        }
+                    }
+                }
             }
 
+        }
+        .fullScreenCover(isPresented: $onProfile) {
+            ProfileView(onProfile: $onProfile)
         }
         
     }
