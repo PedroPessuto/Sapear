@@ -150,7 +150,7 @@ struct FrogTalking: View {
             }
             else {
                 VStack{
-                    Image("bocaNeutra")
+                    Image("BocaNeutra")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .scaledToFit()
