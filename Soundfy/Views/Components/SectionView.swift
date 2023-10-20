@@ -42,6 +42,7 @@ struct SectionView: View {
                             .padding(.leading, 175)
                     }
                 }
+                
             }
         }
         .padding(.bottom, 50)        

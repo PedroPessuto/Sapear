@@ -120,6 +120,7 @@ struct PhaseManagerView: View {
                         Image(systemName: "house.fill")
                             .foregroundColor(Color(red: 56/255, green: 128/255, blue: 147/255))
                             .font(.system(size: 24))
+                            .accessibilityLabel(Text("Voltar"))
                     }
                 }
                 

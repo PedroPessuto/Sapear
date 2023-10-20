@@ -40,6 +40,7 @@ struct PhaseButton: View {
                 Image("lilypad3")
                     .resizable()
                     .frame(width: 190, height: 150)
+                    .accessibilityLabel(Text("Fase atual"))
                     
                    
                 
@@ -47,7 +48,7 @@ struct PhaseButton: View {
                 Image(isDone ? "lilypad2" : "lilypad")
                     .resizable()
                     .frame(width: 190, height: 100)
-                  
+                    .accessibilityLabel(isDone ? Text("Fase concluída") : Text("Fase"))
                   
             }
             

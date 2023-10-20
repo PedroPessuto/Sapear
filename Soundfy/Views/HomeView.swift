@@ -49,6 +49,7 @@ struct HomeView: View {
                         Image(systemName: "chart.bar.xaxis")
                             .foregroundColor(Color(red: 123/255, green: 167/255, blue: 215/255))
                             .font(.system(size: 25))
+                            .accessibilityLabel(Text("Estatísticas"))
                     }
                 }
             }

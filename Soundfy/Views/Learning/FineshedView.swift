@@ -30,6 +30,7 @@ struct FineshedView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 180, height: 180)
+                    .accessibilityLabel(Text("Sapo comemorando"))
                 
                 Text("Parabéns!")
                     .font(.title)

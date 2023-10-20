@@ -70,6 +70,9 @@ struct LessonView: View {
                                 palavraescrita = alternative.alternativeSoundName!
                                 isTalking.toggle()
                             })
+                            .accessibilityElement(children: .ignore)
+                            .accessibilityLabel(Text("Alternativa \(alternative.alternativeLabel)"))
+                            
                         }
                     }
                    

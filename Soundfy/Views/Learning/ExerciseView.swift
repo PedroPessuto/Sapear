@@ -121,10 +121,14 @@ struct ExerciseView: View {
                 
                 if exercise.exerciseType == "soundExercise" {
                     SoundButton(buttonAction: {playSound(Nome: getSound())})
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(Text("Áudio Botão"))
                 }
                 
                 else {
                     FrogTalking(playSound: playSound, getSound: getSound, palavraescrita: $palavraescrita, isDisabled: false, isTalking: $isTalking, type: exercise.exerciseType)
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(Text("Sapo Botão"))
                 }
                 
                 LazyVGrid(columns: columns, spacing: 20) {
@@ -135,6 +139,8 @@ struct ExerciseView: View {
                                 playSound(Nome: exercise.exerciseAlternatives[number].alternativeSoundName ?? "")
                             }
                         }, selectedOption: $selectedOption, selectedOptionId: $selectedOptionId, clickedAlternatives: $clickedAlternatives)
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel(Text("Alternativa \(exercise.exerciseAlternatives[number].alternativeLabel)"))
                     }
                 }
             }

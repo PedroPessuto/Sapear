@@ -110,6 +110,7 @@ struct ProfileView: View {
                                 Image(systemName: "house.fill")
                                     .foregroundColor(Color(red: 229/255, green: 94/255, blue: 41/255))
                                     .font(.system(size: 25))
+                                    .accessibilityLabel(Text("Voltar"))
                             }
                         }
                         ToolbarItem(placement: .principal) {
