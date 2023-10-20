@@ -109,27 +109,6 @@ struct HomeView: View {
                     }
                 }
                 
-                outerLoop: for section in contentController.phonemesSection {
-                    for phase in section.sectionPhases {
-                        if phase.phaseId == profileController.actualPhaseId {
-                            profileController.actualPhase = phase
-                           
-                            aux = true
-                            break outerLoop
-                        }
-                    }
-                }
-                
-                outerLoop: for section in contentController.wordsSection {
-                    for phase in section.sectionPhases {
-                        if phase.phaseId == profileController.actualPhaseId {
-                            profileController.actualPhase = phase
-                           
-                            aux = true
-                            break outerLoop
-                        }
-                    }
-                }
             }
 
         }
