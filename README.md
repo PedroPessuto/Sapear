@@ -2,7 +2,7 @@
 
 ## 📚 Descrição
 
-Aplicativo desenvolvido para iPhone com SwiftUI e tecnologias de persistência de dados (SwiftData), projetado para auxiliar crianças no aprendizado de sons e alfabetização de forma envolvente e inclusiva, com recursos de acessibilidade e gamificaçção.
+Aplicativo desenvolvido para iPhone com SwiftUI e tecnologias de persistência de dados (SwiftData), projetado para auxiliar crianças no aprendizado de sons e alfabetização de forma envolvente e inclusiva, com recursos de acessibilidade e gamificação.
 
 ## 🖼️ Aplicação
 
